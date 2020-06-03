@@ -19,8 +19,24 @@ p {
     font-size: 1.5vw;
     padding-left: 20%;
     padding-right: 20%;
+    margin-bottom: 3%;
     text-align: left;
 }
+
+/* .p_right {
+    clear: left;
+} */
+
+img{
+    border: 1px solid black;
+    width: 35%;
+    height: auto;
+}
+
+video {
+    width: 60%;
+    height: auto;
+  }
 
 .mainframe {
     /* position: fixed; */
@@ -39,10 +55,11 @@ p {
     /* min-height: 80%;   What about vertically long screens? */
 }
 
-video {
-    width: 60%;
-    height: auto;
-  }
+.img_by {
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+}
 
 #main{
     background-color: #f78d97;
