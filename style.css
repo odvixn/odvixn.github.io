@@ -1,0 +1,65 @@
+/* Some references
+    Relative Font Size: https://stackoverflow.com/questions/16056591/
+*/
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: center;
+    color: #040404;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 4vw;
+}
+
+p {
+    font-size: 1.5vw;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: left;
+}
+
+.mainframe {
+    /* position: fixed; */
+    /* width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 0; */
+    /* text-align: center; */
+}
+
+.content {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    /* min-height: 80%;   What about vertically long screens? */
+}
+
+video {
+    width: 60%;
+    height: auto;
+  }
+
+#main{
+    background-color: #f78d97;
+}
+
+#plot{
+    background-color: #ffec8f;
+}
+
+#background{
+    background-color: #7fe492;
+}
+
+#takepart{
+    background-color: #5f7ec6;
+}
+
+#by{
+    background-color: #bf80dc;
+}
