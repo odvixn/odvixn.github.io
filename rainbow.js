@@ -1,11 +1,7 @@
-// var vid = document.getElementById('main-video');
-// vid.addEventListener('click',function(){this.paused ? this.play() : this.pause();},false);
-// vid.volume = 1;
-
 const saturation = 128;
-var hue = 0;
-var rainbowObj;
-var clrOrg; // original color
+let hue = 0;
+let rainbowObj; // one element at a time
+let clrOrg; // original color
 
 function rainbowOn(obj) {
     clrOrg = obj.style.color;
@@ -17,7 +13,7 @@ function rainbowOff(obj) {
     obj.style.color = clrOrg;
 }
 
-function makeColor() {
+function makeColor() { // predicts color in a rainbow sequence
     if (saturation == 0) {r = 255; g = 255; b = 255;} 
     else {
         t1 = 255; 
