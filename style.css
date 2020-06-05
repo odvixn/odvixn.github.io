@@ -1,4 +1,4 @@
-/* Some references
+/* Some reference(s)
     Relative Font Size: https://stackoverflow.com/questions/16056591/
 */
 
@@ -12,7 +12,6 @@ body {
     color: #040404;
     margin: 0;
     padding: 0;
-
 }
 
 h1 {
@@ -31,6 +30,7 @@ p {
 }
 
 a {
+    color: royalblue;
     cursor: pointer;
 }
 
@@ -52,16 +52,23 @@ nav {
     display: block;
     width: 100%;
     background-color: #040404;
+    border-color: snow;
+    border-style: inset;
+    border-width: 0;
+    border-bottom-width: 1px;
     padding: 1%;
 }
 
 nav a {
-    
     color: beige;
     font-weight: bold;
     font-size: 1.05vw;
     padding: 2%;
     float: none;
+}
+
+nav a:hover {
+    background-color: silver;
 }
 
 .navbar { 
