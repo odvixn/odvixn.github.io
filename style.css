@@ -29,8 +29,24 @@ p {
     text-align: left;
 }
 
+ul {
+    font-size: 1.3vw;
+    line-height: 2vw;
+    padding-left: 23.5%;
+    padding-right: 20%;
+    text-align: left; 
+}
+
+li {
+    padding-bottom: 1.5%;
+}
+
+#takepart a {
+    color: navy;
+}
+
 a {
-    color: royalblue;
+    color: navy;
     cursor: pointer;
 }
 
@@ -104,7 +120,7 @@ nav a:hover {
 }
 
 #takepart{
-    background-color: #5f7ec6;
+    background-color: #7f9ee6;
 }
 
 #by{
