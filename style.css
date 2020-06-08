@@ -111,6 +111,10 @@ nav a:hover {
 .footer {
     background-color: #040404;
     color: beige;
+    border-color: snow;
+    border-style: inset;
+    border-width: 0;
+    border-top-width: 1px;
     padding: 0.7%;
 }
 
