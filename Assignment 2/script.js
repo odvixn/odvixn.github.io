@@ -15,17 +15,15 @@ function addComicBox(choice) {
     document.body.innerHTML += '<div class="comic-box"><img src=' + source +'><p>Scene 4</p></div>';
 }
 
-// The element should be reselected every time innerHTML is updated
-
 function promptChoice(elem) {
     screenSize = window.screen.availHeight;
     diff = Math.max(elem.offsetTop - window.scrollY, 0);  // no negative value
     v = "hidden";  // visibility;
+    choice = elem.getElementsByClassName("choice");
     if (0 < diff < screenSize/2) {
-        choice = elem.getElementsByClassName("choice");
         img = elem.getElementsByTagName("img")[0];
-        b = Math.min(((1-diff/screenSize)*2)**5, 10);  // blur; exponential; max 10.
-        o = Math.max((diff/screenSize)*200, 60);  // opacity; min 60.
+        b = Math.min(((1-diff/screenSize)*2)**7, 10);  // blur; max 10px.
+        o = Math.max((diff/screenSize)*200, 60);  // opacity; min 60%.
         img.style.filter = "blur("+ b.toString() +"px) opacity(" + o.toString() +"%)";
         if (diff < screenSize/3) {v = "visible";}
     } else {img.style.filter = "";}
@@ -35,5 +33,6 @@ function promptChoice(elem) {
     }
 }
 
+// The element should be reselected every time innerHTML is updated
 elem = document.getElementById("choice1");
 let interval = setInterval(function(){promptChoice(elem)},100);
