@@ -4,6 +4,7 @@ body {
     color: #040404;
     margin: 0;
     padding: 0;
+    padding-bottom: 70%;
 }
 
 img {
@@ -11,6 +12,7 @@ img {
 }
 
 .comic-box {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3%;
@@ -18,7 +20,24 @@ img {
     width: 35%;
 }
 
+.choice-prompt {
+    width: 90%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+}
+
 .choice {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: royalblue;
     cursor: pointer;
+}
+
+.choice p:hover {
+    color: orange;
 }
