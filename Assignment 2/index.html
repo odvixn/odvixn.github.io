@@ -6,10 +6,12 @@
         <script src="script.js" type="text/javascript"></script>
         <!-- <link rel="icon" href="resources/pride.png"> -->
     </head>
-    <body>
+    <body onload="loadComplete()">
         <!-- Testing if this preloads image files -->
-        <div style="visibility: hidden; background-image:url(1.jpg);"></div>
-        <div style="visibility: hidden; background-image:url(2.jpg);"></div>
+        <div class="preload" style="visibility: hidden">
+            <div style="background-image:url(1.jpg)"></div>
+            <div style="background-image:url(2.jpg);"></div>
+        </div>
         <!-- Actual page -->
         <h1>Some title</h1>
         <div class="comic-box" onclick="transition(this,'1.jpg')">

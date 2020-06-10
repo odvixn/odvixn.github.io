@@ -33,7 +33,9 @@ function transition(elem, dest) {
 }
 
 
-
+function loadComplete() {
+    document.getElementsByClassName("comic-box")[0].style.visibility = "visible";
+}
 
 
 
