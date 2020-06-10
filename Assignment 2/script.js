@@ -29,7 +29,7 @@ let transcript = {
     "start": 
         "❌Omar > ugh,✔ it's two a.m. already.✔ I think I should go to sleep and finish the assignment tomorrow.✔ \
         ➡Omar > Wait.✔ Someone sent me a message.✔ \
-        ➡➰212text_messagetext_message➰\
+        ➡ Your_Choice > ➰212text_messagetext_message➰\
         "
     ,
     "text_message": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"

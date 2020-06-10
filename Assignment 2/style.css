@@ -70,11 +70,12 @@ img {
 }
 
 .option {
+    color: orange;
     cursor: pointer;
 }
 
 .option:hover {
-    color: orange;
+    color: rgb(255, 238, 0);
 }
 
 /* MERGE SPEAKER AND DIALOGUE */
