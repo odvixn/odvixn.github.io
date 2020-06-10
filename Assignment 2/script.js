@@ -1,9 +1,35 @@
+let transcript = {
+    sample: [
+        ['Sample','❌This is a sample sentence.✔ ➡The color is  ✨19color:red"red"✨ in the subtext.✔'],
+        ['Sample','❌This is a sample sentence.✔ ➡The color is  ✨212color:orange"orange"✨ in the subtext.✔']
+    ],
+    start: [
+        ["Bob","Ugh, it's 2 a.m. already.✔ I think I should go to sleep and finish the assignment tomorrow.✔"],
+        ["Bob", "Wait. Someone sent me a message."]
+    ],
+    text_message: [
+        ["Unknown", "HI BOB."],
+        ["Unknown", "I HAVE A PICTURE OF YOURS."],
+        ["Unknown", "DO YOU RECOGNIZE YOURSELF?"],
+        ["Unknown", "DO WHAT I SAY OR UNPLEASANT THINGS ARE GOING TO HAPPEN."],
+        ["Unknown", "MEET ME BEHIND THE FACULTY RESIDENCE BUILDING IN 30 MINUTES."],
+        ["!Blank", ""],
+        ["Bob", "What the f**k? I didn't add him. Did he hack into my account?"]
+    ]
+};
+
+current_progress = 0;
+MAX_PROGRESS = 2;
 
 // ------------- Extend to use typeWriter function !
+// initial screen start with a black rectangle with an immediate transition to the initial screen
 function transition(elem, dest) {
+    if (current_progress>=MAX_PROGRESS) {return;}
     image = elem.getElementsByTagName("img")[0];
-    image.attributes.src.value = dest;
-    elem.attributes.onclick.value = "transition(this,'" + "orange.png" + "')";
+    image.attributes.src.value = (++current_progress).toString() + ".jpg";
+    elem.attributes.onclick.value = "transition(this,'" + current_progress.toString() + ".jpg')";
+    dialogue = transcript["sample"];
+    typeWriter(dialogue[current_progress-1][1],15,0);
 }
 
 
