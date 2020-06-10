@@ -1,6 +1,5 @@
-let transcript = [
-    // Sample
-    [
+let transcript = {
+    sample: [
         //-----------------------------------------------------------------------------------------------------//
         //    [❌ clears the dialogue] [✔ pauses for a moment] [➡ adds a new line] [✨style✨ adds style]   //
         //    In style, follow the format of CSS -> property:value;property:value;...
@@ -24,57 +23,27 @@ let transcript = [
             //      "bolded orange" types "bolded orange"
             //      second ✨ finishes styling.
     ],
-    // 1: start
-    [
+
+
+
+    start: [
+        "❌Omar > ugh,✔ it's two a.m. already.✔ I think I should go to sleep and finish the assignment tomorrow.✔ \
+        ➡Omar > Wait.✔ Someone sent me a message.✔ \
+        "
+    ],
+    text_message: [
 
     ],
-    // 2: text-message
-    [
+    school_principal: [
 
     ],
-    // 1:Start
-    [
+    bob_admits: [
 
     ],
-    // 1:Start
-    [
+    goes_to_the_place: [
 
-    ],
-    // 1:Start
-    [
-
-    ],
-    // 1:Start
-    [
-
-    ],
-    // 1:Start
-    [
-
-    ],
-    // 1:Start
-    [
-
-    ],
-    // 1:Start
-    [
-
-    ],
-    // 1:Start
-    [
-
-    ],
-    // 1:Start
-    [
-
-    ],
-    // 1:Start
-    [
-
-    ],
-    
-]
-
+    ]
+};
 
 let current_progress = 0;
 let MAX_PROGRESS = 13;
@@ -86,8 +55,8 @@ function transition(elem, dest) {
     image = elem.getElementsByTagName("img")[0];
     image.attributes.src.value = "resources/scenes/" + (++current_progress).toString() + ".png";
     elem.attributes.onclick.value = "transition(this,'resources/scenes/" + current_progress.toString() + ".png')";
-    dialogue = transcript["sample"];
-    typeWriter(dialogue[current_progress-1][1],15,0);
+    dialogue = transcript["start"];
+    typeWriter(dialogue[0],15,0);
 }
 
 // https://stackoverflow.com/questions/807878
