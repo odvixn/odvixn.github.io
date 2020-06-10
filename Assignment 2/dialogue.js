@@ -3,8 +3,8 @@ document.addEventListener("mouseup",function(){skip=false;})
 document.addEventListener("keydown",function(){skip=true;})
 document.addEventListener("keyup",function(){skip=false;})
 
-skip = false;
-isStyling = false;
+let skip = false;
+let isStyling = false;
 
 
 // Base Code from https://www.w3schools.com/howto/tryit.asp
