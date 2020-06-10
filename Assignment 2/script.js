@@ -66,21 +66,22 @@ let transcript = {
 };
 
 current_progress = 0;
-MAX_PROGRESS = 2;
+MAX_PROGRESS = 13;
 
 // ------------- Work on this later
 // initial screen start with a loading screen with an immediate transition to the starting screen
 function transition(elem, dest) {
     if (current_progress>=MAX_PROGRESS) {return;}
     image = elem.getElementsByTagName("img")[0];
-    image.attributes.src.value = (++current_progress).toString() + ".jpg";
-    elem.attributes.onclick.value = "transition(this,'" + current_progress.toString() + ".jpg')";
+    image.attributes.src.value = "resources/scenes/" + (++current_progress).toString() + ".png";
+    elem.attributes.onclick.value = "transition(this,'resources/scenes/" + current_progress.toString() + ".png')";
     dialogue = transcript["sample"];
     typeWriter(dialogue[current_progress-1][1],15,0);
 }
 
 // https://stackoverflow.com/questions/807878
 function loadComplete() {
+    document.getElementsByClassName("loading")[0].style.visibility = "hidden";
     document.getElementsByClassName("comic-box")[0].style.visibility = "visible";
 }
 
