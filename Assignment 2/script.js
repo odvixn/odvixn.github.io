@@ -65,8 +65,8 @@ let transcript = {
     ]
 };
 
-current_progress = 0;
-MAX_PROGRESS = 13;
+let current_progress = 0;
+let MAX_PROGRESS = 13;
 
 // ------------- Work on this later
 // initial screen start with a loading screen with an immediate transition to the starting screen
