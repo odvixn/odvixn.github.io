@@ -9,6 +9,7 @@ isStyling = false;
 
 // Base Code from https://www.w3schools.com/howto/tryit.asp
 // Special functions: pause, styling, clear
+// Need to disable click or interaction while the script is being typed! While paused, moving onto the next page breaks the page.
 function typeWriter(text, delay, position) {
     if (position < text.length) {
         dialogue = document.getElementById("dialogue");
