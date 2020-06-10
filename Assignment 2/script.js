@@ -29,10 +29,10 @@ let transcript = {
     "start": 
         "❌Omar > ugh,✔ it's two a.m. already.✔ I think I should go to sleep and finish the assignment tomorrow.✔ \
         ➡Omar > Wait.✔ Someone sent me a message.✔ \
-        ➡ Your_Choice > ➰212text_messagetext_message➰\
+        ➡ Your_Choice > ➰212text_messageview_message➰\
         "
     ,
-    "text_message": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    "text_message": "❌aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 
     ,
     "school_principal": [
@@ -68,10 +68,8 @@ function transition(option) {
 function loadComplete() {
     document.getElementsByClassName("loading")[0].style.visibility = "hidden";
     document.getElementsByClassName("comic-box")[0].style.visibility = "visible";
+    transition('start');
 }
-
-
-
 
 
 

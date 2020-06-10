@@ -45,18 +45,14 @@ function typeWriter(text, delay, position) {
             p++;
         } else if (c=='➰') {  // add options. used styling format
             if (!isOption) {
-                console.log("hi");
                 isOption = true;
                 lenNum = parseInt(text.charAt(p+1),10);  // get length of the number
-                console.log(text.charAt(p+1));
                 lenTxt = parseInt(text.substr(p+2,lenNum),10);  // get length of the Option text
-                console.log(text.substr(p+2,lenNum));
                 o = text.substr(p+2+lenNum,lenTxt);  // Option.
-                console.log(o);
                 tag = document.createElement("span");
 
                 attrib1 = document.createAttribute("onclick");
-                attrib1.value = "function() {transition(" + o + ")}";
+                attrib1.value = "transition('" + o + "')";
                 tag.setAttributeNode(attrib1);  // set onclick of span tag
 
                 attrib2 = document.createAttribute("class");
