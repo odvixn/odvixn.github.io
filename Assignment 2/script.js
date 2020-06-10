@@ -76,8 +76,7 @@ function transition(elem, dest) {
     image.attributes.src.value = "resources/scenes/" + (++current_progress).toString() + ".png";
     elem.attributes.onclick.value = "transition(this,'resources/scenes/" + current_progress.toString() + ".png')";
     dialogue = transcript["sample"];
-    dialogue_index = current_progress-1;
-    typeWriter(dialogue[dialogue_index][1],15,0);
+    typeWriter(dialogue[current_progress-1][1],15,0);
 }
 
 // https://stackoverflow.com/questions/807878
