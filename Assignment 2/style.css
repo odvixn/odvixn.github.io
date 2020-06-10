@@ -69,6 +69,14 @@ img {
     text-align: left;
 }
 
+.option {
+    cursor: pointer;
+}
+
+.option:hover {
+    color: orange;
+}
+
 /* MERGE SPEAKER AND DIALOGUE */
 
 /* #speaker {

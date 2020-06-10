@@ -1,5 +1,5 @@
 let transcript = {
-    sample: [
+    "sample": [
         //-----------------------------------------------------------------------------------------------------//
         //    [❌ clears the dialogue] [✔ pauses for a moment] [➡ adds a new line] [✨style✨ adds style]   //
         //    In style, follow the format of CSS -> property:value;property:value;...
@@ -26,23 +26,29 @@ let transcript = {
 
 
 
-    start: [
+    "start": 
         "❌Omar > ugh,✔ it's two a.m. already.✔ I think I should go to sleep and finish the assignment tomorrow.✔ \
         ➡Omar > Wait.✔ Someone sent me a message.✔ \
+        ➡➰212text_messagetext_message➰\
         "
-    ],
-    text_message: [
+    ,
+    "text_message": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+    ,
+    "school_principal": [
 
     ],
-    school_principal: [
+    "bob_admits": [
 
     ],
-    bob_admits: [
-
-    ],
-    goes_to_the_place: [
+    "goes_to_the_place": [
 
     ]
+};
+
+let scene_image = {
+    "start":"1",
+    "text_message": "2"
 };
 
 let current_progress = 0;
@@ -50,13 +56,12 @@ let MAX_PROGRESS = 13;
 
 // ------------- Work on this later
 // initial screen start with a loading screen with an immediate transition to the starting screen
-function transition(elem, dest) {
-    if (current_progress>=MAX_PROGRESS) {return;}
-    image = elem.getElementsByTagName("img")[0];
-    image.attributes.src.value = "resources/scenes/" + (++current_progress).toString() + ".png";
-    elem.attributes.onclick.value = "transition(this,'resources/scenes/" + current_progress.toString() + ".png')";
-    dialogue = transcript["start"];
-    typeWriter(dialogue[0],15,0);
+function transition(option) {
+    // if (current_progress>=MAX_PROGRESS) {return;}
+    image = document.getElementsByTagName("img")[0];
+    image.attributes.src.value = "resources/scenes/" + scene_image[option] + ".png";
+    // elem.attributes.onclick.value = "transition(this,'resources/scenes/" + current_progress.toString() + ".png')";
+    typeWriter(transcript[option],15,0);
 }
 
 // https://stackoverflow.com/questions/807878

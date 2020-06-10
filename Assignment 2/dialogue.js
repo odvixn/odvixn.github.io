@@ -5,6 +5,7 @@ document.addEventListener("keyup",function(){skip=false;})
 
 let skip = false;
 let isStyling = false;
+let isOption = false;
 
 
 // Base Code from https://www.w3schools.com/howto/tryit.asp
@@ -42,8 +43,32 @@ function typeWriter(text, delay, position) {
         } else if (c=='➡') {  // newline
             dialogue.innerHTML += "<br>";
             p++;
+        } else if (c=='➰') {  // add options. used styling format
+            if (!isOption) {
+                console.log("hi");
+                isOption = true;
+                lenNum = parseInt(text.charAt(p+1),10);  // get length of the number
+                console.log(text.charAt(p+1));
+                lenTxt = parseInt(text.substr(p+2,lenNum),10);  // get length of the Option text
+                console.log(text.substr(p+2,lenNum));
+                o = text.substr(p+2+lenNum,lenTxt);  // Option.
+                console.log(o);
+                tag = document.createElement("span");
+
+                attrib1 = document.createAttribute("onclick");
+                attrib1.value = "function() {transition(" + o + ")}";
+                tag.setAttributeNode(attrib1);  // set onclick of span tag
+
+                attrib2 = document.createAttribute("class");
+                attrib2.value = "option";
+                tag.setAttributeNode(attrib2);  // set class of span tag
+
+                dialogue.appendChild(tag);
+
+                p+=lenTxt+lenNum+2;
+            } else {isOption = false;p++;}
         }
-        if (isStyling) {dialogue = dialogue.getElementsByTagName("span")[dialogue.getElementsByTagName("span").length-1];}
+        if (isStyling||isOption) {dialogue = dialogue.getElementsByTagName("span")[dialogue.getElementsByTagName("span").length-1];}
         dialogue.innerHTML += text.charAt(p);
         if (skip) {typeWriter(text, delay, ++p);}
         else {setTimeout(function(){typeWriter(text, delay, ++p)}, d);}
