@@ -1,10 +1,11 @@
-let transcript = {
-    sample: [
+let transcript = [
+    // Sample
+    [
         //-----------------------------------------------------------------------------------------------------//
         //    [❌ clears the dialogue] [✔ pauses for a moment] [➡ adds a new line] [✨style✨ adds style]   //
         //    In style, follow the format of CSS -> property:value;property:value;...
         //-----------------------------------------------------------------------------------------------------//
-        ['Sample','❌This is a sample sentence.✔ ➡The style is  ✨19color:red"red"✨ in the subtext.'],
+        '❌This is a sample sentence.✔ ➡The style is  ✨19color:red"red"✨ in the subtext.',
             // the above clears the dialogue, types "This is a sample sentence.", pauses for a moment,
             // moves onto the next line, types "The style is  ", types ""red"" in red color, types " in the subtext."
             // Explanation on "✨19color:red"red"✨":
@@ -13,7 +14,7 @@ let transcript = {
             //      9 is the 'length of the text' that describes how the styling is done. -> color:red
             //      "red" types "red"
             //      second ✨ finishes styling.
-        ['Sample','❌This is a sample sentence.✔ ➡The style is  ✨230color:orange;font-weight:bold;"bolded orange"✨ in the subtext.']
+        '❌This is a sample sentence.✔ ➡The style is  ✨230color:orange;font-weight:bold;"bolded orange"✨ in the subtext.'
             // the above clears the dialogue, types "This is a sample sentence.", pauses for a moment,
             // moves onto the next line, types "The style is  ", types ""orange"" in orange color, types " in the subtext."
             // Explanation on "✨230color:orange;font-weight:bold;"bolded orange"✨":
@@ -23,47 +24,57 @@ let transcript = {
             //      "bolded orange" types "bolded orange"
             //      second ✨ finishes styling.
     ],
+    // 1: start
+    [
 
+    ],
+    // 2: text-message
+    [
 
+    ],
+    // 1:Start
+    [
 
-    start: [
-        ["Bob","Ugh, it's 2 a.m. already.✔ I think I should go to sleep and finish the assignment tomorrow."],
-        ["Bob", "Wait. Someone sent me a message."]
     ],
-    text_message: [
-        ["Unknown", "HI BOB."],
-        ["Unknown", "I HAVE A PICTURE OF YOURS."],
-        ["Unknown", "DO YOU RECOGNIZE YOURSELF?"],
-        ["Unknown", "DO WHAT I SAY OR UNPLEASANT THINGS ARE GOING TO HAPPEN."],
-        ["Unknown", "MEET ME BEHIND THE FACULTY RESIDENCE BUILDING IN 30 MINUTES."],
-        ["Bob", "What the f**k? I didn't add him. Did he hack into my account?"]
+    // 1:Start
+    [
+
     ],
-    school_principal: [
-        ["Principal", "We recently got an email from one of our students, whose name I will not disclose, that contained a picture."],
-        ["Principal", "The picture features you specifically, doing something I don't want to talk about."],
-        ["Principal", "I understand that this one piece of evidence is not enough, and would like to hear out what you have to say."]
+    // 1:Start
+    [
+
     ],
-    bob_admits: [
-        ["Bob", "It's me indeed. I am very sorry. I understand how big of a problem I caused the school and you personally. Unfortunately, there is nothing I can do aat this point to restore the leaked files regarding Emily's death."],
-        ["Bob", "..."],
-        ["Bob", "I will accept whatever the sanctions would be."],
-        ["Principal", "..You! Do you understand what how much struggle it took me to restore mine and the school's dignity?! It happened a year ago, and we: the school, the students, me personaly - are still affected by it. I have nothing to do with that student's death. How can you negate all the pain you caused so casually?"],
-        ["Principal", "You already did the worst you could do."],
-        ["Principal", "There is absolutely nothing stopping me from kicking you out of the school. I wonder where you are going to go then?"],
-        ["Principal", "Kids are so ungrateful these days. You understand that you will never find a full scholarship anywhere else, right?"],
-        ["Bob", "..."],
-        ["Principal", "Sigh. I'll spare you with a two-week detention. Next time you do anything similar, be ready to tell your parents that you are expelled."],
-        ["Principal", "Now get lost."]
+    // 1:Start
+    [
+
     ],
-    goes_to_the_place: [
-        ["Unknown", "NO SUDDEN MOVEMENTS."],
-        ["Unknown", "HERE IS MY PHONE WITH YOUR PICTURE."],
-        ["Unknown", "I CAN CLICK THE SEND BUTTON ANYTIME."],
-        ["Unknown", "AND YOU ARE GONE FROM THIS COUNTRY."],
-        ["Unknown", "THERE IS ONLY ONE THING YOU CAN DO TO PREVENT THAT FROM HAPPENING."],
-        []
-    ]
-};
+    // 1:Start
+    [
+
+    ],
+    // 1:Start
+    [
+
+    ],
+    // 1:Start
+    [
+
+    ],
+    // 1:Start
+    [
+
+    ],
+    // 1:Start
+    [
+
+    ],
+    // 1:Start
+    [
+
+    ],
+    
+]
+
 
 let current_progress = 0;
 let MAX_PROGRESS = 13;
