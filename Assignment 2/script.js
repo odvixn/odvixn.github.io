@@ -13,7 +13,6 @@ let transcript = {
         ["Unknown", "DO YOU RECOGNIZE YOURSELF?"],
         ["Unknown", "DO WHAT I SAY OR UNPLEASANT THINGS ARE GOING TO HAPPEN."],
         ["Unknown", "MEET ME BEHIND THE FACULTY RESIDENCE BUILDING IN 30 MINUTES."],
-        ["!Blank", ""],
         ["Bob", "What the f**k? I didn't add him. Did he hack into my account?"]
     ]
 };
