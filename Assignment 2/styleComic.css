@@ -17,6 +17,16 @@ html {
     color: #8cff99;
 }
 
+.tip {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8vw;
+    font-weight: bolder;
+    color: #10aa22;
+}
+
 body {
     margin: 0;
     padding: 0;

@@ -28,7 +28,9 @@ let transcript = {
     "start":
         "❌Omar > Ugh,✔ it's 2 a.m. already.✔ I think I should go to sleep and finish the assignment tomorrow.✔ \
         ➡Omar > Wait.✔ Someone sent me a message.✔ \
-        ➡ > ➰12TMView_message➰\
+        ➡ > ➰12TMOpen message➰\
+        ➡ ✨255font-size:1.1vw;line-height:1.4vw;color:rgb(235,57,72);\
+        (Dialogue too slow? Press any key or click anywhere on the screen to skip the dialogue.)✨ \
         ",
     "TM":
         "❌Unknown > HI OMAR.✔ \
@@ -38,7 +40,7 @@ let transcript = {
         ➡Omar > What the hell?✔ \
         ➡Omar > I thought nobody would find out about the ATM incident. Nobody was there when I broke the machine.✔\
         ➡Omar > ...What should I do?!✔ \
-        ➡Choices > ➰18recorderGrab_a_recorder_for_the_meetup➰ / ➰16ignoreIgnore➰ / ➰14GTTPGo_to_the_place➰\
+        ➡Choices > ➰18recorderGrab a recorder for the meetup➰ / ➰16ignoreIgnore➰ / ➰14GTTPGo to the place➰\
         ",
     "SP":
         "❌Principal > We recently got an anonymous email containing a questionable picture of you.✔ \
@@ -51,7 +53,7 @@ let transcript = {
         ➡Principal > Omar, I am really disappointed in you.✔\
         ➡Principal > There is absolutely nothing stopping me from kicking you out of the school.✔\
         ➡Principal > However, given the academic excellence you showed consistently, we will resolve this issue internally by giving you a two-week detention.✔ Don't expect me to be as lenient from now on.✔ \
-        ➡ > ➰12GE2_years_later➰\
+        ➡ > ➰12GE2 years later➰\
         ",
     "GTTP":
         "❌Unknown > DON'T MAKE ANY SUDDEN MOVEMENTS.✔ \
@@ -59,14 +61,14 @@ let transcript = {
         ➡Unknown > I CAN CLICK THE SEND BUTTON ANYTIME,✔ AND YOU CAN SAY GOODBYE TO YOUR SCHOLARSHIP.✔ \
         ➡Unknown > THERE IS ONLY ONE THING YOU CAN DO TO PREVENT THAT FROM HAPPENING. ✔ \
         ➡Unknown >  SEE THIS BAG ON THE FLOOR?✔ IT CONTAINS SOMETHING THAT YOU HAVE TO PUT IN THE LOUNGE WATER DISPENSER BEFORE 12 PM TOMORROW.✔ THE SECURITY CAMERAS WILL BE TURNED OFF.✔ MAKE SURE YOU ARE NOT SEEN BY ANYONE. ✔ \
-        ➡Choices > ➰14NDDIKnock_Down_&_Delete_Images➰ / ➰16complyComply➰",
+        ➡Choices > ➰14NDDIKnock Down & Delete Images➰ / ➰16complyComply➰",
     "ignore":
         "❌Omar > Where did he get that image from?✔ \
         ➡Omar > I don't remember being seen by anyone when taking the money from the ATM.✔ \
         ➡Omar > Basement in 30 minutes? I am not going.✔ \
         ➡Omar > Nobody's going to believe that petty picture. ✔ \
         ➡Omar > let him do as he wishes. ✔ \
-        ➡ > ➰12SPSchool_Principal➰\
+        ➡ > ➰12SPSchool principal calls you.➰\
         ",
     "OL":
         "❌Omar > I didn't do that.✔ Sir, you know that I am here on a scholarship.✔ Why would I put myself in this position?✔ \
@@ -76,20 +78,19 @@ let transcript = {
         ➡Principal > Why would you tell me now if you already know it's me?!✔ \
         ➡Principal > I was giving you a chance to take responsibility.✔ \
         ➡Principal > The police will be arriving soon.✔ \
-        ➡ > ➰132MJ2_Months_In_Jail➰\
+        ➡ > ➰132MJYou are sentenced 2 months of imprisonment➰\
         ",
     "GE":
         "❌Omar > It's been two years since that incident.✔ \
         ➡Omar > I still can't sleep at night trying to figure out who the hacker was.✔ \
         ➡Omar > Who in the world hates me that much?✔ \
-        ➡END✔ \
         ➡ $\
         ",
     "comply":
         "❌Omar > I put the mixture in the water dispenser.✔ \
         ➡Omar > I hope no one was watching.✔\
         ➡Omar > Hopefully he keeps his word and deletes the image.✔\
-        ➡ > ➰1420YJ20_Years_In_Jail➰\
+        ➡ > ➰1420YJ5 people got poisoned to death. You received 20 years of imprisonment.➰\
         ",
     "NDDI":
         "❌Unknown > AAAARGH.✔\
@@ -99,13 +100,12 @@ let transcript = {
         ➡Omar > this should do the job.✔\
         ➡Unknown > ..ha..@ha..@ha.✔\
         ➡Unknown > ...There is no escape.✔ I wrote a programm that will automatically leak your image within 2 hours.✔\
-        ➡Choices > ➰15bluffUnknown_is_lying!➰ / ➰14killKill_him_anyway➰\
+        ➡Choices > ➰15bluffUnknown must be lying!➰ / ➰14killEh, Kill him anyway➰\
         ",
     "10YJ":
         "❌Omar > *sob*✔\
         ➡Omar > I@ want@ everything@ to@ be@ normal@ again.✔\
         ➡Omar > It's all that hacker's fault.✔\
-        ➡END.✔\
         ➡ $\
         ",
     "2MJ":
@@ -125,14 +125,14 @@ let transcript = {
         ➡Omar > I don't believe you.✔\
         ➡Unknown > ..FINE.✔\
         ➡Unknown > *deletes the images*✔\
-        ➡ > ➰13GE2Good_Ending➰\
+        ➡ > ➰13GE2Two weeks later➰\
         ",
     "bluff":
         "❌Omar > Nice try.✔\
         ➡Omar > I know you are bluffing.✔\
         ➡Omar > Get lost.✔\
         ➡Unknown >IT WILL NOT END THAT EASY.✔ YOU KNOW THAT.✔\
-        ➡ > ➰15AOBBS(Worried_but_let_unknown_go)➰\
+        ➡ > ➰15AOBBS(You feel worried, but let Unknown go.)➰\
         ",
     "20YJ":
         "❌Omar > *sobs*✔\
@@ -146,12 +146,12 @@ let transcript = {
     "kill":
         "❌Omar > AAAAHHH.✔\
         ➡Omar > DIE.✔\
-        ➡ > ➰1410YJ10_Years_In_Jail➰\
+        ➡ > ➰1410YJYour murder is discovered. You received 10 years of imprisonment.➰\
         ",
     "recorder":
         "❌Omar > I should probably grab a recorder before meeting him.✔\
         ➡Omar > Just in case things don't go as planned.✔\
-        ➡ > ➰14GTTPGo_to_the_place➰\
+        ➡ > ➰14GTTPGo to the place➰\
         ",
     "GE2":
         "❌*two weeks passed*✔\
@@ -212,7 +212,6 @@ function preload(num) {
 // https://stackoverflow.com/questions/807878
 function loadComplete() {
     document.getElementsByClassName("loading")[0].style.visibility = "hidden";
-    document.getElementsByClassName("tip")[0].style.visibility = "hidden";
     document.getElementsByClassName("comic-box")[0].style.visibility = "visible";
     transition('start');
 }

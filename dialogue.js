@@ -97,7 +97,7 @@ function typeWriter(text, delay, position) {
             tag2.setAttributeNode(attrib3_2);
             tag2.setAttributeNode(attrib4_2);
             
-            tag1.innerText = " Return ";
+            tag1.innerText = " Return to main menu";
             tag2.innerText = " Replay";
             
             dialogue.innerHTML += "END >";

@@ -26,6 +26,9 @@ function typeWriter(text, delay, position) {
         if (c=='✔') {  // use at the end of the sentence. will delay longer (visible pause).
             d=800;
             p+=1;
+        } else if (c=='@') {  // mid-sentence pause
+            d=100;
+            p+=1;
         } else if (c=='✨') {  // define style for a separate section.
                             // syntax: ✨210color:blueSOMETEXT✨ 2 is the length of the next number, 10 is the length of the styling text.
             if (!isStyling) {
