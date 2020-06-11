@@ -100,7 +100,7 @@ let transcript = {
         ➡Omar > this should do the job.✔\
         ➡Unknown > ..ha..@ha..@ha.✔\
         ➡Unknown > ...There is no escape.✔ I wrote a programm that will automatically leak your image within 2 hours.✔\
-        ➡Choices > ➰15bluffUnknown must be lying!➰ / ➰14killEh, Kill him anyway➰\
+        ➡Choices > ➰15bluffUnknown must be lying!➰ / ➰14killKill him!!➰\
         ",
     "10YJ":
         "❌Omar > *sob*✔\
