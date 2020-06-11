@@ -5,15 +5,16 @@
         <title>Comic Strip</title>
         <link rel="stylesheet" href="style.css" />
         <script src="script.js" type="text/javascript"></script>
+        <script>preload(15)</script>
     </head>
-    <body onload="loadComplete()">
+    <body>
         <!-- Loading Screen. This will be hidden once everything loads. -->
         <div class="loading">LOADING...</div>
 
         <!-- Main -->
         <div class="comic-box" onmousedown="return false">
             <div class="loaded-images" style="visibility: hidden;">
-                <img class="scenes" id="IMG1" src="resources/scenes/1.png"/>
+                <img class="scenes" id="IMG1" src="resources/scenes/1.png" onload="loadComplete()"/>
                 <img class="scenes" id="IMG2" src="resources/scenes/2.png"/>
                 <img class="scenes" id="IMG3" src="resources/scenes/3.png"/>
                 <img class="scenes" id="IMG4" src="resources/scenes/4.png"/>

@@ -225,6 +225,14 @@ function transition(option) {
     typeWriter(transcript[option],15,0);
 }
 
+let image_holder = []
+function preload(num) {
+    for (i=1;i<=num;i++) {
+        image_holder.push(new Image())
+        image_holder[image_holder.length-1].src = "resources/scenes/" + num.toString() + ".png";
+    }
+}
+
 // https://stackoverflow.com/questions/807878
 function loadComplete() {
     document.getElementsByClassName("loading")[0].style.visibility = "hidden";
