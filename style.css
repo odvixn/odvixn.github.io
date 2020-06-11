@@ -73,7 +73,6 @@ body {
 }
 
 .scenes {
-    visibility: hidden;
     position: absolute;
     top: 48%;
     left: 50%;
