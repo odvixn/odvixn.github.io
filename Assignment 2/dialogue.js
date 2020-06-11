@@ -6,7 +6,12 @@ document.addEventListener("keyup",function(){skip=false;})
 let skip = false;
 let isStyling = false;
 let isOption = false;
-
+var x = "";
+// $(document).ready(function(){
+//   $(".bg").click(function(){
+//     $("#Menu").show();
+//   });
+// });
 
 // Base Code from https://www.w3schools.com/howto/tryit.asp
 // Special functions: pause, styling, clear
@@ -20,13 +25,13 @@ function typeWriter(text, delay, position) {
         if (c=='✔') {  // use at the end of the sentence. will delay longer (visible pause).
             d*=40;
             p+=1;
-        } else if (c=='✨') {  // define style for a separate section. 
+        } else if (c=='✨') {  // define style for a separate section.
                             // syntax: ✨210color:blueSOMETEXT✨ 2 is the length of the next number, 10 is the length of the styling text.
             if (!isStyling) {
                 isStyling = true;
                 lenNum = parseInt(text.charAt(p+1),10);  // get length of the number
                 lenTxt = parseInt(text.substr(p+2,lenNum),10);  // get length of the styling text
-                s = text.substr(p+2+lenNum,lenTxt);  // style. syntax: "attribute:value attribute:value"
+                s = text.substr(p+2+lenNum,lenTxt);  // style. syntax: "attribute:value;attribute:value;"
                 tag = document.createElement("span");
 
                 attrib = document.createAttribute("style");
@@ -63,12 +68,30 @@ function typeWriter(text, delay, position) {
 
                 p+=lenTxt+lenNum+2;
             } else {isOption = false;p++;}
+        } else if (c=='$') {  // "Return home" feature
+            tag = document.createElement("span");
+
+            attrib1 = document.createAttribute("onclick");
+            attrib1.value = "document.location.href='/'";
+            tag.setAttributeNode(attrib1);  // set onclick of span tag
+
+            attrib2 = document.createAttribute("class");
+            attrib2.value = "option";
+            tag.setAttributeNode(attrib2);  // set class of span tag
+
+            attrib3 = document.createAttribute("style");
+            attrib3.value = "color:tomato";
+            tag.setAttributeNode(attrib3);  // set style of span tag
+
+            tag.innerText = "<END. Press Any Key To Return Home>";
+            dialogue.appendChild(tag);
+            document.addEventListener("keypress",function(){document.location.href="/";})
+            p++;
         }
+
         if (isStyling||isOption) {dialogue = dialogue.getElementsByTagName("span")[dialogue.getElementsByTagName("span").length-1];}
         dialogue.innerHTML += text.charAt(p);
         if (skip) {typeWriter(text, delay, ++p);}
         else {setTimeout(function(){typeWriter(text, delay, ++p)}, d);}
     } else {skip = false;}
 }
-
-
