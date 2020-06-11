@@ -87,7 +87,7 @@ let transcript = {
         ",
     "OL":
         "❌Omar > I didn't do that.✔ I have absolutely no intention of harming the school's dignity like that.✔ ALso, you know that I am here on a scholarship.✔ Why would I put myself in such danger? ✔ \
-        ➡Principal > Bob. ✔ \
+        ➡Principal > Omar. ✔ \
         ➡Principal > When you broke into my office,✔ you clearly overlooked something important.✔ \
         ➡Principal > You didn't realize there was a hidden camera,✔ right?✔ \
         ➡Omar > What?!.✔ \
@@ -107,87 +107,87 @@ let transcript = {
         ➡ $\
         ",
     "comply":
-        "❌Bob > this should do the job.✔ \
-        ➡Bob > I hope no one was watching.✔\
+        "❌Omar > this should do the job.✔ \
+        ➡Omar > I hope no one was watching.✔\
         ➡ Your_Choice > ➰1420YJ20_Years_In_Jail➰\
         ",
     "NDDI":
         "❌Unknown > AAAARGH.✔\
         ➡Unknown > ...✔\
-        ➡Bob > *pant*✔\
-        ➡Bob > I should delete the images immediately while he is unconscious.✔\
-        ➡Bob > this should do the job.✔\
+        ➡Omar > *pant*✔\
+        ➡Omar > I should delete the images immediately while he is unconscious.✔\
+        ➡Omar > this should do the job.✔\
         ➡Unknown > ..ha..✔ha..✔ha.✔\
-        ❌Bob > ?!... what the fuck?✔\
+        ❌Omar > ?!... what the fuck?✔\
         ➡Unknown > ...There is no escape.✔ I wrote a program that will send your image automatically in 2 hours.✔\
         ➡ Your_Choices > ➰15bluffBluff➰ / ➰14killKill➰\
         ",
     "10YJ":
-        "❌Bob > *sob*✔\
-        ➡Bob > I✔ want✔ everything✔ to✔ be✔ normal✔ again.✔\
-        ➡Bob > If only that fucker didn't do anything!✔\
-        ➡Bob > it's all his fault.✔\
+        "❌Omar > *sob*✔\
+        ➡Omar > I✔ want✔ everything✔ to✔ be✔ normal✔ again.✔\
+        ➡Omar > If only that fucker didn't do anything!✔\
+        ➡Omar > it's all his fault.✔\
         ➡ $\
         ",
     "2MJ":
-        "❌Bob > It's been a year since that accident.✔\
-        ➡Bob > I am back home after spending two months in jail.✔\
-        ➡Bob > I had to drop college and pick-up a part-time software engineering job.✔ The pay sucks, but at least they didn't✔\
+        "❌Omar > It's been a year since that accident.✔\
+        ➡Omar > I am back home after spending two months in jail.✔\
+        ➡Omar > I had to drop college and pick-up a part-time software engineering job.✔ The pay sucks, but at least they didn't✔\
         bother with checking my criminal history.✔\
-        ➡Bob > My parents are friends are avoiding me.✔\
+        ➡Omar > My parents are friends are avoiding me.✔\
         ✔ ❌ \
-        ➡Bob > I still can't sleep at night trying to figure out who the hacker was.✔\
-        ➡Bob: FUCK.✔\
-        ➡Bob > WHOEVER YOU ARE, I WILL KILL YOU ONE DAY.✔\
-        ➡Bob > just you wait.✔\
+        ➡Omar > I still can't sleep at night trying to figure out who the hacker was.✔\
+        ➡Omar: FUCK.✔\
+        ➡Omar > WHOEVER YOU ARE, I WILL KILL YOU ONE DAY.✔\
+        ➡Omar > just you wait.✔\
         ➡ $\
         ",
     "recorder1":
-        "❌Bob > you are being recorded.✔\
-        ➡Bob > Delete that image immediately,✔ or you are done.✔\
-        ➡Bob > I know who you are.✔\
+        "❌Omar > you are being recorded.✔\
+        ➡Omar > Delete that image immediately,✔ or you are done.✔\
+        ➡Omar > I know who you are.✔\
         ➡Unknown > !!✔\
         ❌Unknown > I set an automatic..✔\
-        ➡Bob > I don't care.✔\
+        ➡Omar > I don't care.✔\
         ➡Unknown > ..FINE.✔\
         ➡Unknown > *deletes the images*✔\
         ➡ Your_Choice > ➰13GE2Good_Ending➰\
         ",
     "bluff":
         "❌nice try.✔\
-        ➡Bob > I know you are bluffing.✔\
-        ➡Bob > Get lost.✔\
+        ➡Omar > I know you are bluffing.✔\
+        ➡Omar > Get lost.✔\
         ➡Unknown >IT WILL NOT END THAT EASY.✔ YOU KNOW THAT.✔\
         ➡ Your_Choice > ➰15AOBBSNext➰\
         ",
     "20YJ":
-        "❌Bob > *sob*✔\
-        ➡Bob > I can't believe it.✔\
-        ➡Bob > I want everything to be normal again.✔\
-        ➡Bob > If only that fucker didn't do anything!✔\
-        ➡Bob > It's all his fault.✔\
+        "❌Omar > *sob*✔\
+        ➡Omar > I can't believe it.✔\
+        ➡Omar > I want everything to be normal again.✔\
+        ➡Omar > If only that fucker didn't do anything!✔\
+        ➡Omar > It's all his fault.✔\
         ➡ $\
         ",
     "kill":
-        "❌Bob > AAAAHHH.✔\
-        ➡Bob > DIE.✔\
+        "❌Omar > AAAAHHH.✔\
+        ➡Omar > DIE.✔\
         ➡> ➰1410YJ10_Years_In_Jail➰\
         ",
     "recorder":
-        "❌Bob > I should probably grab a recorder.✔\
-        ➡Bob > Just in case.✔\
+        "❌Omar > I should probably grab a recorder.✔\
+        ➡Omar > Just in case.✔\
         ➡ Your_Choice > ➰14GTTPGo_to_the_place➰\
         ",
     "GE2":
         "❌*two weeks pass*✔\
-        ➡Bob > Life is good again.✔\
-        ➡Bob > I wonder how is he doing.✔\
+        ➡Omar > Life is good again.✔\
+        ➡Omar > I wonder how is he doing.✔\
         ➡ $\
         ",
     "AOBBS":
-        "❌Bob > It's been two years since that accident.✔\
-        ➡Bob > I still can't sleep at night thinking of what he might do.✔\
-        ➡Bob > fuck,✔ why in the world does he hate me that much?✔\
+        "❌Omar > It's been two years since that accident.✔\
+        ➡Omar > I still can't sleep at night thinking of what he might do.✔\
+        ➡Omar > fuck,✔ why in the world does he hate me that much?✔\
         ➡ $\
         "
 };
@@ -214,17 +214,11 @@ let scene_image = {
     "AOBBS":"6"
 };
 
-let current_progress = 0;
-let MAX_PROGRESS = 13;
-
-// ------------- Work on this later
 // initial screen start with a loading screen with an immediate transition to the starting screen
 function transition(option) {
-    if (option=='recorder') {transcript['GTTP']+=' / ➰19recorder1Use_Recorder➰ '}
-    // if (current_progress>=MAX_PROGRESS) {return;}
+    if (option=='recorder') {transcript['GTTP']+=' / ➰19recorder1Use_Recorder➰ '} // quick and dirty, but it works.
     image = document.getElementsByTagName("img")[0];
     image.attributes.src.value = "resources/scenes/" + scene_image[option] + ".png";
-    // elem.attributes.onclick.value = "transition(this,'resources/scenes/" + current_progress.toString() + ".png')";
     typeWriter(transcript[option],15,0);
 }
 
@@ -234,52 +228,3 @@ function loadComplete() {
     document.getElementsByClassName("comic-box")[0].style.visibility = "visible";
     transition('start');
 }
-
-
-
-
-
-
-
-
-
-
-
-// let c = 0;
-
-// function addComicBox(choice) {
-//     if (c!=0) {return}
-//     let source = "";
-//     if (choice=="apple") {
-//         source = "apple.jpg";
-//         c = 1;
-//     }
-//     else if (choice=="orange") {
-//         source = "orange.png";
-//         c = 2;
-//     }
-//     // the below line is a quick and dirty solution. For a proper solution, visit https://www.w3schools.com/jsref/prop_doc_body.asp
-//     document.body.innerHTML += '<div class="comic-box"><img src=' + source +'><p>Scene 4</p></div>';
-// }
-
-// function promptChoice(elem) {
-//     screenSize = window.screen.availHeight;
-//     diff = Math.max(elem.offsetTop - window.scrollY, 0);  // no negative value
-//     v = "hidden";  // visibility;
-//     choice = elem.getElementsByClassName("choice");
-//     if (0 < diff < screenSize/2) {
-//         img = elem.getElementsByTagName("img")[0];
-//         b = Math.min(((1-diff/screenSize)*2)**7, 10);  // blur; max 10px.
-//         o = Math.max((diff/screenSize)*200, 60);  // opacity; min 60%.
-//         img.style.filter = "blur("+ b.toString() +"px) opacity(" + o.toString() +"%)";
-//         if (diff < screenSize/3) {v = "visible";}
-//     } else {img.style.filter = "";}
-//     elem.getElementsByClassName("choice-prompt")[0].style.visibility = v;
-//     for (i=0;i<choice.length;i++) {
-//         choice[i].style.visibility = v;
-//     }
-// }
-
-// // The element should be reselected every time innerHTML is updated
-// elem = document.getElementById("choice1");
-// let interval = setInterval(function(){promptChoice(elem)},100);
