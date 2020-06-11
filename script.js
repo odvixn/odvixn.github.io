@@ -26,80 +26,70 @@ let transcript = {
 
 
     "start":
-        "❌Omar > Ugh,✔ it's two a.m. already.✔ I think I should go to sleep and finish the assignment tomorrow.✔ \
+        "❌Omar > Ugh,✔ it's 2 a.m. already.✔ I think I should go to sleep and finish the assignment tomorrow.✔ \
         ➡Omar > Wait.✔ Someone sent me a message.✔ \
-        ➡ Your_Choice > ➰12TMView_message➰\
+        ➡ > ➰12TMView_message➰\
         ",
     "TM":
         "❌Unknown > HI OMAR.✔ \
         ➡Unknown > I HAVE A PICTURE OF YOURS.✔ \
-        ➡Unknown > DO YOU RECOGNIZE YOURSELF?✔ \
-        ➡Unknown > DO WHAT I SAY OR UNPLEASANT THINGS ARE GOING TO HAPPEN.✔ \
-        ➡Unknown > MEET ME BEHIND THE FACULTY RESIDENCE BUILDING IN 30 MINUTES.✔ \
-        ➡Omar > What the fuck?✔ I didn't add him. ✔ Did he hack into my account?✔ \
-        ➡Omar > What should I do?✔ \
-        ➡ Your_Choices > ➰18recorderGrab_Recorder➰ / ➰16ignoreIgnore➰ / ➰14GTTPGo_to_the_place➰\
+        ➡Unknown > DO WHAT I SAY OR I LEAK IT TO THE PRINCIPAL.✔ \
+        ➡Unknown > MEET ME IN THE SCHOOL BASEMENT IN 30 MINUTES.✔ \
+        ➡Omar > What the hell?✔ \
+        ➡Omar > I thought nobody would find out about the ATM incident. Nobody was there when I broke the machine.✔\
+        ➡Omar > ...What should I do?!✔ \
+        ➡Choices > ➰18recorderGrab_a_recorder_for_the_meetup➰ / ➰16ignoreIgnore➰ / ➰14GTTPGo_to_the_place➰\
         ",
     "SP":
-        "❌Principal > We recently got an email from one of our students,✔ whose name I will not disclose,✔ that contained a picture.✔ \
-        ➡Principal > The picture features you specifically,✔ doing something I don't want to talk about.✔ \
-        ➡Principal >  I understand that this one piece of evidence is not enough,✔ and would like to hear out what you have to say.✔ \
-        ➡ Your_Choices > ➰12OLLie➰ / ➰12OAAdmit➰\
+        "❌Principal > We recently got an anonymous email containing a questionable picture of you.✔ \
+        ➡Principal > I understand one piece of evidence is not enough.✔ I would like to hear out what you have to say.✔ \
+        ➡Choices > ➰12OLLie➰ / ➰12OAAdmit➰\
         ",
     "OA":
-        "❌Omar > It's me indeed.✔ I am very sorry.✔ I understand how big of a problem I caused the school and you personally.✔ Unfortunately, there is nothing I can do aat this point to restore the leaked files regarding Emily's death. ✔ \
-        ➡Omar > ...✔ \
-        ➡Omar > I will accept whatever the sanctions would be.✔ \
-        ➡Principal > ..You!✔ Do you understand what how much struggle it took me to restore mine and the school's dignity?!✔ It happened a year ago,✔ and we:✔ the school,✔ the students,✔ me personaly✔ - are still affected by it.✔ I have nothing to do with that student's death.✔ How can you negate all the pain you caused so casually?✔ \
-        ➡Principal > You already did the worst you could do.✔ \
-        ➡Principal > There is absolutely nothing stopping me from kicking you out of the school.✔ I wonder where you are going to go then?✔ \
-        ➡Principal > Kids are so ungrateful these days.✔ You understand that you will never find a full scholarship anywhere else,✔ right?✔ \
-        ➡Omar > ...✔ \
-        ➡Principal > Sigh.✔ I'll spare you with a two-week detention.✔ Next time you do anything similar,✔ be ready to tell your parents that you are expelled.✔ \
-        ➡Principal > Now get lost.✔ \
-        ➡ Your_Choice > ➰12GEGood_Ending➰\
+        "❌Omar > It's me indeed.✔ I am very sorry.✔ \
+        ➡Omar > I will return the money I took from the school's ATM, and I accept the consequences regarding my actions.✔ \
+        ➡Principal > Omar, I am really disappointed in you.✔\
+        ➡Principal > There is absolutely nothing stopping me from kicking you out of the school.✔\
+        ➡Principal > However, given the academic excellence you showed consistently, we will resolve this issue internally by giving you a two-week detention.✔ Don't expect me to be as lenient from now on.✔ \
+        ➡ > ➰12GE2_years_later➰\
         ",
     "GTTP":
-        "❌Unknown > NO SUDDEN MOVEMENTS.✔ \
+        "❌Unknown > DON'T MAKE ANY SUDDEN MOVEMENTS.✔ \
         ➡Unknown > HERE IS MY PHONE WITH YOUR PICTURE.✔ \
-        ➡Unknown > I CAN CLICK THE SEND BUTTON ANYTIME.✔ \
-        ➡Unknown > AND YOU ARE GONE FROM THIS COUNTRY.✔ \
+        ➡Unknown > I CAN CLICK THE SEND BUTTON ANYTIME,✔ AND YOU CAN SAY GOODBYE TO YOUR SCHOLARSHIP.✔ \
         ➡Unknown > THERE IS ONLY ONE THING YOU CAN DO TO PREVENT THAT FROM HAPPENING. ✔ \
         ➡Unknown >  SEE THIS BAG ON THE FLOOR?✔ IT CONTAINS SOMETHING THAT YOU HAVE TO PUT IN THE LOUNGE WATER DISPENSER BEFORE 12 PM TOMORROW.✔ THE SECURITY CAMERAS WILL BE TURNED OFF.✔ MAKE SURE YOU ARE NOT SEEN BY ANYONE. ✔ \
-        ➡ Your_Choices > ➰14NDDIKnock_Down_N_Delete_Images➰ / ➰16complyComply➰",
+        ➡Choices > ➰14NDDIKnock_Down_&_Delete_Images➰ / ➰16complyComply➰",
     "ignore":
-        "❌Omar > WHERE DID HE GET THAT IMAGE FROM?✔ \
-        ➡Omar > I don't remember being seen by anyone.✔ \
-        ➡Omar > anyways.✔ \
-        ➡Omar > WHY THE FUCK DO I HAVE TO JUST DANCE TO WHATEVER HE SAYS?✔ \
-        ➡Omar > fuck him. What's his benefit in doing this? ✔ \
-        ➡Omar > nobody's going to believe that petty picture. ✔ \
+        "❌Omar > Where did he get that image from?✔ \
+        ➡Omar > I don't remember being seen by anyone when taking the money from the ATM.✔ \
+        ➡Omar > Basement in 30 minutes? I am not going.✔ \
+        ➡Omar > Nobody's going to believe that petty picture. ✔ \
         ➡Omar > let him do as he wishes. ✔ \
-        ➡ Your_Choice > ➰12SPSchool_Principal➰\
+        ➡ > ➰12SPSchool_Principal➰\
         ",
     "OL":
-        "❌Omar > I didn't do that.✔ I have absolutely no intention of harming the school's dignity like that.✔ ALso, you know that I am here on a scholarship.✔ Why would I put myself in such danger? ✔ \
+        "❌Omar > I didn't do that.✔ Sir, you know that I am here on a scholarship.✔ Why would I put myself in this position?✔ \
         ➡Principal > Omar. ✔ \
-        ➡Principal > When you broke into my office,✔ you clearly overlooked something important.✔ \
-        ➡Principal > You didn't realize there was a hidden camera,✔ right?✔ \
-        ➡Omar > What?!.✔ \
-        ➡Omar > Why would you tell me now if you already know it's me?!✔ \
-        ➡Principal > I was giving you a chance.✔ I know you are related to the deceased student,✔ and the fact that I tried to keep this quiet was unacceptable to you.✔ I understand,✔ really.✔  \
-        ➡Principal > But now it's all gone.✔ \
-        ➡Principal > The police will be arriving soon.✔ We'll talk more with them.✔ \
-        ➡Omar > ...✔ \
-        ➡ Your_Choice > ➰132MJ2_Months_In_Jail➰\
+        ➡Principal > I am very disappointed in you. ✔ \
+        ➡Principal > I was able to retrieve the old tape through the security company,✔ and,✔ unfortunately, you were seen stealing from the ATM..✔ \
+        ➡Principal > Why would you tell me now if you already know it's me?!✔ \
+        ➡Principal > I was giving you a chance to take responsibility.✔ \
+        ➡Principal > The police will be arriving soon.✔ \
+        ➡ > ➰132MJ2_Months_In_Jail➰\
         ",
     "GE":
-        "❌Omar > It's been two years since that accident.✔ \
+        "❌Omar > It's been two years since that incident.✔ \
         ➡Omar > I still can't sleep at night trying to figure out who the hacker was.✔ \
-        ➡Omar > fuck,✔ who in the world hates me that much?✔ \
+        ➡Omar > Who in the world hates me that much?✔ \
+        ➡END✔ \
         ➡ $\
         ",
     "comply":
-        "❌Omar > this should do the job.✔ \
+        "❌Omar > I put the mixture in the water dispenser.✔ \
         ➡Omar > I hope no one was watching.✔\
-        ➡ Your_Choice > ➰1420YJ20_Years_In_Jail➰\
+        ➡Omar > Hopefully he keeps his word and deletes the image.✔\
+        ➡ > ➰1420YJ20_Years_In_Jail➰\
         ",
     "NDDI":
         "❌Unknown > AAAARGH.✔\
@@ -107,76 +97,72 @@ let transcript = {
         ➡Omar > *pant*✔\
         ➡Omar > I should delete the images immediately while he is unconscious.✔\
         ➡Omar > this should do the job.✔\
-        ➡Unknown > ..ha..✔ha..✔ha.✔\
-        ➡Omar > ?!... what the fuck?✔\
-        ➡Unknown > ...There is no escape.✔ I wrote a program that will send your image automatically in 2 hours.✔\
-        ➡ Your_Choices > ➰15bluffBluff➰ / ➰14killKill➰\
+        ➡Unknown > ..ha..@ha..@ha.✔\
+        ➡Unknown > ...There is no escape.✔ I wrote a programm that will automatically leak your image within 2 hours.✔\
+        ➡Choices > ➰15bluffUnknown_is_lying!➰ / ➰14killKill_him_anyway➰\
         ",
     "10YJ":
         "❌Omar > *sob*✔\
-        ➡Omar > I✔ want✔ everything✔ to✔ be✔ normal✔ again.✔\
-        ➡Omar > If only that fucker didn't do anything!✔\
-        ➡Omar > it's all his fault.✔\
+        ➡Omar > I@ want@ everything@ to@ be@ normal@ again.✔\
+        ➡Omar > It's all that hacker's fault.✔\
+        ➡END.✔\
         ➡ $\
         ",
     "2MJ":
-        "❌Omar > It's been a year since that accident.✔\
+        "❌Omar > It's been a year since that incident.✔\
         ➡Omar > I am back home after spending two months in jail.✔\
-        ➡Omar > I had to drop college and pick-up a part-time software engineering job.✔ The pay sucks, but at least they didn't✔\
-        bother with checking my criminal history.✔\
-        ➡Omar > My parents are friends are avoiding me.✔\
+        ➡Omar > I had to drop from school and pick-up a part-time job.✔\
+        ➡Omar > My parents and friends are avoiding me.✔\
         ➡Omar > I still can't sleep at night trying to figure out who the hacker was.✔\
-        ➡Omar > FUCK.✔\
-        ➡Omar > WHOEVER YOU ARE, I WILL KILL YOU ONE DAY.✔\
-        ➡Omar > just you wait.✔\
+        ➡Omar > Whoever you are, you literally destroyed everything I had.✔\
         ➡ $\
         ",
     "recorder1":
-        "❌Omar > you are being recorded.✔\
-        ➡Omar > Delete that image immediately,✔ or you are done.✔\
-        ➡Omar > I know who you are.✔\
+        "❌Omar > You are being recorded.✔\
+        ➡Omar > Delete that image immediately,@ or I will report you to the police.✔\
         ➡Unknown > !!✔\
-        ➡Unknown > I set an automatic..✔\
-        ➡Omar > I don't care.✔\
+        Unknown >  I wrote a programm that will automatically leak your image within 2 hours. ✔\
+        ➡Omar > I don't believe you.✔\
         ➡Unknown > ..FINE.✔\
         ➡Unknown > *deletes the images*✔\
-        ➡ Your_Choice > ➰13GE2Good_Ending➰\
+        ➡ > ➰13GE2Good_Ending➰\
         ",
     "bluff":
-        "❌nice try.✔\
+        "❌Omar > Nice try.✔\
         ➡Omar > I know you are bluffing.✔\
         ➡Omar > Get lost.✔\
         ➡Unknown >IT WILL NOT END THAT EASY.✔ YOU KNOW THAT.✔\
-        ➡ Your_Choice > ➰15AOBBSNext➰\
+        ➡ > ➰15AOBBS(Worried_but_let_unknown_go)➰\
         ",
     "20YJ":
-        "❌Omar > *sob*✔\
+        "❌Omar > *sobs*✔\
         ➡Omar > I can't believe it.✔\
         ➡Omar > I want everything to be normal again.✔\
-        ➡Omar > If only that fucker didn't do anything!✔\
+        ➡Omar > If only that hacker didn't do anything!✔\
         ➡Omar > It's all his fault.✔\
+        ➡Omar > Whoever you are, you literally destroyed everything I had.✔\
         ➡ $\
         ",
     "kill":
         "❌Omar > AAAAHHH.✔\
         ➡Omar > DIE.✔\
-        ➡> ➰1410YJ10_Years_In_Jail➰\
+        ➡ > ➰1410YJ10_Years_In_Jail➰\
         ",
     "recorder":
-        "❌Omar > I should probably grab a recorder.✔\
-        ➡Omar > Just in case.✔\
-        ➡ Your_Choice > ➰14GTTPGo_to_the_place➰\
+        "❌Omar > I should probably grab a recorder before meeting him.✔\
+        ➡Omar > Just in case things don't go as planned.✔\
+        ➡ > ➰14GTTPGo_to_the_place➰\
         ",
     "GE2":
-        "❌*two weeks pass*✔\
+        "❌*two weeks passed*✔\
         ➡Omar > Life is good again.✔\
-        ➡Omar > I wonder how is he doing.✔\
+        ➡Omar > I wonder what happened to the hacker.✔\
         ➡ $\
         ",
     "AOBBS":
-        "❌Omar > It's been two years since that accident.✔\
-        ➡Omar > I still can't sleep at night thinking of what he might do.✔\
-        ➡Omar > fuck,✔ why in the world does he hate me that much?✔\
+        "❌Omar > It's been two years since that incident.✔\
+        ➡Omar > I still can't sleep at night thinking of what the hacker might do to me.✔\
+        ➡Omar > Why in the world does he hate me that much?✔\
         ➡ $\
         "
 };
@@ -226,6 +212,7 @@ function preload(num) {
 // https://stackoverflow.com/questions/807878
 function loadComplete() {
     document.getElementsByClassName("loading")[0].style.visibility = "hidden";
+    document.getElementsByClassName("tip")[0].style.visibility = "hidden";
     document.getElementsByClassName("comic-box")[0].style.visibility = "visible";
     transition('start');
 }
