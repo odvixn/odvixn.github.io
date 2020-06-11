@@ -25,7 +25,6 @@ let transcript = {
     ],
 
 
-
     "start":
         "❌Omar > Ugh,✔ it's two a.m. already.✔ I think I should go to sleep and finish the assignment tomorrow.✔ \
         ➡Omar > Wait.✔ Someone sent me a message.✔ \
@@ -216,19 +215,20 @@ let scene_image = {
 
 // initial screen start with a loading screen with an immediate transition to the starting screen
 function transition(option) {
-    if (option=='recorder') {transcript['GTTP']+=' / ➰19recorder1Use_Recorder➰ '} // quick and dirty, but it works.
+    if (option=='recorder') {transcript['GTTP']+=' / ➰19recorder1Use_Recorder➰ ';} // quick and dirty, but it works.
     images = document.getElementsByClassName("scenes");
     for (i=0;i<images.length;i++) {images[i].style.visibility = "hidden";}
     image = document.getElementById("IMG"+scene_image[option]);
     image.style.visibility = "visible";
 
-    typeWriter(transcript[option],15,0);
+    typeWriter(transcript[option],27,0);
 }
 
+// Preload function
 let image_holder = []
 function preload(num) {
     for (i=1;i<=num;i++) {
-        image_holder.push(new Image())
+        image_holder.push(new Image());
         image_holder[image_holder.length-1].src = "resources/scenes/" + num.toString() + ".png";
     }
 }

@@ -54,6 +54,8 @@ body {
 
 #dialogue {
     width: 80%;
+    height:25%;
+    overflow-y: scroll;
     position: absolute;
     top: 64%;
     left: 10%;

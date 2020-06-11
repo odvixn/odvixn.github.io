@@ -7,8 +7,15 @@ let skip = false;
 let isStyling = false;
 let isOption = false;
 
+
+// https://stackoverflow.com/questions/18614301
+function updateScroll(){
+    var element = document.getElementById("dialogue");
+    element.scrollTop = element.scrollHeight;
+}
+
 // Base Code from https://www.w3schools.com/howto/tryit.asp
-// Special functions: pause, styling, clear
+// Special functions: pause, styling, clear, etc.
 // Need to disable click or interaction while the script is being typed! While paused, moving onto the next page breaks the page.
 function typeWriter(text, delay, position) {
     if (position < text.length) {
@@ -17,7 +24,7 @@ function typeWriter(text, delay, position) {
         p = position;  // current position
         c = text.charAt(p);  // current character being processed.
         if (c=='✔') {  // use at the end of the sentence. will delay longer (visible pause).
-            d*=40;
+            d=800;
             p+=1;
         } else if (c=='✨') {  // define style for a separate section.
                             // syntax: ✨210color:blueSOMETEXT✨ 2 is the length of the next number, 10 is the length of the styling text.
@@ -99,6 +106,7 @@ function typeWriter(text, delay, position) {
 
         if (isStyling||isOption) {dialogue = dialogue.getElementsByTagName("span")[dialogue.getElementsByTagName("span").length-1];}
         dialogue.innerHTML += text.charAt(p);
+        updateScroll();
         if (skip) {typeWriter(text, delay, ++p);}
         else {setTimeout(function(){typeWriter(text, delay, ++p)}, d);}
     } else {skip = false;}
