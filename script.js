@@ -191,7 +191,7 @@ let scene_image = {
 
 // initial screen start with a loading screen with an immediate transition to the starting screen
 function transition(option) {
-    if (option=='recorder') {transcript['GTTP']+=' / ➰19recorder1Use_Recorder➰ ';} // quick and dirty, but it works.
+    if (option=='recorder') {transcript['GTTP']+=' / ➰19recorder1Use Recorder➰ ';} // quick and dirty, but it works.
     images = document.getElementsByClassName("scenes");
     for (i=0;i<images.length;i++) {images[i].style.visibility = "hidden";}
     image = document.getElementById("IMG"+scene_image[option]);
