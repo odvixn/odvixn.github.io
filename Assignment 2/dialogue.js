@@ -72,7 +72,7 @@ function typeWriter(text, delay, position) {
             tag = document.createElement("span");
 
             attrib1 = document.createAttribute("onclick");
-            attrib1.value = "document.location.href='/'";
+            attrib1.value = "window.history.back()";
             tag.setAttributeNode(attrib1);  // set onclick of span tag
 
             attrib2 = document.createAttribute("class");
@@ -83,9 +83,8 @@ function typeWriter(text, delay, position) {
             attrib3.value = "color:tomato";
             tag.setAttributeNode(attrib3);  // set style of span tag
 
-            tag.innerText = "<END. Press Any Key To Return Home>";
+            tag.innerText = "<END. Click Here To Return Home>";
             dialogue.appendChild(tag);
-            document.addEventListener("keypress",function(){document.location.href="/";})
             p++;
         }
 
