@@ -24,7 +24,7 @@
         <link rel="preload" href="resources/scenes/15.png" as="image"/>
 
     </head>
-    <body>
+    <body onload="loadComplete()">
         <!-- Loading Screen. This will be hidden once everything loads. -->
         <div class="loading">LOADING...</div>
 
@@ -51,6 +51,4 @@
         </div>
     </body>
     <script src="dialogue.js" type="text/javascript"></script>
-    <!-- Give 3 sec Loading time -->
-    <script>setTimeout(loadComplete, 3000)</script>
 </html>
