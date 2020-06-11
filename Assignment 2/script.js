@@ -137,7 +137,7 @@ let transcript = {
         ➡Omar > My parents are friends are avoiding me.✔\
         ✔ \
         ❌Omar > I still can't sleep at night trying to figure out who the hacker was.✔\
-        ➡Omar: FUCK.✔\
+        ➡Omar > FUCK.✔\
         ➡Omar > WHOEVER YOU ARE, I WILL KILL YOU ONE DAY.✔\
         ➡Omar > just you wait.✔\
         ➡ $\

@@ -68,23 +68,38 @@ function typeWriter(text, delay, position) {
 
                 p+=lenTxt+lenNum+2;
             } else {isOption = false;p++;}
-        } else if (c=='$') {  // "Return home" feature
-            tag = document.createElement("span");
-
+        } else if (c=='$') {  // When game Ends
             attrib1 = document.createAttribute("onclick");
             attrib1.value = "window.history.back()";
-            tag.setAttributeNode(attrib1);  // set onclick of span tag
+            attrib2 = document.createAttribute("onclick");
+            attrib2.value = "location.reload()";
+            attrib3_1 = document.createAttribute("class");
+            attrib3_1.value = "option";
+            attrib4_1 = document.createAttribute("style");
+            attrib4_1.value = "color:tomato";
+            attrib3_2 = document.createAttribute("class");
+            attrib3_2.value = "option";
+            attrib4_2 = document.createAttribute("style");
+            attrib4_2.value = "color:tomato";
 
-            attrib2 = document.createAttribute("class");
-            attrib2.value = "option";
-            tag.setAttributeNode(attrib2);  // set class of span tag
+            tag1 = document.createElement("span");  // "Return" feature
+            tag2 = document.createElement("span");  // "Refresh" feature
 
-            attrib3 = document.createAttribute("style");
-            attrib3.value = "color:tomato";
-            tag.setAttributeNode(attrib3);  // set style of span tag
+            tag1.setAttributeNode(attrib1);
+            tag1.setAttributeNode(attrib3_1);
+            tag1.setAttributeNode(attrib4_1);
 
-            tag.innerText = "<END. Click Here To Return Home>";
-            dialogue.appendChild(tag);
+            tag2.setAttributeNode(attrib2);
+            tag2.setAttributeNode(attrib3_2);
+            tag2.setAttributeNode(attrib4_2);
+            
+            tag1.innerText = " Return ";
+            tag2.innerText = " Replay";
+            
+            dialogue.innerHTML += "END >";
+            dialogue.appendChild(tag1);
+            dialogue.innerHTML += " / ";
+            dialogue.appendChild(tag2);
             p++;
         }
 
