@@ -1,139 +1,83 @@
-/* Some reference(s)
-    Relative Font Size: https://stackoverflow.com/questions/16056591/
+/* Some resource(s):
+https://www.w3schools.com/howto/howto_css_image_text.asp
+
 */
 
 html {
-    scroll-behavior: smooth; /* if you use an internal link, this will allow smooth scrolling into the approperiate section */
+    height: 100%;
+}
+
+.loading {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    font-weight: bolder;
+    color: #8cff99;
 }
 
 body {
-    font-family: Tahoma, Geneva, sans-serif; /* clean fonts for legibility & readability */
-    text-align: center; /* everything centered by default */
-    color: #040404; /* lower contrast */
-    margin: 0; /* remove browser-default margins */
-    padding: 0; /* remove browser-default padding */
+    margin: 0;
+    padding: 0;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    background-image: url("resources/monitor.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    background-color: #040404;
+    color: #8cff99;
+    /* Below from https://stackoverflow.com/questions/826782 for disabling select*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;      /* Old versions of Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }
 
-h1 {
-    margin: auto;
-    margin-top: 0;
-    font-size: 4vw;
-    max-width: 50%;
+.comic-box {
+    visibility: hidden; /* hidden until the loading is complete */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid black; */
+    width: 77%;
+    height: 80%;
 }
 
-p {
+#dialogue {
+    width: 80%;
+    position: absolute;
+    top: 64%;
+    left: 10%;
+    /* transform: translate(-50%, -50%); */
     font-size: 1.3vw;
-    line-height: 2vw;
-    padding-left: 20%;
-    padding-right: 20%;
+    line-height: 1.8vw;
     text-align: left;
 }
 
-ul {
-    font-size: 1.3vw;
-    line-height: 2vw;
-    padding-left: 23.5%;
-    padding-right: 20%;
-    text-align: left; 
-}
-
-li {
-    padding-bottom: 1.5%;
-}
-
-#takepart a {
-    color: navy;
-}
-
-a {
-    color: navy;
+.option {
+    color: orange;
     cursor: pointer;
 }
 
-img{
-    border: 1px solid black;
-    width: 35%;
-    height: auto;
+.option:hover {
+    color: rgb(255, 238, 0);
 }
 
-video {
-    width: 60%;
-    height: auto;
-    margin-top: 2%;
-}
-
-nav {
-    position: fixed;
-    overflow: hidden;
-    display: block;
-    width: 100%;
-    background-color: #040404;
-    border-color: snow;
-    border-style: inset;
-    border-width: 0;
-    border-bottom-width: 1px;
-    padding: 1%;
-}
-
-nav a {
-    text-decoration: none;
-    color: beige;
-    font-weight: bold;
-    font-size: 1.05vw;
-    padding: 2%;
-    float: none;
-}
-
-nav a:hover {
-    background-color: silver;
-}
-
-.navbar { 
-    background-color: #040404;
-}
-
-.content {
-    padding-top: 4%;
-    padding-bottom: 4%;
-}
-
-.img_by {
-    float: left;
-    margin-right: 3%;
-    margin-left: 3%;
-}
-
-.by_description {
-    margin-top: 3%;
-    margin-bottom: 2%;
-}
-
-.footer {
-    background-color: #040404;
-    color: beige;
-    border-color: snow;
-    border-style: inset;
-    border-width: 0;
-    border-top-width: 1px;
-    padding: 0.7%;
-}
-
-#main{
-    background-color: #f78d97;
-}
-
-#plot{
-    background-color: #ffec8f;
-}
-
-#background{
-    background-color: #7fe492;
-}
-
-#takepart{
-    background-color: #7f9ee6;
-}
-
-#by{
-    background-color: #bf80dc;
+.scenes {
+    visibility: hidden;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 97%;
 }
