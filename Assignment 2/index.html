@@ -5,6 +5,8 @@
         <link rel="stylesheet" href="style.css" />
         <script src="script.js" type="text/javascript"></script>
 
+        <!-- Preload Images -->
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content -->
         <link rel="preload" href="resources/scenes/1.png" as="image"/>
         <link rel="preload" href="resources/scenes/2.png" as="image"/>
         <link rel="preload" href="resources/scenes/3.png" as="image"/>
@@ -28,7 +30,23 @@
 
         <!-- Main -->
         <div class="comic-box" onmousedown="return false">
-            <img src="resources/scenes/1.png"/>
+            <div class="loaded-images">
+                <img class="scenes" id="IMG1" src="resources/scenes/1.png"/>
+                <img class="scenes" id="IMG2" src="resources/scenes/2.png"/>
+                <img class="scenes" id="IMG3" src="resources/scenes/3.png"/>
+                <img class="scenes" id="IMG4" src="resources/scenes/4.png"/>
+                <img class="scenes" id="IMG5" src="resources/scenes/5.png"/>
+                <img class="scenes" id="IMG6" src="resources/scenes/6.png"/>
+                <img class="scenes" id="IMG7" src="resources/scenes/7.png"/>
+                <img class="scenes" id="IMG8" src="resources/scenes/8.png"/>
+                <img class="scenes" id="IMG9" src="resources/scenes/9.png"/>
+                <img class="scenes" id="IMG10" src="resources/scenes/10.png"/>
+                <img class="scenes" id="IMG11" src="resources/scenes/11.png"/>
+                <img class="scenes" id="IMG12" src="resources/scenes/12.png"/>
+                <img class="scenes" id="IMG13" src="resources/scenes/13.png"/>
+                <img class="scenes" id="IMG14" src="resources/scenes/14.png"/>
+                <img class="scenes" id="IMG15" src="resources/scenes/15.png"/>
+            </div>
             <p class="dialogue" id="dialogue"></p>
         </div>
     </body>

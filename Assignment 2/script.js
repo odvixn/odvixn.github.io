@@ -27,7 +27,7 @@ let transcript = {
 
 
     "start":
-        "❌Omar > ugh,✔ it's two a.m. already.✔ I think I should go to sleep and finish the assignment tomorrow.✔ \
+        "❌Omar > Ugh,✔ it's two a.m. already.✔ I think I should go to sleep and finish the assignment tomorrow.✔ \
         ➡Omar > Wait.✔ Someone sent me a message.✔ \
         ➡ Your_Choice > ➰12TMView_message➰\
         ",
@@ -37,30 +37,30 @@ let transcript = {
         ➡Unknown > DO YOU RECOGNIZE YOURSELF?✔ \
         ➡Unknown > DO WHAT I SAY OR UNPLEASANT THINGS ARE GOING TO HAPPEN.✔ \
         ➡Unknown > MEET ME BEHIND THE FACULTY RESIDENCE BUILDING IN 30 MINUTES.✔ \
-        ✔ ✔ ✔ ❌ \
-        ➡Omar > what the fuck?✔ I didn't add him. ✔ Did he hack into my account?✔ \
-        ➡Omar > what should I do?✔ \
+        ✔ ✔ ✔ \
+        ❌Omar > What the fuck?✔ I didn't add him. ✔ Did he hack into my account?✔ \
+        ➡Omar > What should I do?✔ \
         ➡ Your_Choices > ➰18recorderGrab_Recorder➰ / ➰16ignoreIgnore➰ / ➰14GTTPGo_to_the_place➰\
         ",
     "SP":
         "❌Principal > We recently got an email from one of our students,✔ whose name I will not disclose,✔ that contained a picture.✔ \
         ➡Principal > The picture features you specifically,✔ doing something I don't want to talk about.✔ \
-        ✔ ❌ \
-        ➡Principal >  I understand that this one piece of evidence is not enough,✔ and would like to hear out what you have to say.✔ \
+        ✔ \
+        ❌Principal >  I understand that this one piece of evidence is not enough,✔ and would like to hear out what you have to say.✔ \
         ➡ Your_Choices > ➰12OLLie➰ / ➰12OAAdmit➰\
         ",
     "OA":
         "❌Omar > It's me indeed.✔ I am very sorry.✔ I understand how big of a problem I caused the school and you personally.✔ Unfortunately, there is nothing I can do aat this point to restore the leaked files regarding Emily's death. ✔ \
         ➡Omar > ...✔ \
         ➡Omar > I will accept whatever the sanctions would be.✔ \
-        ✔ ❌ \
-        ➡Principal > ..You!✔ Do you understand what how much struggle it took me to restore mine and the school's dignity?!✔ It happened a year ago,✔ and we:✔ the school,✔ the students,✔ me personaly✔ - are still affected by it.✔ I have nothing to do with that student's death.✔ How can you negate all the pain you caused so casually?✔ \
-        ✔ ❌ \
-        ➡Principal > You already did the worst you could do.✔ \
+        ✔ \
+        ❌Principal > ..You!✔ Do you understand what how much struggle it took me to restore mine and the school's dignity?!✔ It happened a year ago,✔ and we:✔ the school,✔ the students,✔ me personaly✔ - are still affected by it.✔ I have nothing to do with that student's death.✔ How can you negate all the pain you caused so casually?✔ \
+        ✔ \
+        ❌Principal > You already did the worst you could do.✔ \
         ➡Principal > There is absolutely nothing stopping me from kicking you out of the school.✔ I wonder where you are going to go then?✔ \
         ➡Principal > Kids are so ungrateful these days.✔ You understand that you will never find a full scholarship anywhere else,✔ right?✔ \
-        ✔ ❌ \
-        ➡Omar > ...✔ \
+        ✔ \
+        ❌Omar > ...✔ \
         ➡Principal > Sigh.✔ I'll spare you with a two-week detention.✔ Next time you do anything similar,✔ be ready to tell your parents that you are expelled.✔ \
         ➡Principal > Now get lost.✔ \
         ➡ Your_Choice > ➰12GEGood_Ending➰\
@@ -71,16 +71,16 @@ let transcript = {
         ➡Unknown > I CAN CLICK THE SEND BUTTON ANYTIME.✔ \
         ➡Unknown > AND YOU ARE GONE FROM THIS COUNTRY.✔ \
         ➡Unknown > THERE IS ONLY ONE THING YOU CAN DO TO PREVENT THAT FROM HAPPENING. ✔ \
-        ✔ ❌ \
-        ➡Unknown >  SEE THIS BAG ON THE FLOOR?✔ IT CONTAINS SOMETHING THAT YOU HAVE TO PUT IN THE LOUNGE WATER DISPENSER BEFORE 12 PM TOMORROW.✔ THE SECURITY CAMERAS WILL BE TURNED OFF.✔ MAKE SURE YOU ARE NOT SEEN BY ANYONE. ✔ \
+        ✔ \
+        ❌Unknown >  SEE THIS BAG ON THE FLOOR?✔ IT CONTAINS SOMETHING THAT YOU HAVE TO PUT IN THE LOUNGE WATER DISPENSER BEFORE 12 PM TOMORROW.✔ THE SECURITY CAMERAS WILL BE TURNED OFF.✔ MAKE SURE YOU ARE NOT SEEN BY ANYONE. ✔ \
         ➡ Your_Choices > ➰14NDDIKnock_Down_N_Delete_Images➰ / ➰16complyComply➰",
     "ignore":
         "❌Omar > WHERE DID HE GET THAT IMAGE FROM?✔ \
         ➡Omar > I don't remember being seen by anyone.✔ \
         ➡Omar > anyways.✔ \
         ➡Omar > WHY THE FUCK DO I HAVE TO JUST DANCE TO WHATEVER HE SAYS?✔ \
-        ✔ ❌ \
-        ➡Omar > fuck him. What's his benefit in doing this? ✔ \
+        ✔ \
+        ❌Omar > fuck him. What's his benefit in doing this? ✔ \
         ➡Omar > nobody's going to believe that petty picture. ✔ \
         ➡Omar > let him do as he wishes. ✔ \
         ➡ Your_Choice > ➰12SPSchool_Principal➰\
@@ -92,11 +92,11 @@ let transcript = {
         ➡Principal > You didn't realize there was a hidden camera,✔ right?✔ \
         ➡Omar > What?!.✔ \
         ➡Omar > Why would you tell me now if you already know it's me?!✔ \
-        ✔ ❌ \
-        ➡Principal > I was giving you a chance.✔ I know you are related to the deceased student,✔ and the fact that I tried to keep this quiet was unacceptable to you.✔ I understand,✔ really.✔  \
+        ✔ \
+        ❌Principal > I was giving you a chance.✔ I know you are related to the deceased student,✔ and the fact that I tried to keep this quiet was unacceptable to you.✔ I understand,✔ really.✔  \
         ➡Principal > But now it's all gone.✔ \
-        ✔ ❌ \
-        ➡Principal > The police will be arriving soon.✔ We'll talk more with them.✔ \
+        ✔ \
+        ❌Principal > The police will be arriving soon.✔ We'll talk more with them.✔ \
         ➡Omar > ...✔ \
         ➡ Your_Choice > ➰132MJ2_Months_In_Jail➰\
         ",
@@ -135,8 +135,8 @@ let transcript = {
         ➡Omar > I had to drop college and pick-up a part-time software engineering job.✔ The pay sucks, but at least they didn't✔\
         bother with checking my criminal history.✔\
         ➡Omar > My parents are friends are avoiding me.✔\
-        ✔ ❌ \
-        ➡Omar > I still can't sleep at night trying to figure out who the hacker was.✔\
+        ✔ \
+        ❌Omar > I still can't sleep at night trying to figure out who the hacker was.✔\
         ➡Omar: FUCK.✔\
         ➡Omar > WHOEVER YOU ARE, I WILL KILL YOU ONE DAY.✔\
         ➡Omar > just you wait.✔\
@@ -217,8 +217,11 @@ let scene_image = {
 // initial screen start with a loading screen with an immediate transition to the starting screen
 function transition(option) {
     if (option=='recorder') {transcript['GTTP']+=' / ➰19recorder1Use_Recorder➰ '} // quick and dirty, but it works.
-    image = document.getElementsByTagName("img")[0];
-    image.attributes.src.value = "resources/scenes/" + scene_image[option] + ".png";
+    images = document.getElementsByClassName("scenes");
+    for (i=0;i<images.length;i++) {images[i].style.visibility = "hidden";}
+    image = document.getElementById("IMG"+scene_image[option]);
+    image.style.visibility = "visible";
+
     typeWriter(transcript[option],15,0);
 }
 
