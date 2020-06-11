@@ -6,12 +6,6 @@ document.addEventListener("keyup",function(){skip=false;})
 let skip = false;
 let isStyling = false;
 let isOption = false;
-var x = "";
-// $(document).ready(function(){
-//   $(".bg").click(function(){
-//     $("#Menu").show();
-//   });
-// });
 
 // Base Code from https://www.w3schools.com/howto/tryit.asp
 // Special functions: pause, styling, clear
