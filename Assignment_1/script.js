@@ -30,5 +30,3 @@ function sectionHighlight() {
 }
                
 let interval = setInterval(sectionHighlight,100);
-
-document.getElementById('nav-plot').addEventListener("mouseenter",function() {self.color = "silver";})
