@@ -120,24 +120,29 @@ nav a:hover {
     padding: 0.7%;
 }
 
-#main{
+.main{
     background-color: #f78d97;
+    color: inherit;
 }
 
-#plot{
+.plot{
     background-color: #ffec8f;
+    color: inherit;
 }
 
-#background{
+.background{
     background-color: #7fe492;
+    color: inherit;
 }
 
-#takepart{
+.takepart{
     background-color: #7f9ee6;
+    color: inherit;
 }
 
-#by{
+.by{
     background-color: #bf80dc;
+    color: inherit;
 }
 
 .noselect {

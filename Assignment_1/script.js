@@ -5,6 +5,7 @@ let sections = [['by','#bf80dc'],
                 ['main','#f78d97']];
 
 let highlight;
+let highlight_class;
 let prev = document.getElementById("nav-"+sections[1][0]);
 
 function trackScroll(elem) {
@@ -20,14 +21,14 @@ function sectionHighlight() {
         trigger = trackScroll(elem);
         if (trigger) {
             highlight = document.getElementById("nav-"+sections[i][0]);
-            color = sections[i][1];
+            highlight_class = sections[i][0];
         }
     }
-    prev.style.backgroundColor = "#040404";
-    prev.style.color = "beige";
-    highlight.style.backgroundColor = color;
-    highlight.style.color = '#040404';
+    prev.className = "";
+    highlight.className = highlight_class;
     prev = highlight;
 }
                
 let interval = setInterval(sectionHighlight,100);
+
+document.getElementById('nav-plot').addEventListener("mouseenter",function() {self.color = "silver";})
