@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-    text-shadow: 1px 0 #040404, 0 -1px #040404, -1px 0 #040404, 0 1px #040404;
+    text-shadow: 0.05vw 0 #040404, 0 -0.05vw #040404, -0.05vw 0 #040404, 0 0.05vw #040404;
     margin: auto;
     margin-top: 0;
     font-size: 4vw;
