@@ -15,10 +15,12 @@ body {
 }
 
 h1 {
+    text-shadow: 1px 0 #040404, 0 -1px #040404, -1px 0 #040404, 0 1px #040404;
     margin: auto;
     margin-top: 0;
     font-size: 4vw;
     max-width: 50%;
+    cursor: default;
 }
 
 p {
@@ -51,7 +53,7 @@ a {
 }
 
 img{
-    border: 1px solid black;
+    border: 1px solid #040404;
     width: 35%;
     height: auto;
 }
@@ -136,4 +138,15 @@ nav a:hover {
 
 #by{
     background-color: #bf80dc;
+}
+
+.noselect {
+    /* Below from https://stackoverflow.com/questions/826782 for disabling select*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;      /* Old versions of Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }

@@ -9,13 +9,13 @@
     
     <body>
         <!-- Navigation Bar -->
-        <div class="navbar">
+        <div class="navbar noselect">
             <nav>
-                <a id="red" href="#main">Celebrating Pride Month</a>
-                <a id="yellow" href="#plot">Plot</a>
-                <a id="green" href="#background">Background</a>
-                <a id="blue" href="#takepart">Take Part</a>
-                <a id="purple" href="#by">By</a>            
+                <a id="nav-main" href="#main">Celebrating Pride Month</a>
+                <a id="nav-plot" href="#plot">Plot</a>
+                <a id="nav-background" href="#background">Background</a>
+                <a id="nav-takepart" href="#takepart">Take Part</a>
+                <a id="nav-by" href="#by">By</a>         
             </nav>
         </div>
         <!-- Main Frame -->
@@ -23,7 +23,7 @@
             <!-- Main (Video) -->
             <div class="content" id="main">
                 <header>
-                    <h1 onmouseover="rainbowOn(this)" onmouseout="rainbowOff(this)">Celebrating Pride Month</h1>
+                    <h1 class="noselect" onmouseover="rainbowOn(this)" onmouseout="rainbowOff(this)">Celebrating Pride Month</h1>
                 </header>
                 <div id="video-overlay">
                     <video poster="resources/video_preview.PNG" controls>
@@ -34,7 +34,7 @@
             <!-- Plot -->
             <div class="content" id="plot">
                 <header>
-                    <h1 onmouseover="rainbowOn(this)" onmouseout="rainbowOff(this)">Plot</h1>
+                    <h1 class="noselect" onmouseover="rainbowOn(this)" onmouseout="rainbowOff(this)">Plot</h1>
                 </header>
                 <div>
                     <p>
@@ -47,7 +47,7 @@
             <!-- Background -->
             <div class="content" id="background">
                 <header>
-                    <h1 onmouseover="rainbowOn(this)" onmouseout="rainbowOff(this)">Background</h1>
+                    <h1 class="noselect" onmouseover="rainbowOn(this)" onmouseout="rainbowOff(this)">Background</h1>
                 </header>
                 <div>
                     <p>
@@ -62,7 +62,7 @@
             <!-- Take Part -->
             <div class="content" id="takepart">
                 <header>
-                    <h1 onmouseover="rainbowOn(this)" onmouseout="rainbowOff(this)">Take Part</h1>
+                    <h1 class="noselect" onmouseover="rainbowOn(this)" onmouseout="rainbowOff(this)">Take Part</h1>
                 </header>
                 <div>
                     <p>
@@ -84,27 +84,27 @@
             <!-- By -->
             <div class="content" id="by">
                 <header>
-                    <h1 onmouseover="rainbowOn(this)" onmouseout="rainbowOff(this)">By</h1>
+                    <h1 class="noselect" onmouseover="rainbowOn(this)" onmouseout="rainbowOff(this)">By</h1>
                 </header>
                 <div>
                     <div>
                         <p class="by_description">
-                            <img class=img_by src="resources/by_0.PNG"/>
+                            <img class="img_by noselect" src="resources/by_0.PNG"/>
                             <strong>Pam Barrera</strong>
                             as "Pam". Pam is an incoming sophomore from Venezuela. She is currently majoring in Film & New Media, while also taking classes in both Economics and Interactive Media to gain additional skills and expertise. She plays the role of "Pam", Katie's lover.
                         </p>
                         <p class="by_description">
-                            <img class=img_by src="resources/by_1.PNG"/>
+                            <img class="img_by noselect" src="resources/by_1.PNG"/>
                             <strong>Katie ferreol</strong>
                             as "Katie". Katie is an incoming sophomore from Manila, Philippines. She just recently declared her major in Interactive Media, also while doing a minor in Film & New Media and Economics. She plays the role of "Katie", Pam's lover.
                         </p>
                         <p class="by_description">
-                            <img class=img_by src="resources/by_2.PNG"/>
+                            <img class="img_by noselect" src="resources/by_2.PNG"/>
                             <strong>Sashank Silwal</strong>
                             as "Shashank". Sashank is an incoming sophomore from Kathmandu, Nepal majoring in both Computer Science and Interactive Media. It is interesting to note that those from Nepal are able to understand both Hindi and Urdu. He plays the role of "Sashank", Pam and Katie's friend.
                         </p>
                         <p class="by_description">
-                            <img class=img_by src="resources/by_3.PNG"/>
+                            <img class="img_by noselect" src="resources/by_3.PNG"/>
                             <strong>Joonha Yu</strong>
                             as "Inner Voice". Joonha is an incoming sophomore from South Korea. He has studied in the United States during his high school and is currently majoring in Computer Science. He plays the role of Pam's and Katie's inner voices.
                         </p>
@@ -117,5 +117,6 @@
         <div class="footer">
             You have reached the end. Thank you for visiting this webpage!
         </div>
+        <script src="script.js" type="text/javascript"></script>
     </body>
 </html>

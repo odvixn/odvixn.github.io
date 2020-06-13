@@ -34,7 +34,7 @@ function makeColor() { // predicts color in a rainbow sequence
     if (r.length == 1) r = "0" + r; // to fit the format #RRGGBB
     if (g.length == 1) g = "0" + g; 
     if (b.length == 1) b = "0" + b
-    hue = hue + 50; 
+    hue = hue + 25; 
     if (hue >= 360) hue = 0;
     return '#' + r + g + b; 
 }
