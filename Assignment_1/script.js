@@ -28,5 +28,31 @@ function sectionHighlight() {
     highlight.className = highlight_class;
     prev = highlight;
 }
-               
-let interval = setInterval(sectionHighlight,100);
+
+// --- below solution from https://gomakethings.com/detecting-when-a-visitor-has-stopped-scrolling-with-vanilla-javascript/ --- //
+
+// Setup isScrolling variable
+let isScrolling;
+
+// Listen for scroll events
+// In current environment, works on navigation bar, touch, scroll bar, mouse scroll, keyboard scroll(space,PgUp/PgDown, Home/End), etc.
+window.addEventListener('scroll', function ( event ) {
+
+	// Clear our timeout throughout the scroll
+	window.clearTimeout( isScrolling );
+
+	// Set a timeout to run after scrolling ends
+	isScrolling = setTimeout(function() {
+
+		sectionHighlight();
+
+	}, 66);
+
+}, false);
+
+sectionHighlight(); // initial highlighting
+
+//--depreciated--//
+// document.addEventListener("mouseup",sectionHighlight);
+// document.addEventListener("keyup",sectionHighlight);
+// let interval = setInterval(sectionHighlight,100);
