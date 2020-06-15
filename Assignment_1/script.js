@@ -29,6 +29,7 @@ function sectionHighlight() {
     prev = highlight;
 }
 
+/* Not work on mobile. Rollback.
 // --- below solution from https://gomakethings.com/detecting-when-a-visitor-has-stopped-scrolling-with-vanilla-javascript/ --- //
 
 // Setup isScrolling variable
@@ -55,4 +56,5 @@ sectionHighlight(); // initial highlighting
 //--depreciated--//
 // document.addEventListener("mouseup",sectionHighlight);
 // document.addEventListener("keyup",sectionHighlight);
-// let interval = setInterval(sectionHighlight,100);
+*/
+let interval = setInterval(sectionHighlight,100);
