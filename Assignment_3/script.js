@@ -39,7 +39,13 @@ function togglePlay() {
 };
 function restartPlay() {
   myAudio.currentTime=0;
-  return myAudio.paused ? myAudio.play() : myAudio.pause();
+  if(myAudio.paused){
+  		myAudio.play();
+  		playbtn.innerHTML = "Pause";
+  	} else {
+  		myAudio.pause();
+  		playbtn.innerHTML = "Play";
+  	}
 };
 var volumeslider;
 volumeslider = document.getElementById("volumeslider");
