@@ -64,7 +64,7 @@ p {
 }
 
 .colorbox {
-    transition: 0.3s background-color ease-out;
+    transition: 1.9s background-color ease-out;
     float:left;
     margin: auto;
     border: 1px solid #040404;
@@ -80,9 +80,9 @@ p {
   /* height: 50%; */
 }
 
-/* audio {
-    width: 35.2%;
-} */
+audio {
+    width: 100%;
+}
 
 .content {
     position: absolute;
@@ -95,7 +95,7 @@ p {
     padding-top: 5%;
     /* padding-bottom: 4%; */
     /* height:530px; */
-    transition: 1.7s background-color ease-out;
+    transition: 10s background-color ease-out;
 }
 
 .main {
@@ -144,7 +144,7 @@ nav {
 }
 
 .button1 {
-  color: #ffffff;
+  color: #cccccc;
   /* border: none; */
   padding: 0.5% 1.9%;
   font-size: 1.7vw;
@@ -155,13 +155,13 @@ nav {
 .button1:hover{
   font-weight: bolder;
   background-color: #696969;
-  color: #ffffff;
+  color: #cccccc;
 
 }
 .active {
-  background-color: #ffffff;
+  background-color: #cccccc;
   color: #000000;
-  border: 2px solid #ffffff;
+  border: 2px solid #cccccc;
 
 }
 
