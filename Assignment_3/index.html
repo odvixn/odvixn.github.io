@@ -5,7 +5,15 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="content">
+      <div class="header" >
+                <div class= "right-alligned">
+                  <button  class= "button1 active tab" onclick="openoption(event,'Home')">Home</button>
+                  <button  class= "button1 tab" onclick="openoption(event,'Storyline')">Story</button>
+                </div>
+      </div>
+
+
+        <div id="Home" class="opt content">
             <h1>The Title</h1>
             <div class="main">
                 <div class="visual">
@@ -14,19 +22,21 @@
                 <audio preload="auto" controls>
                     <source src="resources/refuge.mp3" type="audio/mp3">
                     !! Your browser does not support the audio element. !!
-                </audio> 
+                </audio>
             </div>
         </div>
-        <div class="content">
+
+        <div id="Storyline" class="opt content" style="display:none">
             <h1>Storyline</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, ipsa qui culpa porro exercitationem provident assumenda modi aut facere similique nobis nulla voluptas nemo rem, praesentium sunt, quasi mollitia molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officiis illum, beatae inventore ipsa eum repellendus at aperiam corrupti enim reprehenderit ab eligendi ducimus voluptatem, nisi labore culpa eius quam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quas voluptas id rem aperiam, laborum consectetur quis doloremque hic dignissimos modi soluta dicta fugit sunt velit minima! In, facere alias! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, dignissimos. Rem, hic iure a saepe reprehenderit quos omnis eius voluptates corporis et ut recusandae excepturi reiciendis nisi accusamus similique laborum!</p>
         </div>
         <div class="footer">Footer</div>
+
         <script src="script.js" type="text/javascript"></script>
     </body>
 </html>
 
-<!-- Memo 
+<!-- Memo
 
 When the audio is paused/muted, notify users that a disaster will not pause for anyone.
 

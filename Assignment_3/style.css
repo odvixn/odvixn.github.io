@@ -1,4 +1,4 @@
-/* 
+/*
     Webfonts made local through https://google-webfonts-helper.herokuapp.com/fonts
 */
 
@@ -64,7 +64,7 @@ ul {
     line-height: 2vw;
     padding-left: 23.5%;
     padding-right: 20%;
-    text-align: left; 
+    text-align: left;
 }
 
 li {
@@ -120,10 +120,44 @@ audio {
     user-select: none;           /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
 }
+.right-alligned{
+  float: right;
+}
+.button1 {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px;
+  font-size: 150%;
+  float:left;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+
+}
+
+.button1:hover{
+  background-color: #696969;
+  color: #ffffff;
+
+}
+.active {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+
+}
+
+
+.header{
+    overflow: hidden;
+    border-radius: 4px;
+    background-color:#000000;
+}
 
 
 
-/* 
+/*
 https://www.youtube.com/watch?v=CkFm27GQtMQ
 14:34 transition ease in
 */
