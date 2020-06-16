@@ -71,19 +71,11 @@ li {
     padding-bottom: 1.5%;
 }
 
-#takepart a {
-    color: navy;
-}
-
-a {
-    color: navy;
-    cursor: pointer;
-}
-
-img{
+.colorbox {
+    margin: auto;
     border: 1px solid #040404;
-    width: 35%;
-    height: auto;
+    width: 35vw;
+    height: 35vw;
 }
 
 audio {
