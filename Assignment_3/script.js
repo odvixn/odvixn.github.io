@@ -41,7 +41,7 @@ function restartPlay() {
   myAudio.currentTime=0;
   if(myAudio.paused){
   		myAudio.play();
-  		playbtn.innerHTML = "Pause";
+  		playbtn.innerHTML = "Play";
   	} else {
   		myAudio.pause();
   		playbtn.innerHTML = "Play";
