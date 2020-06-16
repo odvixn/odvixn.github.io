@@ -59,23 +59,11 @@ p {
     /* text-align: left; */
 }
 
-ul {
-    font-size: 1.3vw;
-    line-height: 2vw;
-    padding-left: 23.5%;
-    padding-right: 20%;
-    text-align: left;
-}
-
-li {
-    padding-bottom: 1.5%;
-}
-
 .colorbox {
     margin: auto;
     border: 1px solid #040404;
-    width: 35vw;
-    height: 35vw;
+    width: 64vh;
+    height: 64vh;
 }
 
 audio {
@@ -83,9 +71,9 @@ audio {
 }
 
 .content {
-    padding-top: 2%;
-    padding-bottom: 4%;
-    height:530px;
+    padding-top: 5%;
+    /* padding-bottom: 4%; */
+    /* height:530px; */
 }
 
 .main {
@@ -94,13 +82,16 @@ audio {
 }
 
 .footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     background-color: #040404;
     color: beige;
     border-color: snow;
     border-style: inset;
     border-width: 0;
     border-top-width: 1px;
-    padding: 0.7%;
+    padding: 0.4%;
 }
 
 .noselect {
@@ -116,17 +107,27 @@ audio {
 .right-alligned{
   float: right;
 }
+
+nav {
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: #040404;
+    border-color: snow;
+    border-style: inset;
+    border-width: 0;
+    border-bottom-width: 1px;
+}
+
 .button1 {
-  background-color: #000000;
   color: #ffffff;
-  border: none;
-  padding: 16px 32px;
-  font-size: 150%;
-  float:left;
-  transition-duration: 0.4s;
+  /* border: none; */
+  padding: 0.5% 1.9%;
+  font-size: 1.5vw;
+  /* transition-duration: 0.4s; */
   cursor: pointer;
-
-
 }
 
 .button1:hover{
@@ -141,10 +142,12 @@ audio {
 
 }
 
-
 .header{
+    position: fixed;
+    margin-top: 0;
+    width: 100%;
+    height: 6.5%;
     overflow: hidden;
-    border-radius: 4px;
     background-color:#000000;
 }
 
