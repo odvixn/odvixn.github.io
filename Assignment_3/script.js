@@ -4,7 +4,11 @@
 
 
 let a = document.getElementsByTagName("audio")[0];
-a.addEventListener("timeupdate", function() { document.getElementById("progress").innerHTML = a.currentTime; }, true);
+a.addEventListener("timeupdate", function() {
+  var s= parseInt(a.currentTime%60);
+  var m = parseInt((a.currentTime / 60) % 60);
+  document.getElementById("progress").innerHTML = m + ':' + s ;
+ }, true);
 
 
 
@@ -22,7 +26,25 @@ function openoption(evt, optiontype) {
   evt.currentTarget.className += " active";
 }
 var myAudio = document.getElementById("myAudio");
-
+var playbtn = document.getElementById("playpausebtn");
+playbtn.addEventListener("click",togglePlay,false);
 function togglePlay() {
+  if(myAudio.paused){
+  		myAudio.play();
+  		playbtn.innerHTML = "Pause";
+  	} else {
+  		myAudio.pause();
+  		playbtn.innerHTML = "Play";
+  	}
+};
+function restartPlay() {
+  myAudio.currentTime=0;
   return myAudio.paused ? myAudio.play() : myAudio.pause();
 };
+var volumeslider;
+volumeslider = document.getElementById("volumeslider");
+volumeslider.addEventListener("change",setvolume,false);
+
+function setvolume(){
+	myAudio.volume = volumeslider.value / 100;
+}

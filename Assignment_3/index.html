@@ -16,8 +16,10 @@
         <div id="Home" class="opt content">
             <h1>The Title</h1>
             <div class="main">
-                <button onClick="togglePlay()"> Play/Pause</button>
-                <div id="progress"></div>
+                <button id="playpausebtn"> Play</button>
+                <span id="progress">0:0</span> / <span>3:21</span>
+                <button onClick="restartPlay()"> Restart</button>
+                <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
                 <div class="visual">
                     <div class="colorbox"></div>
                 </div>
