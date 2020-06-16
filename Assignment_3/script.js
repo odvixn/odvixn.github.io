@@ -30,8 +30,13 @@ function cameleon(ct) {
   else if (152<ct&&ct<153) {colorFill(50, 50, 120);}
   else if (153<ct&&ct<157) {colorFill(0, 0, 100);}
   else if (157<ct&&ct<165) {colorFill(25, 25, 102);}
-  else if (165<ct&&ct<200) {colorFill(10, 10, 10);}
-  
+  else if (165<ct&&ct<197) {colorFill(10, 10, 10);}
+  else if (197<ct&&ct<200)
+  {colorFill(10, 10, 10);
+  playbtn.innerHTML = "Play";
+  }
+
+
 
 
 }
