@@ -16,10 +16,12 @@
         <div id="Home" class="opt content">
             <h1>The Title</h1>
             <div class="main">
+                <button onClick="togglePlay()"> Play/Pause</button>
+                <div id="progress"></div>
                 <div class="visual">
                     <div class="colorbox"></div>
                 </div>
-                <audio preload="auto" controls>
+                <audio id="myAudio" preload="auto">
                     <source src="resources/refuge.mp3" type="audio/mp3">
                     !! Your browser does not support the audio element. !!
                 </audio>

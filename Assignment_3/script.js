@@ -4,7 +4,7 @@
 
 
 let a = document.getElementsByTagName("audio")[0];
-a.addEventListener("timeupdate", function() { console.log(a.currentTime); }, true);
+a.addEventListener("timeupdate", function() { document.getElementById("progress").innerHTML = a.currentTime; }, true);
 
 
 
@@ -21,3 +21,8 @@ function openoption(evt, optiontype) {
   document.getElementById(optiontype).style.display = "block";
   evt.currentTarget.className += " active";
 }
+var myAudio = document.getElementById("myAudio");
+
+function togglePlay() {
+  return myAudio.paused ? myAudio.play() : myAudio.pause();
+};
