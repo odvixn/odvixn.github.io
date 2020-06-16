@@ -7,7 +7,7 @@ let a = document.getElementsByTagName("audio")[0];
 a.addEventListener("timeupdate", function() {
   var s= parseInt(a.currentTime%60);
   var m = parseInt((a.currentTime / 60) % 60);
-  document.getElementById("progress").innerHTML = m + ':' + s ;
+  document.getElementById("progress").innerHTML = m + ':' + s + '/3:21';
  }, true);
 
 
@@ -40,7 +40,7 @@ function togglePlay() {
 function restartPlay() {
   myAudio.currentTime=0;
   if(myAudio.paused){
-  		myAudio.play();
+  		myAudio.pause();
   		playbtn.innerHTML = "Play";
   	} else {
   		myAudio.pause();

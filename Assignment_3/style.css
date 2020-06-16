@@ -60,10 +60,19 @@ p {
 }
 
 .colorbox {
+    float:left;
     margin: auto;
     border: 1px solid #040404;
-    width: 64vh;
-    height: 64vh;
+    width:80%;
+    height:64vh;
+}
+.visual{
+  align:right;
+  overflow: hidden;
+  margin: auto;
+  border: 1px solid #040404;
+  width: 50%;
+  height: 50%;
 }
 
 audio {
@@ -150,6 +159,61 @@ nav {
     overflow: hidden;
     background-color:#000000;
 }
+.options{
+  float:right;
+  align:left;
+  color: #000000;
+  /* border: none; */
+  padding: 0.5% 1.9%;
+  font-size: 1.5vw;
+  /* transition-duration: 0.4s; */
+  margin: auto;
+  width:15%;
+
+}
+
+.button2{
+  cursor: pointer;
+}
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
+}
+
+
 
 
 

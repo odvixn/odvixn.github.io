@@ -5,23 +5,31 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-      <div class="header" >
-                <div class= "right-alligned">
-                  <button  class= "button1 active tab" onclick="openoption(event,'Home')">Home</button>
-                  <button  class= "button1 tab" onclick="openoption(event,'Storyline')">Story</button>
-                </div>
-      </div>
+      <!-- Navigation Bar -->
+        <div class="navbar noselect">
+            <nav>
+                <a class= "button1 tab" onclick="openoption(event,'Storyline')">Story</a>
+                <a class= "button1 active tab" onclick="openoption(event,'Home')">Home</a>
+            </nav>
+        </div>
+
 
 
         <div id="Home" class="opt content">
             <h1>The Title</h1>
             <div class="main">
-                <button id="playpausebtn"> Play</button>
-                <span id="progress">0:0</span> / <span>3:21</span>
-                <button onClick="restartPlay()"> Restart</button>
-                <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
                 <div class="visual">
-                    <div class="colorbox"></div>
+                  <div class="colorbox"></div>
+                  <div class="options">
+                      <div class="button2" id="playpausebtn"> Play</div> <br>
+                      <div>
+                      <span class="noselect" id="progress">0:0/3:21</span>
+                    </div> <br>
+                      <div class="button2" onClick="restartPlay()"> Restart</div> <br>
+                    <div class:"slidecontainer">
+                      <input id="volumeslider" type="range" min="0" max="100" value="100" step="1" class="slider">
+                    </div>
+                </div>
                 </div>
                 <audio id="myAudio" preload="auto">
                     <source src="resources/refuge.mp3" type="audio/mp3">
