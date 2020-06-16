@@ -16,6 +16,7 @@ a.addEventListener("timeupdate", function() {
 
 // rgba function from https://stackoverflow.com/questions/8177964
 function cameleon(ct) {
+  console.log(ct)
   if (0<ct&&ct<17) {colorFill(255,255,102);}  // use max color to 150
   else if (18<ct&&ct<36) {colorFill(255, 153, 51);}
   else if (36<ct&&ct<43.5) {colorFill(255, 140, 26);}
@@ -29,8 +30,8 @@ function cameleon(ct) {
   else if (128<ct&&ct<152) {colorFill(0, 0, 80);}
   else if (152<ct&&ct<153) {colorFill(50, 50, 120);}
   else if (153<ct&&ct<157) {colorFill(0, 0, 100);}
-  else if (157<ct&&ct<165) {colorFill(25, 25, 102);}
-  else if (165<ct&&ct<200) {colorFill(10, 10, 10);}
+  else if (157<ct&&ct<163) {colorFill(25, 25, 102);}
+  else if (163<ct&&ct<200) {colorFill(10, 10, 10);}
   
 
 

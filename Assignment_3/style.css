@@ -64,7 +64,7 @@ p {
 }
 
 .colorbox {
-    transition: 1.9s background-color ease-out;
+    transition: 2.3s background-color ease-out;
     float:left;
     margin: auto;
     border: 1px solid #040404;
