@@ -1,0 +1,100 @@
+/* Some reference(s)
+    Relative Font Size: https://stackoverflow.com/questions/16056591/
+*/
+
+html {
+    scroll-behavior: smooth; /* if you use an internal link, this will allow smooth scrolling into the approperiate section */
+}
+
+body {
+    font-family: Tahoma, Geneva, sans-serif; /* clean fonts for legibility & readability */
+    text-align: center; /* everything centered by default */
+    color: #040404; /* lower contrast */
+    margin: 0; /* remove browser-default margins */
+    padding: 0; /* remove browser-default padding */
+}
+
+h1 {
+    text-shadow: 0.05vw 0 #040404, 0 -0.05vw #040404, -0.05vw 0 #040404, 0 0.05vw #040404;
+    margin: auto;
+    margin-top: 0;
+    padding-bottom: 1.1%;
+    font-size: 4vw;
+    max-width: 50%;
+    cursor: default;
+}
+
+p {
+    font-size: 1.3vw;
+    line-height: 2vw;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: left;
+}
+
+ul {
+    font-size: 1.3vw;
+    line-height: 2vw;
+    padding-left: 23.5%;
+    padding-right: 20%;
+    text-align: left; 
+}
+
+li {
+    padding-bottom: 1.5%;
+}
+
+#takepart a {
+    color: navy;
+}
+
+a {
+    color: navy;
+    cursor: pointer;
+}
+
+img{
+    border: 1px solid #040404;
+    width: 35%;
+    height: auto;
+}
+
+audio {
+    width: 35.2%;
+}
+
+.content {
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.main {
+    border: black;
+    border-width: 1%;
+}
+
+.footer {
+    background-color: #040404;
+    color: beige;
+    border-color: snow;
+    border-style: inset;
+    border-width: 0;
+    border-top-width: 1px;
+    padding: 0.7%;
+}
+
+.noselect {
+    /* Below from https://stackoverflow.com/questions/826782 for disabling select*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;      /* Old versions of Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* 
+https://www.youtube.com/watch?v=CkFm27GQtMQ
+14:34 transition ease in
+*/
