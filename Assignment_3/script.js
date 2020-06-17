@@ -1,7 +1,8 @@
 window.onblur = function() { document.title = "Are you looking away?" };
 window.onfocus = function() { document.title = "A Story of Refuge" };
 
-// document.addEventListener("keypress",togglePlay)
+// press spacebar to toggle play from https://stackoverflow.com/questions/24386354
+document.addEventListener("keypress", function(e) {if(e.keyCode == 32){togglePlay();}})
 
 let background = document.getElementsByClassName('content')[0];
 let elem = document.getElementsByClassName("colorbox")[0];
@@ -13,27 +14,32 @@ a.addEventListener("timeupdate", function() {
   cameleon(a.currentTime)
  }, true);
 
+let bgc = background.style.backgroundColor;
+let emc =  elem.style.backgroundColor;
+
 
 // rgba function from https://stackoverflow.com/questions/8177964
 function cameleon(ct) {
   console.log(ct)
-  if (0<ct&&ct<17) {colorFill(255,255,102);}  // use max color to 150
+  if (0<ct&&ct<17) {colorFill(255,255,102);}
   else if (18<ct&&ct<36) {colorFill(255, 153, 51);} //yellow
   else if (36<ct&&ct<43.5) {colorFill(255, 140, 26);} //orange
   else if (43.5<ct&&ct<57) {colorFill(204, 82, 0);} //dark orange
   else if (57<ct&&ct<68) {colorFill(200, 0, 0);}// red
   //else if (68<ct&&ct<76) {colorFill(179, 36, 0);}//red
   else if (68<ct&&ct<93) {colorFill(153, 00, 0);}//red
-  else if (94<ct&&ct<98) {colorFill(255, 204, 203);} //bright red
-  else if (98<ct&&ct<121) {colorFill(0, 255, 255);} //blue
-  else if (122<ct&&ct<131) {colorFill(0, 0, 80);}// blue
+  else if (94<ct&&ct<98) {colorFill(77, 0, 77);} //purple
+  else if (98<ct&&ct<119) {colorFill(67, 73, 164);} //blue
+  else if (119<ct&&ct<131) {colorFill(0, 0, 80);}// blue
   else if (132<ct&&ct<153) {colorFill(0, 0, 128);}
   //else if (153<ct&&ct<155) {colorFill(0, 0, 100);}
   //else if (157<ct&&ct<165) {colorFill(25, 25, 102);}
   else if (154<ct&&ct<197) {colorFill(10, 10, 10);}
-  else if (197<ct&&ct<200)
-  {colorFill(10, 10, 10);
-  playbtn.innerHTML = "Play";
+  else if (197<ct&&ct<200) {
+    colorFill(10, 10, 10);
+    restartPlay();
+    // playbtn.innerHTML = "Play";
+
   }
 }
 //filling the color function
@@ -72,6 +78,8 @@ function togglePlay() {
 };
 //restart button function
 function restartPlay() {
+  background.style.backgroundColor = bgc;
+  elem.style.backgroundColor = emc;
   myAudio.currentTime=0;
   if(myAudio.paused){
   		myAudio.pause();
