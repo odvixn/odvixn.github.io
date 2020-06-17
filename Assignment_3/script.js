@@ -34,19 +34,15 @@ function cameleon(ct) {
   {colorFill(10, 10, 10);
   playbtn.innerHTML = "Play";
   }
-
-
-
-
 }
-
+//filling the color function
 function colorFill(r,g,b) {
   clr = r.toString() + ',' + g.toString() + ',' + b.toString();
   background.style.backgroundColor = 'rgba('+clr+',0.3)'.replace(/[^,]+(?=\))/, '0.6');
   elem.style.backgroundColor = 'rgba('+clr+',0.3)'.replace(/[^,]+(?=\))/, '0.9');
 }
 
-
+// function to open the tab while the audio will still be playing
 function openoption(evt, optiontype) {
   var i, x, tablinks;
   x = document.getElementsByClassName("opt");
@@ -60,6 +56,7 @@ function openoption(evt, optiontype) {
   document.getElementById(optiontype).style.display = "block";
   evt.currentTarget.className += " active";
 }
+//play pause button function
 var myAudio = document.getElementById("myAudio");
 var playbtn = document.getElementById("playpausebtn");
 playbtn.addEventListener("click",togglePlay,false);
@@ -72,6 +69,7 @@ function togglePlay() {
   		playbtn.innerHTML = "Play";
   	}
 };
+//restart button function
 function restartPlay() {
   myAudio.currentTime=0;
   if(myAudio.paused){
@@ -82,6 +80,7 @@ function restartPlay() {
   		playbtn.innerHTML = "Play";
   	}
 };
+//volume slider function
 var volumeslider;
 volumeslider = document.getElementById("volumeslider");
 volumeslider.addEventListener("change",setvolume,false);
