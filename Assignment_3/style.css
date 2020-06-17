@@ -56,7 +56,7 @@ h1 {
 
 p {
     font-size: 1.5vw;
-    line-height: 2vw;
+    line-height: 4vh;
     margin: 0;
     padding-left: 20%;
     padding-right: 20%;
@@ -92,7 +92,7 @@ audio {
     right:0;
     overflow:hidden;
     z-index:-1;
-    padding-top: 5%;
+    padding-top: 5.5%;
     /* padding-bottom: 4%; */
     /* height:530px; */
     transition: 10s background-color ease-out;
@@ -235,7 +235,24 @@ nav {
 .time {
   font-size: 1.2vw;
 }
-
+@media only screen and (max-width: 750px) {
+  h1{
+    font-size: 8vw;
+  }
+  p{
+    font-size: 2.5vw;
+    line-height: 3vw;
+  }
+  .options {
+    font-size: 3vw;
+  }
+  .time {
+    font-size: 2vw;
+  }
+  .button1{
+    font-size: 3vw;
+  }
+}
 
 
 /*
