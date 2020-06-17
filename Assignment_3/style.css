@@ -68,7 +68,7 @@ p {
     float:left;
     margin: auto;
     border: 1px solid #040404;
-    width:64vh;
+    width:75%;
     height:64vh;
 }
 .visual{
@@ -76,7 +76,7 @@ p {
   overflow: hidden;
   margin: auto;
   border: 1px solid #040404;
-  width: 93vh;
+  width: 60%;
   /* height: 50%; */
 }
 
@@ -131,7 +131,7 @@ audio {
 }
 
 nav {
-    position: fixed;
+    /* position: fixed; */
     overflow: hidden;
     display: flex;
     flex-direction: row-reverse;
@@ -182,7 +182,7 @@ nav {
   font-size: 1.7vw;
   /* transition-duration: 0.4s; */
   margin: auto;
-  width:25vh;
+  width:20%;
 
 }
 
