@@ -27,7 +27,7 @@ a.addEventListener("volumechange", function(){
   else {pt.innerText = "A disaster does not pause for refuges.";}
 });
 
-
+a.addEventListener("ended", function(){restartPlay();})
 a.addEventListener("timeupdate", function() {
   var s= parseInt(a.currentTime%60);
   var m = parseInt((a.currentTime / 60) % 60);
@@ -58,9 +58,7 @@ function cameleon(ct) {
   else if (154<ct&&ct<197) {colorFill(10, 10, 10);}
   else if (197<ct&&ct<200) {
     colorFill(10, 10, 10);
-    restartPlay();
     // playbtn.innerHTML = "Play";
-
   }
 }
 //filling the color function
