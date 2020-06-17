@@ -240,6 +240,18 @@ nav {
   background-color: rgba(170,170,170,50);
 }
 
+#alert {
+  color: crimson;
+  font-family: 'Permanent Marker', Tahoma, Geneva, sans-serif; /* In case webfonts are blocked */
+  position: absolute;
+  top: 1.2vw;
+  left: 50%;
+  width: 75%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+  /* font-weight: bolder; */
+}
+
 /*
 https://www.youtube.com/watch?v=CkFm27GQtMQ
 14:34 transition ease in

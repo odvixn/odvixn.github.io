@@ -7,6 +7,27 @@ document.addEventListener("keypress", function(e) {if(e.keyCode == 32){togglePla
 let background = document.getElementsByClassName('content')[0];
 let elem = document.getElementsByClassName("colorbox")[0];
 let a = document.getElementsByTagName("audio")[0];
+let pt = document.getElementById("alert");
+
+// When paused, show message
+a.addEventListener("pause", function(){
+  if (a.currentTime!=0) {pt.innerText = "A disaster does not pause for refuges.";}
+});
+
+// When unpaused, remove message
+a.addEventListener("play", function(){
+  if (a.volume!=0 && !a.muted) {pt.innerText="";}
+  else {pt.innerText="No disaster should be kept in silence.";}
+});
+
+// When volume is changed, check volume and decide to show or remove message
+a.addEventListener("volumechange", function(){
+  if (a.volume==0 || a.muted) {pt.innerText="No disaster should be kept in silence.";}
+  else if (!a.paused) {pt.innerText="";}
+  else {pt.innerText = "A disaster does not pause for refuges.";}
+});
+
+
 a.addEventListener("timeupdate", function() {
   var s= parseInt(a.currentTime%60);
   var m = parseInt((a.currentTime / 60) % 60);
@@ -20,7 +41,7 @@ let emc =  elem.style.backgroundColor;
 
 // rgba function from https://stackoverflow.com/questions/8177964
 function cameleon(ct) {
-  console.log(ct)
+  // console.log(ct)
   if (0<ct&&ct<17) {colorFill(255,255,102);}
   else if (18<ct&&ct<36) {colorFill(255, 153, 51);} //yellow
   else if (36<ct&&ct<43.5) {colorFill(255, 140, 26);} //orange
@@ -73,21 +94,19 @@ function togglePlay() {
   		playbtn.innerHTML = "Pause";
   	} else {
   		myAudio.pause();
-  		playbtn.innerHTML = "Play";
+  		playbtn.innerHTML = "Continue";
   	}
 };
+
 //restart button function
 function restartPlay() {
   background.style.backgroundColor = bgc;
   elem.style.backgroundColor = emc;
   myAudio.currentTime=0;
-  if(myAudio.paused){
-  		myAudio.pause();
-  		playbtn.innerHTML = "Play";
-  	} else {
-  		myAudio.pause();
-  		playbtn.innerHTML = "Play";
-  	}
+  myAudio.pause();
+  playbtn.innerHTML = "Experience";
+  if (a.volume!=0 && !a.muted) {pt.innerText="";}
+  else {pt.innerText="No disaster should be kept in silence.";}
 };
 //volume slider function
 var volumeslider;
