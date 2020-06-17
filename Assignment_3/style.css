@@ -64,6 +64,7 @@ p {
 }
 
 .colorbox {
+    background-color: #555555;
     transition: 2.3s background-color ease-out;
     float:left;
     margin: auto;
