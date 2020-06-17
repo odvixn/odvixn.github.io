@@ -23,7 +23,7 @@ a.addEventListener("play", function(){
 // When volume is changed, check volume and decide to show or remove message
 a.addEventListener("volumechange", function(){
   if (a.volume==0 || a.muted) {pt.innerText="No disaster should be kept in silence.";}
-  else if (!a.paused) {pt.innerText="";}
+  else if (!a.paused||a.currentTime==0) {pt.innerText="";}
   else {pt.innerText = "A disaster does not pause for refuges.";}
 });
 
