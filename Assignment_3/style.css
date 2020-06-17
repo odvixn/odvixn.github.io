@@ -132,7 +132,7 @@ audio {
 }
 
 nav {
-    position: fixed;
+    /* position: fixed; */
     overflow: hidden;
     display: flex;
     flex-direction: row-reverse;
@@ -265,7 +265,7 @@ nav {
   font-family: 'Permanent Marker', Tahoma, Geneva, sans-serif; /* In case webfonts are blocked */
   position: absolute;
   top: 1.2vw;
-  left: 50%;
+  left: 40%;
   width: 75%;
   transform: translate(-50%, -50%);
   font-size: 4vw;
