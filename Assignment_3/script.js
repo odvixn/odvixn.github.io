@@ -82,6 +82,9 @@ function openoption(evt, optiontype) {
   document.getElementById(optiontype).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// Some implementation for the buttons are taken from
+//https://www.developphp.com/video/JavaScript/Video-Volume-Change-and-Mute-Programming-Tutorial
 //play pause button function
 var myAudio = document.getElementById("myAudio");
 var playbtn = document.getElementById("playpausebtn");
