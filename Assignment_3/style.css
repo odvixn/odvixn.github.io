@@ -241,7 +241,7 @@ nav {
   background-color: rgba(170,170,170,50);
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 700px) {
   h1{
     font-size: 8vw;
   }
@@ -250,13 +250,21 @@ nav {
     line-height: 3vw;
   }
   .options {
-    font-size: 3vw;
+    font-size: 1.2vw;
+    width:10vh;
   }
   .time {
     font-size: 2vw;
   }
   .button1{
     font-size: 3vw;
+  }
+  .colorbox{
+    width:43vh;
+    height:43vh;
+  }
+  .visual{
+    width:64vh;
   }
 }
 
