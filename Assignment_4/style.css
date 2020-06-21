@@ -201,36 +201,102 @@ video {
     padding: 0.7%;
 }
 
-
 .bg-black {
     background-color: #040404;
     color: snow;
 }
 
-.noselect {
-    /* Below from https://stackoverflow.com/questions/826782 for disabling select*/
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none;   /* Safari */
-    -khtml-user-select: none;    /* Konqueror HTML */
-    -moz-user-select: none;      /* Old versions of Firefox */
-    -ms-user-select: none;       /* Internet Explorer/Edge */
-    user-select: none;           /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
-}
+/* Below from https://stackoverflow.com/questions/826782 for disabling select*/
+    .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none;   /* Safari */
+        -khtml-user-select: none;    /* Konqueror HTML */
+        -moz-user-select: none;      /* Old versions of Firefox */
+        -ms-user-select: none;       /* Internet Explorer/Edge */
+        user-select: none;           /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+    }
 
 /* Glow effect from https://www.w3schools.com/howto/howto_css_glowing_text.asp */
-.glow {
-    font-size: 80px;
-    color: #eeeeee;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-  
-@-webkit-keyframes glow {
-    from {text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #e60073, 0 0 8px #e60073, 
-          0 0 10px #e60073, 0 0 12px #e60073, 0 0 14px #e60073;}
-    to {text-shadow: 0 0 4px #fff, 0 0 6px #ff4da6, 0 0 8px #ff4da6, 0 0 10px #ff4da6, 
-        0 0 12px #ff4da6, 0 0 14px #ff4da6, 0 0 16px #ff4da6;}
-}
+    .glow {
+        font-size: 80px;
+        color: #eeeeee;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+        from {text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #e60073, 0 0 8px #e60073, 
+            0 0 10px #e60073, 0 0 12px #e60073, 0 0 14px #e60073;}
+        to {text-shadow: 0 0 4px #fff, 0 0 6px #ff4da6, 0 0 8px #ff4da6, 0 0 10px #ff4da6, 
+            0 0 12px #ff4da6, 0 0 14px #ff4da6, 0 0 16px #ff4da6;}
+    }
+
+/* Base Code from https://www.w3schools.com/howto/howto_css_modals.asp */
+/* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Header */
+    .modal-header {
+        padding: 1px 8px;
+        background-color: #242424;
+        color: white;
+    }
+    
+    /* Modal Body */
+    .modal-body {padding: 2px 16px;}
+    
+    /* Modal Footer */
+    /* .modal-footer {
+        padding: 1px 8px;
+        background-color: #242424;
+        color: white;
+    } */
+    
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border-left: 1px solid #444;
+        border-right: 1px solid #444;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+    
+    /* Add Animation */
+    @keyframes animatetop {
+        from {top: -300px; opacity: 0}
+        to {top: 0; opacity: 1}
+    } 
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover, .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
