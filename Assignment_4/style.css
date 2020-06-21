@@ -72,11 +72,11 @@ nav a:hover {
 .mySlides .blur {
     width: 100%;
     height:calc(100vh - 80px);
-    -webkit-filter: blur(2vw);
-    -moz-filter: blur(2vw);
-    -o-filter: blur(2vw);
-    -ms-filter: blur(2vw);
-    filter: blur(2vw);
+    -webkit-filter: blur(3vw);
+    -moz-filter: blur(3vw);
+    -o-filter: blur(3vw);
+    -ms-filter: blur(3vw);
+    filter: blur(3vw);
 }
 
 .mySlides img {
