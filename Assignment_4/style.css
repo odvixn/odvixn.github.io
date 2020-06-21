@@ -1,0 +1,233 @@
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    /* vertical-align: baseline; */
+}
+
+nav {
+    position:fixed;
+    display: block;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    width:100%;
+    z-index:1;
+    top:0;
+}
+
+nav a {
+    display: inline-block;
+    user-select: none;
+    width: auto;
+    padding: 2%;
+    border-radius: 3%;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: beige;
+    /* font-size: 1.05vw; */
+    /* line-height: 50%; */
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.9);
+    transition: .5s;
+}
+
+.content {   /* changed 5.5% -> 80px */
+    padding-top: 80px;
+    padding-bottom: 4%;
+}
+
+.mySlides {  /* Initially do not display (wait for JavaScript) */
+    display: none;
+    flex-direction: column;
+    background-size: cover;
+    overflow: hidden;
+    /* position: relative; */
+    padding: 0;
+    padding-top: 80px;
+    background-color: black;
+    /* vertical-align: middle; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+.mySlides .blur {
+    width: 100%;
+    height:calc(100vh - 80px);
+    -webkit-filter: blur(2vw);
+    -moz-filter: blur(2vw);
+    -o-filter: blur(2vw);
+    -ms-filter: blur(2vw);
+    filter: blur(2vw);
+}
+
+.mySlides img {
+    position: absolute;
+    height:calc(100vh - 83px);
+    transform: translate(-50%,0);
+    -ms-transform:translate(-50%,0);
+    left: 50%;
+    width: auto;
+    margin: auto;
+    border-width: 0;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.title {
+    position:absolute;
+    left:50%;
+    top:35%;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%);
+    font-weight: bold;
+}
+
+h1 {
+    /* text-shadow: 0.05vw 0 #040404, 0 -0.05vw #040404, -0.05vw 0 #040404, 0 0.05vw #040404; */
+    margin: auto;
+    margin-top: 0;
+    font-size: 4vw;
+    max-width: 50%;
+    cursor: default;
+}
+
+p {
+    font-size: 1.3vw;
+    line-height: 2vw;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul {
+    font-size: 1.3vw;
+    line-height: 2vw;
+    padding-left: 23.5%;
+    padding-right: 20%;
+    text-align: left; 
+}
+
+li {
+    padding-bottom: 1.5%;
+}
+
+#takepart a {
+    color: navy;
+}
+
+a {
+    color: navy;
+    cursor: pointer;
+}
+
+img{
+    border: 1px solid #040404;
+    width: 35%;
+    height: auto;
+}
+
+video {
+    width: 60%;
+    height: auto;
+    margin-top: 2%;
+}
+
+
+
+
+
+.img_by {
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.by_description {
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.footer {
+    background-color: #040404;
+    color: beige;
+    border-color: snow;
+    border-style: inset;
+    border-width: 0;
+    border-top-width: 1px;
+    padding: 0.7%;
+}
+
+
+.bg-black {
+    background-color: #040404;
+    color: snow;
+}
+
+.noselect {
+    /* Below from https://stackoverflow.com/questions/826782 for disabling select*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;      /* Old versions of Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Glow effect from https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+.glow {
+    font-size: 80px;
+    color: #eeeeee;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@-webkit-keyframes glow {
+    from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 
+          0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;}
+    to {text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 
+        0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;}
+}

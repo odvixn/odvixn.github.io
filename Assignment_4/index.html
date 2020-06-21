@@ -1,0 +1,111 @@
+<!-- Todo
+
+    - Find Good font
+    - Take out glow effect?
+    - Photoshop slideshow images for darker mood
+
+ -->
+
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Title</title>
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="icon" href="resources/favicon.png"> -->
+    </head>
+    
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navbar noselect">
+            <nav>
+                <a id="nav-home" href="#home">Home</a>
+                <a id="nav-about" href="#about">About</a>
+                <a id="nav-video" href="#video">Video</a>
+                <a id="nav-resources" href="#resources">Resources</a>
+                <a id="nav-quiz" href="#quiz">Quiz</a>
+            </nav>
+        </div>
+        <!-- Main Frame -->
+        <div>
+            <!-- Automatic Slideshow Images -->
+            <div class="noselect" id="home">
+                <div class="mySlides" style="display: flex;">
+                    <div class="blur" style="background-image: url('resources/lame_party.png');"></div>
+                    <img src="resources/lame_party.png">
+                </div>
+                <div class="mySlides">
+                    <div class="blur" style="background-image: url('resources/bottles.png');"></div>
+                    <img src="resources/bottles.png">
+                </div>
+                <div class="mySlides">
+                    <div class="blur" style="background-image: url('resources/interview.png');"></div>
+                    <img src="resources/interview.png">
+                </div>
+                <div class="mySlides">
+                    <div class="blur" style="background-image: url('resources/alex_blurry.png');"></div>
+                    <img src="resources/alex_blurry.png">
+                </div>
+                <div class="title glow">
+                    Mr. Miyagi's
+                    <br>
+                    Is it you?
+                </div>
+            </div>
+            
+            <!-- About -->
+            <div class="content about" id="about">
+                <header>
+                    <h1 class="noselect">About</h1>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facere ducimus asperiores dolor et a voluptate reprehenderit unde maiores commodi. Qui eum officia harum, dicta libero itaque laboriosam laudantium sint?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, sint amet. Nobis facilis ad a laborum beatae omnis ipsa totam nesciunt voluptas aliquid. Et dolor magni incidunt facere nostrum. Quasi.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae harum reiciendis similique! Eveniet quos id laudantium accusamus, minima molestias aliquam repellendus? Sequi pariatur reprehenderit aliquam magnam eligendi nam officia neque?
+                </p>
+            </div>
+            <!-- Video -->
+            <div class="content video bg-black" id="video">
+                <header>
+                    <h1 class="noselect">Watch</h1>
+                </header>
+                <div>
+                    <div id="video-overlay">
+                        <video poster="resources/video_preview.PNG" controls>
+                            <source src="resources/theVideo.mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <!-- Resources -->
+            <div class="content resources" id="resources">
+                <header>
+                    <h1 class="noselect">Resources</h1>
+                </header>
+                <div>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam fugiat explicabo distinctio adipisci maiores consequuntur cupiditate facilis provident soluta possimus architecto numquam accusamus, veritatis ad quia exercitationem consequatur officiis aperiam.
+                    </p>
+                </div>
+            </div>
+            <!-- By -->
+            <div class="content quiz" id="quiz">
+                <header>
+                    <h1 class="noselect">Quiz</h1>
+                </header>
+                <div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dolore et! Eaque fuga obcaecati fugiat, dolores tempore veniam at consectetur vitae, distinctio labore veritatis sequi quia cupiditate eligendi quaerat nam?</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            You have reached the end. Thank you for visiting this webpage!
+        </div>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
