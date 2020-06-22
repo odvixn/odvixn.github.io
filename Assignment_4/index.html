@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <title>Web Title</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="slider.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <link rel="icon" href="resources/favicon.png"> -->
         <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
@@ -78,25 +79,70 @@
                     <h1 class="noselect">Resources</h1>
                 </header>
                 <div>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam fugiat explicabo distinctio adipisci maiores consequuntur cupiditate facilis provident soluta possimus architecto numquam accusamus, veritatis ad quia exercitationem consequatur officiis aperiam.
-                    </p>
-                    <div class="card">
-                        <button id="resource_1" onclick="setmodal();openmodal()">Open Modal 1</button>
-                        <div class="modal" id="resource_1M">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <span class="close" onclick="closemodal()">&times;</span>
-                                    <h2>Modal Header</h2>
+                    <br>
+                    <div class='carousel'>
+                        <input checked='checked' class='carousel__activator' id='carousel-slide-activator-1' name='carousel' type='radio'>
+                        <input class='carousel__activator' id='carousel-slide-activator-2' name='carousel' type='radio'>
+                        <input class='carousel__activator' id='carousel-slide-activator-3' name='carousel' type='radio'>
+                        <div class='carousel__controls'>
+                            <label class='carousel__control carousel__control--forward' for='carousel-slide-activator-2'>
+                                &#9658;
+                            </label>
+                        </div>
+                        <div class='carousel__controls'>
+                            <label class='carousel__control carousel__control--backward' for='carousel-slide-activator-1'>
+                                &#9668;
+                            </label>
+                            <label class='carousel__control carousel__control--forward' for='carousel-slide-activator-3'>
+                                &#9658;
+                            </label>
+                        </div>
+                        <div class='carousel__controls'>
+                            <label class='carousel__control carousel__control--backward' for='carousel-slide-activator-2'>
+                                &#9668;
+                            </label>
+                        </div>
+                        <div class='carousel__screen'>
+                            <div class='carousel__track'>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        a
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut nihil eius eligendi optio quas consequuntur ut recusandae. Ipsum incidunt soluta culpa autem dignissimos quo dolores perspiciatis adipisci ratione omnis.
-                                    </p>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        b
+                                    </div>
                                 </div>
-                            </div>
-                        </div> <!-- Modal -->
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        c
+                                    </div>
+                                </div>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        d
+                                    </div>
+                                </div>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        e
+                                    </div>
+                                </div>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        f
+                                    </div>
+                                </div>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        g
+                                    </div>
+                                </div>
+                          </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
