@@ -228,10 +228,10 @@ img{
     }
     
     @-webkit-keyframes glow {
-        from {text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #e60073, 0 0 8px #e60073, 
-            0 0 10px #e60073, 0 0 12px #e60073, 0 0 14px #e60073;}
-        to {text-shadow: 0 0 4px #fff, 0 0 6px #ff4da6, 0 0 8px #ff4da6, 0 0 10px #ff4da6, 
-            0 0 12px #ff4da6, 0 0 14px #ff4da6, 0 0 16px #ff4da6;}
+        from {text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #c000c0, 0 0 8px #c000c0, 
+            0 0 10px #c000c0, 0 0 12px #c000c0, 0 0 14px #c000c0;}
+        to {text-shadow: 0 0 4px #eee, 0 0 6px #441955, 0 0 8px #441955, 0 0 10px #441955, 
+            0 0 12px #441955, 0 0 14px #441955, 0 0 16px #441955;}
     }
 
 /* Base Code from https://www.w3schools.com/howto/howto_css_modals.asp */
