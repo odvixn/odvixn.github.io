@@ -20,7 +20,7 @@ let questions = [
     {
         question : "What is consent?",
         // image was taken from https://www.healthline.com/health/guide-to-consent
-        imgSrc : "img/ques1.jpg",
+        imgSrc : "resources/quiz_a1.png",
         choiceA : "A conversation between partners about sexual preferences and desires.",
         choiceB : "An agreement between people to engage in sexual activity.",
         choiceC : "A verbal contract outlining exactly what sexual activities will take place.",
@@ -28,7 +28,7 @@ let questions = [
     },{
         question : "Which of the following statements indicates that consent has been given?",
         // image was taken from https://www.columbiaspectator.com/news/2020/01/27/here-are-seven-factors-that-influence-sexual-consent/
-        imgSrc : "img/ques2.png",
+        imgSrc : "resources/quiz_a2.png",
         choiceA : "Yes, I want to",
         choiceB : "Maybe, I'm not sure",
         choiceC : "I guess if you really want to",
@@ -36,7 +36,7 @@ let questions = [
     },{
         question : "When should you ask for consent?",
         // image was taken from https://www.nytimes.com/2017/12/16/sunday-review/when-saying-yes-is-easier-than-saying-no.html
-        imgSrc : "img/ques3.jpg",
+        imgSrc : "resources/quiz_a3.png",
         choiceA : "Every time you engage in intercouse.",
         choiceB : "First time you engage with a new partner.",
         choiceC : "If you are in a public place.",
@@ -149,11 +149,11 @@ function scoreRender(){
     const scorePerCent = Math.round(100 * score/questions.length);
     
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "img/5.png" :
-              (scorePerCent >= 60) ? "img/4.png" :
-              (scorePerCent >= 40) ? "img/3.png" :
-              (scorePerCent >= 20) ? "img/2.png" :
-              "img/1.png";
+    let img = (scorePerCent >= 80) ? "resources/quiz_5.png" :
+              (scorePerCent >= 60) ? "resources/quiz_4.png" :
+              (scorePerCent >= 40) ? "resources/quiz_3.png" :
+              (scorePerCent >= 20) ? "resources/quiz_2.png" :
+              "resources/quiz_1.png";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";

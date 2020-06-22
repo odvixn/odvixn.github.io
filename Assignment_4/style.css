@@ -260,13 +260,6 @@ video {
     /* Modal Body */
     .modal-body {padding: 2px 16px;}
     
-    /* Modal Footer */
-    /* .modal-footer {
-        padding: 1px 8px;
-        background-color: #242424;
-        color: white;
-    } */
-    
     /* Modal Content */
     .modal-content {
         position: relative;
@@ -296,7 +289,7 @@ video {
     }
 
     .close:hover, .close:focus {
-        color: #000;
+        color: rgb(110, 110, 110);
         text-decoration: none;
         cursor: pointer;
     }
