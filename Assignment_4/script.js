@@ -52,3 +52,10 @@
             modal.style.display = "none";
         }
     }
+
+    // When the user presses ESC, close
+    document.addEventListener("keydown", function(e) {
+        if(e.keyCode==27 && modal.style.display != "none"){
+            closemodal();
+        }
+    })

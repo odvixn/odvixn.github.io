@@ -14,6 +14,7 @@ const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
+const qRestart = document.getElementById("qRestart");
 
 // create our questions
 let questions = [
@@ -128,6 +129,7 @@ function checkAnswer(answer){
         // end the quiz and show the score
         clearInterval(TIMER);
         scoreRender();
+        qRestart.style.display = "block";
     }
 }
 
