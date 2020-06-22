@@ -34,7 +34,6 @@ body{
     background-color: #ff4da6;
     text-overflow: ellipsis;
     overflow: hidden;
-
 }
 #start:hover{
     border: 3px solid #ff4da6;

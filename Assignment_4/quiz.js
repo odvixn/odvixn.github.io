@@ -4,7 +4,7 @@
 
 // select all elements
 const start = document.getElementById("start");
-const quiz = document.getElementById("quiz");
+const quiz = document.getElementById("quiz-set");
 const question = document.getElementById("question");
 const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
@@ -70,7 +70,6 @@ function renderProgress(){
 }
 
 // checkAnwer
-
 function checkAnswer(answer){
     if( answer == questions[runningQuestion].correct){
         // answer is correct
@@ -119,4 +118,16 @@ function scoreRender(){
     
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
+}
+
+// restart
+function qReset() {
+    progress.innerHTML = "";
+    runningQuestion = 0;
+    count = 0;
+    score = 0;
+    renderQuestion();
+    renderProgress();
+    scoreDiv.style.display = "none";
+    qRestart.style.display = "none";
 }
