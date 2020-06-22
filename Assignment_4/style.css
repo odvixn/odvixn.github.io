@@ -382,6 +382,14 @@ img{
         font-weight: bold;
     }
 
+    .choice:active {
+        background-color: black;
+    }
+    #choices:active {
+        color: white;
+    }
+
+
     #progress{
         width : 500px;
         position: absolute;
