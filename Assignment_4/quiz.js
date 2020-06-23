@@ -191,7 +191,7 @@ function scoreRender(){
               (scorePerCent >= 20) ? "resources/quiz_2.png" :
               "resources/quiz_1.png";
     
-    // scoreDiv.innerHTML = "<img src="+ img +">";
+    scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
 
