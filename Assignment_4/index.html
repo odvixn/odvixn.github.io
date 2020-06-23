@@ -19,11 +19,8 @@
     </head>
     
     <body>
-        <!-- Vignette Filter Throughout the webpage -->
-        <div class="vignette"></div>
-        
         <!-- Navigation Bar -->
-        <div class="navbar noselect">
+        <div class="navbar noselect vignette">
             <nav>
                 <a id="nav-home" href="#home">Home</a>
                 <a id="nav-about" href="#about">About</a>
@@ -35,7 +32,7 @@
         <!-- Main Frame -->
         <div>
             <!-- Automatic Slideshow Images -->
-            <div class="noselect" id="home">
+            <div class="noselect vignette" id="home">
                 <div class="mySlides" style="display: flex;">
                     <div class="blur" style="background-image: url('resources/slides_1.png');"></div>
                     <img src="resources/slides_1.png">
@@ -60,7 +57,7 @@
             </div>
             
             <!-- About -->
-            <div class="content about" id="about">
+            <div class="content about vignette" id="about">
                 <header>
                     <h1 class="noselect">About</h1>
                 </header>
@@ -70,7 +67,7 @@
             </div>
 
             <!-- Video -->
-            <div class="content video bg-black" id="video">
+            <div class="content video bg-black vignette" id="video">
                 <div>
                     <div id="video-overlay">
                         <video poster="resources/video_preview.PNG" controls>
