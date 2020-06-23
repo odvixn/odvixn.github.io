@@ -53,6 +53,26 @@ function renderQuestion(){
 }
 
 start.addEventListener("click",startQuiz);
+choiceA.addEventListener("mousedown", () => {
+    document.getElementById("A").style.backgroundColor = "black";
+});
+choiceB.addEventListener("mousedown", () => {
+    document.getElementById("B").style.backgroundColor = "black";
+});
+choiceC.addEventListener("mousedown", () => {
+    document.getElementById("C").style.backgroundColor = "black";
+});
+
+
+choiceA.addEventListener("mouseleave", () => {
+    document.getElementById("A").style.backgroundColor = "white";
+});
+choiceB.addEventListener("mouseleave", () => {
+    document.getElementById("B").style.backgroundColor = "white";
+});
+choiceC.addEventListener("mouseleave", () => {
+    document.getElementById("C").style.backgroundColor = "white";
+});
 
 // start quiz
 function startQuiz(){
