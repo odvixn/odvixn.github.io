@@ -88,6 +88,7 @@ nav a:hover {
     -ms-transform:translate(-50%,0);
     left: 50%;
     width: auto;
+    max-width: 100%;
     margin: auto;
     border-width: 0;
     /* -webkit-filter: blur(3px);

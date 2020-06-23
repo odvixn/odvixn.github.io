@@ -226,6 +226,7 @@
   font-size: 56px;
   height: 250px;
   width: 100%;
+  cursor: pointer;
 }
 
 .carousel__item:nth-child(1) .demo-content {

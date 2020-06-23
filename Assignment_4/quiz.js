@@ -150,10 +150,12 @@ function qReset() {
     runningQuestion = 0;
     count = 0;
     score = 0;
-    renderQuestion();
-    renderProgress();
+    // renderQuestion();
+    // renderProgress();
     scoreDiv.style.display = "none";
     qRestart.style.display = "none";
+    start.style.display = "block";
+    quiz.style.display = "none";
 }
 
 function qClearChoices() {
