@@ -123,6 +123,8 @@ p {
     padding-left: 20%;
     padding-right: 20%;
     text-align: left;
+    font-weight: bold;
+    text-align: justify;
 }
 
 video {
@@ -132,6 +134,8 @@ video {
     height: auto;
     margin-top: 1%;
 }
+
+
 
 
 
@@ -200,13 +204,7 @@ img{
     border-width: 0;
     border-top-width: 1px;
     padding: 0.7%;
-}
-
-.center {
-    position: absolute;
-    transform:translate(-50%,0%);
-    -ms-transform:translate(-50%,0%);
-    left:50%;
+    width:100%;
 }
 
 .bg-black {
@@ -317,6 +315,7 @@ img{
         border : 1px solid rgba(0, 0, 0, 0.7);
         border-radius: 1.2%;
         cursor: pointer;
+        position: absolute;
         margin: 0 auto;
         padding: 1%;
         padding-left: 6%;
@@ -324,6 +323,9 @@ img{
         top:25%;
         color : #040404;
         display: inline-block;
+        transform:translate(-50%,0%);
+        -ms-transform:translate(-50%,0%);
+        left:50%;
     }
 
     #start:hover{
@@ -336,7 +338,12 @@ img{
     }
 
     #question{
+        position:absolute;
+        left:50%;
+        transform:translate(-50%,0%);
+        -ms-transform:translate(-50%,0%);
         font-size: 2vw;
+        position: absolute;
         text-align: center;
         margin: auto;
         /* width: 80%; */
@@ -356,13 +363,15 @@ img{
 
     #choices{
         width : 58.2%;
-        bottom : 35%;
+        position: absolute;
+        left: 300px;
+        top : 130px;
         padding : 10px;
         display: inline-flex;
         justify-content: space-around;
     }
 
-    .choice, .Choice-deactivated{
+    .choice{
         display: inline-block;
         width : 200px;
         text-align: center;
@@ -370,34 +379,14 @@ img{
         border-radius: 5px;
         cursor: pointer;
         padding : 5px;
-        font-weight: bold;
         /* font-family: Tahoma, Geneva, sans-serif; */
     }
 
     .choice:hover{
-        overflow: hidden;
-        color : snow;
-        background-color: #040404;
-        transition: .2s;
-        /* font-weight: bold; */
+        border : 2px solid grey;
+        font-weight: bold;
     }
 
-    .solution {
-        background-color: #8d8;
-        color: black;
-    }
-
-    .wrong-answer {
-        background-color: #d88;
-        color: black;
-    }
-
-    #qNext, #qRestart {
-        display: none;
-        bottom: 10%;
-        margin: auto;
-        cursor: pointer;
-    }
 
     #progress{
         width : 500px;
@@ -441,12 +430,74 @@ img{
     #scoreContainer p{
         position: absolute;
         display: block;
-        width : 59px;
+        width : 100%;
         height :59px;
         top:130px;
-        left:325px;
         font-size: 1.5em;
         font-weight: bold;
         text-align: center;
         font-family: Tahoma, Geneva, sans-serif;
+    }
+
+    #qRestart {
+        width: 45px;
+        margin: auto;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .icons {
+        justify-content: space-around;
+        width: 100%;
+        text-align: center;
+        display: flex;
+    }
+
+    /* code copied from w3schools */
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 80px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        
+
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+
+    }
+
+      span:hover {
+        color: black !important;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #125688;
+        color: white;
+        
+    }
+
+    .icons a {
+        font-size: 1.5em;
+        text-align: center;
+        margin: auto;
+    }
+
+    .icons p {
+        width: 20%;
+        padding: 0;
+        left: 40%;
     }
