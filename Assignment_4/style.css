@@ -425,10 +425,9 @@ img{
     #scoreContainer p{
         position: absolute;
         display: block;
-        width : 59px;
+        width : 100%;
         height :59px;
         top:130px;
-        left: 197px;
         font-size: 1.5em;
         font-weight: bold;
         text-align: center;
