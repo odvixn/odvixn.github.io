@@ -55,44 +55,56 @@ function renderQuestion(){
 start.addEventListener("click",startQuiz);
 choiceA.addEventListener("mousedown", () => {
     document.getElementById("A").style.backgroundColor = "black";
+    document.getElementById("A").style.color = "white";
 });
 choiceB.addEventListener("mousedown", () => {
     document.getElementById("B").style.backgroundColor = "black";
+    document.getElementById("B").style.color = "white";
 });
 choiceC.addEventListener("mousedown", () => {
     document.getElementById("C").style.backgroundColor = "black";
+    document.getElementById("C").style.color = "white";
 });
 
 
 choiceA.addEventListener("mousemove", () => {
     document.getElementById("A").style.backgroundColor = "white";
+    document.getElementById("A").style.color = "black";
 });
 choiceB.addEventListener("mousemove", () => {
     document.getElementById("B").style.backgroundColor = "white";
+    document.getElementById("B").style.color = "black";
 });
 choiceC.addEventListener("mousemove", () => {
     document.getElementById("C").style.backgroundColor = "white";
+    document.getElementById("C").style.color = "black";
 });
 
 
 choiceA.addEventListener("mouseleave", () => {
     document.getElementById("A").style.backgroundColor = "white";
+    document.getElementById("A").style.color = "black";
 });
 choiceB.addEventListener("mouseleave", () => {
     document.getElementById("B").style.backgroundColor = "white";
+    document.getElementById("B").style.color = "black";
 });
 choiceC.addEventListener("mouseleave", () => {
     document.getElementById("C").style.backgroundColor = "white";
+    document.getElementById("C").style.color = "black";
 });
 
 choiceA.addEventListener("mouseenter", () => {
     document.getElementById("A").style.backgroundColor = "white";
+    document.getElementById("A").style.color = "black";
 });
 choiceB.addEventListener("mouseenter", () => {
     document.getElementById("B").style.backgroundColor = "white";
+    document.getElementById("B").style.color = "black";
 });
 choiceC.addEventListener("mouseenter", () => {
     document.getElementById("C").style.backgroundColor = "white";
+    document.getElementById("C").style.color = "black";
 });
 
 
