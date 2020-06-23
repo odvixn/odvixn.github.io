@@ -159,11 +159,18 @@ video {
     left:50%;
 }
 
+.center-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+}
+
 .vignette {
     z-index: 0;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     box-shadow: inset 0px 0px 100vw black;
 }
 
@@ -204,7 +211,7 @@ video {
         height: 100vh;
         width: 100vw;
     }
-      
+    
     .middle-2 {
         display: table-cell;
         vertical-align: middle;
@@ -281,12 +288,18 @@ video {
         margin: auto;
         width: 75%;
         /* position: absolute; */
-        top:20%;
+        /* top:20%; */
+    }
+
+    @media screen and (max-width: 650px) {
+        #question{
+            font-size: 1.5em;
+        }
     }
 
     #question p{
-        margin : 0;
-        padding : 15px;
+        /* margin : 0; */
+        padding : 1.5%;
         font-size: 1.25em;
         line-height: 1.3em;
         /* font-family: Tahoma, Geneva, sans-serif; */
@@ -295,11 +308,13 @@ video {
     }
 
     #choices{
-        width : 80%;
+        min-width: 55%;
+        max-width : 85%;
         bottom : 35%;
-        padding : 30px;
+        padding-bottom : 3%;
         display: inline-flex;
-        justify-content: space-around;
+        justify-content: center;
+        flex-flow: column wrap;
     }
 
     .Choice-deactivated {
@@ -307,12 +322,16 @@ video {
     }
 
     .choice, .Choice-deactivated {
+        margin: 1%;
         display: inline-block;
-        width : 30%;
+        min-width: 20vh;
+        width : 100%;
         text-align: center;
         border : 1px solid grey;
         border-radius: 5px;
-        padding : 1%;
+        padding : 4%;
+        padding-left: 3%;
+        padding-right: 3%;
         font-weight: bold;
         font-size: 1.25em;
         line-height: 1.3em;
@@ -345,8 +364,7 @@ video {
         padding: 0.2%;
         padding-left: 2%;
         padding-right: 2%;
-        bottom: 20%;
-        margin: auto;
+        margin-bottom: 5%;
         cursor: pointer;
         font-size: x-large;
         font-weight: bold;
@@ -361,7 +379,7 @@ video {
     }
 
     #progress{
-        width : 500px;
+        /* width : 500px; */
         position: absolute;
         bottom : 0px;
         right : 0px;

@@ -96,11 +96,11 @@ function checkAnswer(answer){
 
     count = 0;
     if(runningQuestion < lastQuestion){
-        qNext.style.display = "block";
+        qNext.style.display = "inline-block";
     }else{
         // end the quiz and show the score
         // scoreRender();
-        qRestart.style.display = "block";
+        qRestart.style.display = "inline-block";
     }
 }
 

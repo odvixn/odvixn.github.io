@@ -71,9 +71,6 @@
 
             <!-- Video -->
             <div class="content video bg-black" id="video">
-                <header>
-                    <h1 class="noselect">Watch</h1>
-                </header>
                 <div>
                     <div id="video-overlay">
                         <video poster="resources/video_preview.PNG" controls>
@@ -158,24 +155,24 @@
 
             <!-- Quiz -->
             <div class="content quiz noselect" id="quiz">
-                <!-- <header> -->
-                    <!-- <h1 class="noselect">Quiz</h1> -->
-                <!-- </header> -->
-                <div id="container">
-                    <h1 class="center" id="start">Start Quiz</h1>
-                    <div id="quiz-set" style="display: none">
-                        <div class="center" id="question"></div>
-                        <div class="center" id="choices">
-                            <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-                            <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-                            <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="middle-1" id="container">
+                    <div class="middle-2">
+                        <h1 class="middle-3" id="start">Start Quiz</h1>
+                    </div>
+                    <div class="center-2" id="quiz-set" style="display: none">
+                        <div id="question"></div>
+                        <div id="choices">
+                            <div class="choice center-2" id="A" onclick="checkAnswer('A')"></div>
+                            <div class="choice center-2" id="B" onclick="checkAnswer('B')"></div>
+                            <div class="choice center-2" id="C" onclick="checkAnswer('C')"></div>
+                            <div class="center-2"><br></div>
                         </div>
                         <div id="progress"></div>
                     </div>
                     <div id="scoreContainer" style="display: none"></div>
-                    <div id="quiz-buttons">
-                        <div class="center" id="qNext" onclick="qProgress();">Next</div>
-                        <div class="center" id="qRestart" onclick="qReset();">Finish</div>
+                    <div class="center-2" id="quiz-buttons">
+                        <div id="qNext" onclick="qProgress();">Next</div>
+                        <div id="qRestart" onclick="qReset();">Finish</div>
                     </div>
                 </div>
             </div>
