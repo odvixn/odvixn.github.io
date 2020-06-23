@@ -99,12 +99,11 @@ nav a:hover {
 }
 
 .title {
-    position:absolute;
-    left:50%;
-    top:35%;
-    transform:translate(-50%,0%);
-    -ms-transform:translate(-50%,0%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /* top:35%; */
     font-family: 'MuseoModerno', cursive;
+    font-size: 80px;
     font-weight: bold;
     width: 85%;
 }
@@ -216,8 +215,8 @@ img{
 
 .center {
     position: absolute;
-    transform:translate(-50%,0%);
-    -ms-transform:translate(-50%,0%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     left:50%;
 }
 
@@ -243,9 +242,7 @@ img{
 
 /* Glow effect from https://www.w3schools.com/howto/howto_css_glowing_text.asp */
     .glow {
-        font-size: 80px;
         color: #eeeeee;
-        text-align: center;
         -webkit-animation: glow 4s ease-in-out infinite alternate;
         -moz-animation: glow 4s ease-in-out infinite alternate;
         animation: glow 4s ease-in-out infinite alternate;
@@ -257,6 +254,30 @@ img{
         to {text-shadow: 0 0 2px #eee, 0 0 3px #441955, 0 0 4px #441955, 0 0 5px #441955, 
             0 0 6px #441955, 0 0 7px #441955, 0 0 8px #441955;}
     }
+
+/* Source: https://stackoverflow.com/questions/396145 */
+/* Align vertically & horizontally */
+    .middle-1 {
+        display: table;
+        position: absolute;
+        top: 47%;
+        /* left: 0; */
+        height: 100vh;
+        width: 100vw;
+    }
+      
+    .middle-2 {
+        display: table-cell;
+        vertical-align: middle;
+    }
+      
+    .middle-3 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        /*whatever width you want*/
+    }
+
 
 /* Base Code from https://www.w3schools.com/howto/howto_css_modals.asp */
 /* The Modal (background) */
