@@ -313,11 +313,16 @@ img{
     }
 
 /* Base code from https://github.com/CodeExplainedRepo/Multiple-Choice-Quiz-JavaScript */
+    .quiz {
+        background-color: snow;
+    }
+
     #container{
         margin : 20px auto;
-        background-color: white;
-        height: 300px;
-        width : 100%;
+        background-color: rgb(253, 209, 209);
+        box-shadow: 0px 5px 15px 0px;
+        height: 80vh;
+        width : 80%;
         position: relative;
         text-align: center;
     }
@@ -331,7 +336,7 @@ img{
         padding: 1%;
         padding-left: 6%;
         padding-right: 6%;
-        top:25%;
+        top:40%;
         color : #040404;
         display: inline-block;
     }
@@ -346,12 +351,12 @@ img{
     }
 
     #question{
-        font-size: 2vw;
+        font-size: 2.2em;
         text-align: center;
         margin: auto;
-        /* width: 80%; */
+        width: 75%;
         /* position: absolute; */
-        top:0;
+        top:20%;
     }
 
     #question p{
@@ -365,9 +370,9 @@ img{
     }
 
     #choices{
-        width : 58.2%;
+        width : 80%;
         bottom : 35%;
-        padding : 10px;
+        padding : 30px;
         display: inline-flex;
         justify-content: space-around;
     }
@@ -378,13 +383,14 @@ img{
 
     .choice, .Choice-deactivated {
         display: inline-block;
-        width : 200px;
+        width : 30%;
         text-align: center;
         border : 1px solid grey;
         border-radius: 5px;
-        padding : 5px;
-        /* font-family: Tahoma, Geneva, sans-serif; */
+        padding : 1%;
         font-weight: bold;
+        font-size: 1.25em;
+        line-height: 1.3em;
     }
 
     .choice:hover {
@@ -393,7 +399,6 @@ img{
         background-color: #040404;
         transition: .2s;
         cursor: pointer;
-        /* font-weight: bold; */
     }
 
     .solution {
@@ -415,7 +420,7 @@ img{
         padding: 0.2%;
         padding-left: 2%;
         padding-right: 2%;
-        bottom: 10%;
+        bottom: 20%;
         margin: auto;
         cursor: pointer;
         font-size: x-large;
@@ -488,6 +493,7 @@ img{
         display: flex;
     }
 
+    
 /* code copied from w3schools */
     .fa {
         padding: 20px;
