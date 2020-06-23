@@ -25,7 +25,7 @@ nav {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.8);
     width:100%;
-    z-index:999;
+    z-index:1;
     top:0;
 }
 
@@ -122,9 +122,9 @@ p {
     line-height: 2vw;
     padding-left: 20%;
     padding-right: 20%;
-    text-align: left;
     font-weight: bold;
     text-align: justify;
+    text-align: center;
 }
 
 video {
@@ -211,18 +211,6 @@ img{
     background-color: #040404;
     color: snow;
 }
-
-.center {
-    position: absolute;
-    transform:translate(-50%,0%);
-    -ms-transform:translate(-50%,0%);
-    left:50%;
-}
-
-
-
-
-
 
 /* Below from https://stackoverflow.com/questions/826782 for disabling select*/
     .noselect {
@@ -313,16 +301,11 @@ img{
     }
 
 /* Base code from https://github.com/CodeExplainedRepo/Multiple-Choice-Quiz-JavaScript */
-    .quiz {
-        background-color: snow;
-    }
-
     #container{
         margin : 20px auto;
-        background-color: rgb(253, 209, 209);
-        box-shadow: 0px 5px 15px 0px;
-        height: 80vh;
-        width : 80%;
+        background-color: white;
+        height: 300px;
+        width : 100%;
         position: relative;
         text-align: center;
     }
@@ -332,13 +315,17 @@ img{
         border : 1px solid rgba(0, 0, 0, 0.7);
         border-radius: 1.2%;
         cursor: pointer;
+        position: absolute;
         margin: 0 auto;
         padding: 1%;
         padding-left: 6%;
         padding-right: 6%;
-        top:40%;
+        top:25%;
         color : #040404;
         display: inline-block;
+        transform:translate(-50%,0%);
+        -ms-transform:translate(-50%,0%);
+        left:50%;
     }
 
     #start:hover{
@@ -351,12 +338,17 @@ img{
     }
 
     #question{
-        font-size: 2.2em;
+        position:absolute;
+        left:50%;
+        transform:translate(-50%,0%);
+        -ms-transform:translate(-50%,0%);
+        font-size: 2vw;
+        position: absolute;
         text-align: center;
         margin: auto;
-        width: 75%;
+        /* width: 80%; */
         /* position: absolute; */
-        top:20%;
+        top:0;
     }
 
     #question p{
@@ -370,70 +362,31 @@ img{
     }
 
     #choices{
-        width : 80%;
-        bottom : 35%;
-        padding : 30px;
+        width : 58.2%;
+        position: absolute;
+        left: 300px;
+        top : 130px;
+        padding : 10px;
         display: inline-flex;
         justify-content: space-around;
     }
 
-    .Choice-deactivated {
-        cursor: not-allowed;
-    }
-
-    .choice, .Choice-deactivated {
+    .choice{
         display: inline-block;
-        width : 30%;
+        width : 200px;
         text-align: center;
         border : 1px solid grey;
         border-radius: 5px;
-        padding : 1%;
-        font-weight: bold;
-        font-size: 1.25em;
-        line-height: 1.3em;
-    }
-
-    .choice:hover {
-        overflow: hidden;
-        color : snow;
-        background-color: #040404;
-        transition: .2s;
         cursor: pointer;
+        padding : 5px;
+        /* font-family: Tahoma, Geneva, sans-serif; */
     }
 
-    .solution {
-        background-color: #8d8;
-        color: black;
-        cursor: default;
-    }
-
-    .wrong-answer {
-        background-color: #d88;
-        color: black;
-        cursor: default;
-    }
-
-    #qNext, #qRestart {
-        display: none;
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 0.2%;
-        padding-left: 2%;
-        padding-right: 2%;
-        bottom: 20%;
-        margin: auto;
-        cursor: pointer;
-        font-size: x-large;
+    .choice:hover{
+        border : 2px solid grey;
         font-weight: bold;
     }
 
-    #qNext:hover, #qRestart:hover {
-        transition: .2s;
-        border: 1px solid snow;
-        background-color: black;
-        color: snow;
-        cursor: pointer;
-    }
 
     #progress{
         width : 500px;
@@ -477,13 +430,20 @@ img{
     #scoreContainer p{
         position: absolute;
         display: block;
-        width: 59px;
-        height:59px;
+        width : 100%;
+        height :59px;
         top:130px;
         font-size: 1.5em;
         font-weight: bold;
         text-align: center;
         font-family: Tahoma, Geneva, sans-serif;
+    }
+
+    #qRestart {
+        width: 45px;
+        margin: auto;
+        border: 1px solid white;
+        border-radius: 5px;
     }
 
     .icons {
@@ -493,8 +453,7 @@ img{
         display: flex;
     }
 
-    
-/* code copied from w3schools */
+    /* code copied from w3schools */
     .fa {
         padding: 20px;
         font-size: 30px;
@@ -502,6 +461,8 @@ img{
         text-align: center;
         text-decoration: none;
         margin: 5px 2px;
+        
+
     }
 
     .fa:hover {
@@ -509,7 +470,7 @@ img{
 
     }
 
-    span:hover {
+      span:hover {
         color: black !important;
     }
 
