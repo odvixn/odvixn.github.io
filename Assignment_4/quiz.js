@@ -64,6 +64,17 @@ choiceC.addEventListener("mousedown", () => {
 });
 
 
+choiceA.addEventListener("mousemove", () => {
+    document.getElementById("A").style.backgroundColor = "white";
+});
+choiceB.addEventListener("mousemove", () => {
+    document.getElementById("B").style.backgroundColor = "white";
+});
+choiceC.addEventListener("mousemove", () => {
+    document.getElementById("C").style.backgroundColor = "white";
+});
+
+
 choiceA.addEventListener("mouseleave", () => {
     document.getElementById("A").style.backgroundColor = "white";
 });
@@ -73,6 +84,17 @@ choiceB.addEventListener("mouseleave", () => {
 choiceC.addEventListener("mouseleave", () => {
     document.getElementById("C").style.backgroundColor = "white";
 });
+
+choiceA.addEventListener("mouseenter", () => {
+    document.getElementById("A").style.backgroundColor = "white";
+});
+choiceB.addEventListener("mouseenter", () => {
+    document.getElementById("B").style.backgroundColor = "white";
+});
+choiceC.addEventListener("mouseenter", () => {
+    document.getElementById("C").style.backgroundColor = "white";
+});
+
 
 // start quiz
 function startQuiz(){
