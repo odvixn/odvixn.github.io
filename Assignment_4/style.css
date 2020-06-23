@@ -221,9 +221,13 @@ img{
     left:50%;
 }
 
-
-
-
+.vignette {
+    z-index: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: inset 0px 0px 100vw black;
+}
 
 
 /* Below from https://stackoverflow.com/questions/826782 for disabling select*/
