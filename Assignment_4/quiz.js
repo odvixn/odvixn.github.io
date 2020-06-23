@@ -53,6 +53,8 @@ function renderQuestion(){
 }
 
 start.addEventListener("click",startQuiz);
+
+
 choiceA.addEventListener("mousedown", () => {
     document.getElementById("A").style.backgroundColor = "black";
     document.getElementById("A").style.color = "white";
@@ -94,6 +96,7 @@ choiceC.addEventListener("mouseleave", () => {
     document.getElementById("C").style.color = "black";
 });
 
+
 choiceA.addEventListener("mouseenter", () => {
     document.getElementById("A").style.backgroundColor = "white";
     document.getElementById("A").style.color = "black";
@@ -106,6 +109,7 @@ choiceC.addEventListener("mouseenter", () => {
     document.getElementById("C").style.backgroundColor = "white";
     document.getElementById("C").style.color = "black";
 });
+
 
 
 // start quiz
@@ -170,7 +174,7 @@ function scoreRender(){
               (scorePerCent >= 20) ? "resources/quiz_2.png" :
               "resources/quiz_1.png";
     
-    scoreDiv.innerHTML = "<img src="+ img +">";
+    // scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
 
