@@ -152,10 +152,10 @@
                     <!-- <h1 class="noselect">Quiz</h1> -->
                 <!-- </header> -->
                 <div id="container">
-                    <h1 id="start">Start Quiz</h1>
+                    <h1 class="center" id="start">Start Quiz</h1>
                     <div id="quiz-set" style="display: none">
-                        <div id="question"></div>
-                        <div id="choices">
+                        <div class="center" id="question"></div>
+                        <div class="center" id="choices">
                             <div class="choice" id="A" onclick="checkAnswer('A')"></div>
                             <div class="choice" id="B" onclick="checkAnswer('B')"></div>
                             <div class="choice" id="C" onclick="checkAnswer('C')"></div>
@@ -163,7 +163,10 @@
                         <div id="progress"></div>
                     </div>
                     <div id="scoreContainer" style="display: none"></div>
-                    <div id="qRestart" style="display: none" onclick="qReset();">Retry</div>
+                    <div id="quiz-buttons">
+                        <div class="center" id="qNext" onclick="qProgress();">Next</div>
+                        <div class="center" id="qRestart" onclick="qReset();">Retry</div>
+                    </div>
                 </div>
             </div>
 
