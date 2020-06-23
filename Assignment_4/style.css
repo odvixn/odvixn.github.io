@@ -372,7 +372,11 @@ img{
         justify-content: space-around;
     }
 
-    .choice, .Choice-deactivated{
+    .Choice-deactivated {
+        cursor: not-allowed;
+    }
+
+    .choice, .Choice-deactivated {
         display: inline-block;
         width : 200px;
         text-align: center;
@@ -383,7 +387,7 @@ img{
         font-weight: bold;
     }
 
-    .choice:hover{
+    .choice:hover {
         overflow: hidden;
         color : snow;
         background-color: #040404;
@@ -395,11 +399,13 @@ img{
     .solution {
         background-color: #8d8;
         color: black;
+        cursor: default;
     }
 
     .wrong-answer {
         background-color: #d88;
         color: black;
+        cursor: default;
     }
 
     #qNext, #qRestart {
