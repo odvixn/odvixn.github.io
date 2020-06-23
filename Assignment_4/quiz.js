@@ -11,7 +11,9 @@ const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
+const qNext = document.getElementById("qNext");
 const qRestart = document.getElementById("qRestart");
+let userChoice;
 
 // create questions
 let questions = [
@@ -53,60 +55,6 @@ function renderQuestion(){
 }
 
 start.addEventListener("click",startQuiz);
-choiceA.addEventListener("mousedown", () => {
-    document.getElementById("A").style.backgroundColor = "black";
-    document.getElementById("A").style.color = "white";
-});
-choiceB.addEventListener("mousedown", () => {
-    document.getElementById("B").style.backgroundColor = "black";
-    document.getElementById("B").style.color = "white";
-});
-choiceC.addEventListener("mousedown", () => {
-    document.getElementById("C").style.backgroundColor = "black";
-    document.getElementById("C").style.color = "white";
-});
-
-
-choiceA.addEventListener("mousemove", () => {
-    document.getElementById("A").style.backgroundColor = "white";
-    document.getElementById("A").style.color = "black";
-});
-choiceB.addEventListener("mousemove", () => {
-    document.getElementById("B").style.backgroundColor = "white";
-    document.getElementById("B").style.color = "black";
-});
-choiceC.addEventListener("mousemove", () => {
-    document.getElementById("C").style.backgroundColor = "white";
-    document.getElementById("C").style.color = "black";
-});
-
-
-choiceA.addEventListener("mouseleave", () => {
-    document.getElementById("A").style.backgroundColor = "white";
-    document.getElementById("A").style.color = "black";
-});
-choiceB.addEventListener("mouseleave", () => {
-    document.getElementById("B").style.backgroundColor = "white";
-    document.getElementById("B").style.color = "black";
-});
-choiceC.addEventListener("mouseleave", () => {
-    document.getElementById("C").style.backgroundColor = "white";
-    document.getElementById("C").style.color = "black";
-});
-
-choiceA.addEventListener("mouseenter", () => {
-    document.getElementById("A").style.backgroundColor = "white";
-    document.getElementById("A").style.color = "black";
-});
-choiceB.addEventListener("mouseenter", () => {
-    document.getElementById("B").style.backgroundColor = "white";
-    document.getElementById("B").style.color = "black";
-});
-choiceC.addEventListener("mouseenter", () => {
-    document.getElementById("C").style.backgroundColor = "white";
-    document.getElementById("C").style.color = "black";
-});
-
 
 // start quiz
 function startQuiz(){
@@ -125,6 +73,8 @@ function renderProgress(){
 
 // checkAnwer
 function checkAnswer(answer){
+    if (userChoice) return;
+    userChoice = document.getElementById(answer);
     if( answer == questions[runningQuestion].correct){
         // answer is correct
         score++;
@@ -135,13 +85,21 @@ function checkAnswer(answer){
         // change progress color to red
         answerIsWrong();
     }
+    // reveal correct answer
+    solution = document.getElementById(questions[runningQuestion].correct);
+    solution.className += " solution";
+
+    // deactivate hover effect
+    choiceA.className = choiceA.className.replace("choice", "Choice-deactivated");
+    choiceB.className = choiceB.className.replace("choice", "Choice-deactivated");
+    choiceC.className = choiceC.className.replace("choice", "Choice-deactivated");
+
     count = 0;
     if(runningQuestion < lastQuestion){
-        runningQuestion++;
-        renderQuestion();
+        qNext.style.display = "block";
     }else{
         // end the quiz and show the score
-        scoreRender();
+        // scoreRender();
         qRestart.style.display = "block";
     }
 }
@@ -154,6 +112,9 @@ function answerIsCorrect(){
 // answer is Wrong
 function answerIsWrong(){
     document.getElementById(runningQuestion).style.backgroundColor = "#a00";
+
+    // color wrong answer
+    userChoice.className += " wrong-answer";
 }
 
 // score render
@@ -174,8 +135,17 @@ function scoreRender(){
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
 
+// next question
+function qProgress() {
+    qClearChoices();
+    qNext.style.display = "none";
+    runningQuestion++;
+    renderQuestion();
+}
+
 // restart
 function qReset() {
+    qClearChoices();
     progress.innerHTML = "";
     runningQuestion = 0;
     count = 0;
@@ -184,4 +154,13 @@ function qReset() {
     renderProgress();
     scoreDiv.style.display = "none";
     qRestart.style.display = "none";
+}
+
+function qClearChoices() {
+    choiceA.className = choiceA.className.replace("Choice-deactivated", "choice");
+    choiceB.className = choiceB.className.replace("Choice-deactivated", "choice");
+    choiceC.className = choiceC.className.replace("Choice-deactivated", "choice");
+    userChoice.className = userChoice.className.replace(" wrong-answer", "");
+    solution.className = solution.className.replace(" solution", "");
+    userChoice = null;
 }
