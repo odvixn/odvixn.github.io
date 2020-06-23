@@ -111,6 +111,23 @@ choiceC.addEventListener("mouseenter", () => {
 });
 
 
+qRestart.addEventListener("mousedown", () => {
+    document.getElementById("qRestart").style.backgroundColor = "black";
+    document.getElementById("qRestart").style.color = "white";
+    document.getElementById("qRestart").style.cursor = "pointer";
+});
+
+qRestart.addEventListener("mouseenter", () => {
+    document.getElementById("qRestart").style.backgroundColor = "black";
+    document.getElementById("qRestart").style.color = "white";
+    document.getElementById("qRestart").style.cursor = "pointer";
+});
+
+qRestart.addEventListener("mouseleave", () => {
+    document.getElementById("qRestart").style.backgroundColor = "white";
+    document.getElementById("qRestart").style.color = "black";
+});
+
 
 // start quiz
 function startQuiz(){

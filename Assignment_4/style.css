@@ -434,3 +434,10 @@ img{
         text-align: center;
         font-family: Tahoma, Geneva, sans-serif;
     }
+
+    #qRestart {
+        width: 45px;
+        margin: auto;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
