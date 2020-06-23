@@ -294,7 +294,8 @@ video {
 
     #container{
         margin : 20px auto;
-        background-color: rgb(253, 209, 209);
+        background-color: rgb(105, 3, 59); /* Fallback */
+        background: url('resources/quiz_background.png');
         box-shadow: 0px 5px 15px 0px;
         height: 80vh;
         width : 80%;
