@@ -1,8 +1,9 @@
 /* Code from https://frontendscript.com/responsive-css-only-carousel-slider/ */
 
 .carousel {
-  min-width: 900px;
-  max-width: 1236px;
+  /* min-width: 900px; */
+  /* max-width: 1236px; */
+  max-width: 83%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 48px;

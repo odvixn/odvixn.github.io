@@ -113,14 +113,14 @@ h1 {
     /* text-shadow: 0.05vw 0 #040404, 0 -0.05vw #040404, -0.05vw 0 #040404, 0 0.05vw #040404; */
     margin: auto;
     margin-top: 0;
-    font-size: 4vw;
+    font-size: 400%;
     max-width: 50%;
     cursor: default;
 }
 
 p {
-    font-size: 1.3vw;
-    line-height: 2vw;
+    font-size: 130%;
+    line-height: 150%;
     padding-left: 20%;
     padding-right: 20%;
     text-align: left;
