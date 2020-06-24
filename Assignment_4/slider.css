@@ -220,8 +220,9 @@
   background-position: 50%, 60%;
   color: #fff;
   display: flex;
-  font-family: Helvetica;
-  font-weight: 100;
+  font-family: 'Raleway';
+  font-weight: bold;
+  /* font-weight: 100; */
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
