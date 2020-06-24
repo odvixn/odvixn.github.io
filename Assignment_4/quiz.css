@@ -18,22 +18,21 @@
 
     #start{
         letter-spacing: 2px;
-        border : 1px solid rgba(0, 0, 0, 0.7);
-        border-radius: 1.2%;
         cursor: pointer;
         margin: 0 auto;
         padding: 1%;
         padding-left: 6%;
         padding-right: 6%;
         top:40%;
-        color : #040404;
+        background-color: rgba(0, 0, 0, 0.4);
+        color : white;
         display: inline-block;
+        font-size: 250%;
     }
 
     #start:hover{
         /* border: 3px solid #aaa; */
         /* text-decoration: underline; */
-        overflow: hidden;
         color : snow;
         background-color: #040404;
         transition: .5s;
@@ -46,12 +45,6 @@
         width: 75%;
         /* position: absolute; */
         /* top:20%; */
-    }
-
-    @media screen and (max-width: 650px) {
-        #question{
-            font-size: 1.5em;
-        }
     }
 
     #question p{
@@ -191,4 +184,14 @@
         width: 100%;
         text-align: center;
         display: flex;
+    }
+
+    @media screen and (max-width: 650px) {
+        #start{
+            font-size: 180%;
+        }
+
+        #question{
+            font-size: 1.5em;
+        }
     }

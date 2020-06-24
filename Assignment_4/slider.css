@@ -233,6 +233,12 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 650px) {
+  .demo-content {
+    font-size: 25px;
+  }
+}
+
 .demo-content:hover {
   filter: brightness(110%);
   box-shadow: none;

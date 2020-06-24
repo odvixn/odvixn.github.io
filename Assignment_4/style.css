@@ -265,6 +265,11 @@ video {
             padding: 3%;
         }
     
+        h1 {
+            width: 90%;
+            font-size: 300%;
+        }
+
         p {
             padding-left: 7%;
             padding-right: 7%;
