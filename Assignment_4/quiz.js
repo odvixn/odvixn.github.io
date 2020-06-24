@@ -7,6 +7,7 @@ const qFilter = document.getElementById("qFilter");
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz-set");
 const question = document.getElementById("question");
+const choices = document.getElementById("choices");
 const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
@@ -97,7 +98,7 @@ function checkAnswer(answer){
     choiceC.className = choiceC.className.replace("choice", "Choice-deactivated");
 
     count = 0;
-    if(runningQuestion < lastQuestion){
+    if(runningQuestion <= lastQuestion){
         qNext.style.display = "inline-block";
     }else{
         // end the quiz and show the score
@@ -119,35 +120,33 @@ function answerIsWrong(){
     userChoice.className += " wrong-answer";
 }
 
-// score render
-function scoreRender(){
-    scoreDiv.style.display = "block";
-    
-    // calculate the amount of question percent answered by the user
-    const scorePerCent = Math.round(100 * score/questions.length);
-    
-    // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "resources/quiz_5.png" :
-              (scorePerCent >= 60) ? "resources/quiz_4.png" :
-              (scorePerCent >= 40) ? "resources/quiz_3.png" :
-              (scorePerCent >= 20) ? "resources/quiz_2.png" :
-              "resources/quiz_1.png";
-    
-    scoreDiv.innerHTML = "<img src="+ img +">";
-    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
-}
 
 // next question
 function qProgress() {
     qClearChoices();
     qNext.style.display = "none";
     runningQuestion++;
-    renderQuestion();
+    if (runningQuestion <= lastQuestion) {renderQuestion();}
+    else {
+        choices.style.display = "none";
+        scoreDiv.style.display = "block";
+        question.innerHTML = "<p>You got " + score.toString() + "/" + (lastQuestion+1).toString() + "</p>";
+        message = "";
+        switch (score) {
+            case 3: message = "Great job! continue exercising consent and talking about it." ;break;
+            case 2: message = "Not quite there yet! read a couple of more articles in the section before." ;break;
+            case 1: message = "It's not okay. We encourage you to continue learning about consent." ;break;
+            case 0: message = "What the f**k are you doing?" ;break;
+            default: break;
+        }
+        scoreDiv.innerHTML = "<p class='center-2'>" + message + "</p>";
+        qRestart.style.display = "inline-block";
+    }
 }
 
 // restart
 function qReset() {
-    qClearChoices();
+    choices.style.display = "";
     progress.innerHTML = "";
     runningQuestion = 0;
     count = 0;
