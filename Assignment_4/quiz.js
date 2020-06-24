@@ -56,24 +56,6 @@ function renderQuestion(){
 
 start.addEventListener("click",startQuiz);
 
-qRestart.addEventListener("mousedown", () => {
-    document.getElementById("qRestart").style.backgroundColor = "black";
-    document.getElementById("qRestart").style.color = "white";
-    document.getElementById("qRestart").style.cursor = "pointer";
-});
-
-qRestart.addEventListener("mouseenter", () => {
-    document.getElementById("qRestart").style.backgroundColor = "black";
-    document.getElementById("qRestart").style.color = "white";
-    document.getElementById("qRestart").style.cursor = "pointer";
-});
-
-qRestart.addEventListener("mouseleave", () => {
-    document.getElementById("qRestart").style.backgroundColor = "white";
-    document.getElementById("qRestart").style.color = "black";
-});
-
-
 // start quiz
 function startQuiz(){
     start.style.display = "none";
@@ -114,11 +96,11 @@ function checkAnswer(answer){
 
     count = 0;
     if(runningQuestion < lastQuestion){
-        qNext.style.display = "block";
+        qNext.style.display = "inline-block";
     }else{
         // end the quiz and show the score
         // scoreRender();
-        qRestart.style.display = "block";
+        qRestart.style.display = "inline-block";
     }
 }
 
@@ -168,10 +150,12 @@ function qReset() {
     runningQuestion = 0;
     count = 0;
     score = 0;
-    renderQuestion();
-    renderProgress();
+    // renderQuestion();
+    // renderProgress();
     scoreDiv.style.display = "none";
     qRestart.style.display = "none";
+    start.style.display = "block";
+    quiz.style.display = "none";
 }
 
 function qClearChoices() {

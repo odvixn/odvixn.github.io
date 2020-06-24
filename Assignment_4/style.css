@@ -25,7 +25,7 @@ nav {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.8);
     width:100%;
-    z-index:1;
+    z-index:999;
     top:0;
 }
 
@@ -88,43 +88,87 @@ nav a:hover {
     -ms-transform:translate(-50%,0);
     left: 50%;
     width: auto;
+    max-width: 100%;
     margin: auto;
     border-width: 0;
-    /* -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px); */
+}
+
+.title-holder {
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .title {
-    position:absolute;
-    left:50%;
-    top:35%;
-    transform:translate(-50%,0%);
-    -ms-transform:translate(-50%,0%);
     font-family: 'MuseoModerno', cursive;
+    font-size: 80px;
+    line-height: 95px;
     font-weight: bold;
     width: 85%;
+}
+
+.title-above, .title-below{
+    color: white;
+    width: 85%;
+    font-size: 25px;
+}
+
+.title-watch {
+    border-radius: 1.7%;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+    /* top:40%; */
+    background-color: red;
+    color : white;
+    display: inline-block;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 650px) {
+    .title-holder {
+        top: 1.5%;
+    }
+
+    .title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    
+    .title-above, .title-below {
+        font-size: 20px;
+    }
+    
+    .title-watch {
+        font-size: 20px;
+    }
 }
 
 h1 {
     /* text-shadow: 0.05vw 0 #040404, 0 -0.05vw #040404, -0.05vw 0 #040404, 0 0.05vw #040404; */
     margin: auto;
     margin-top: 0;
-    font-size: 4vw;
-    max-width: 50%;
+    font-size: 400%;
+    /* max-width: 50%; */
     cursor: default;
 }
 
 p {
-    font-size: 1.3vw;
-    line-height: 2vw;
+    font-size: 130%;
+    line-height: 150%;
     padding-left: 20%;
     padding-right: 20%;
     text-align: left;
     font-weight: bold;
     text-align: justify;
+    text-align: center;
 }
 
 video {
@@ -133,67 +177,6 @@ video {
     min-width: 60%;
     height: auto;
     margin-top: 1%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ul {
-    font-size: 1.3vw;
-    line-height: 2vw;
-    padding-left: 23.5%;
-    padding-right: 20%;
-    text-align: left; 
-}
-
-li {
-    padding-bottom: 1.5%;
-}
-
-#takepart a {
-    color: navy;
-}
-
-a {
-    color: navy;
-    cursor: pointer;
-}
-
-img{
-    border: 1px solid #040404;
-    width: 35%;
-    height: auto;
-}
-
-
-
-
-
-.img_by {
-    float: left;
-    margin-right: 3%;
-    margin-left: 3%;
-}
-
-.by_description {
-    margin-top: 3%;
-    margin-bottom: 2%;
 }
 
 .footer {
@@ -212,6 +195,29 @@ img{
     color: snow;
 }
 
+.center {
+    position: absolute;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left:50%;
+}
+
+.center-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+}
+
+.vignette {
+    /* z-index: 0; */
+    /* position: fixed; */
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 100vw black;
+}
+
+
 /* Below from https://stackoverflow.com/questions/826782 for disabling select*/
     .noselect {
         -webkit-touch-callout: none; /* iOS Safari */
@@ -225,9 +231,7 @@ img{
 
 /* Glow effect from https://www.w3schools.com/howto/howto_css_glowing_text.asp */
     .glow {
-        font-size: 80px;
         color: #eeeeee;
-        text-align: center;
         -webkit-animation: glow 4s ease-in-out infinite alternate;
         -moz-animation: glow 4s ease-in-out infinite alternate;
         animation: glow 4s ease-in-out infinite alternate;
@@ -240,44 +244,27 @@ img{
             0 0 6px #441955, 0 0 7px #441955, 0 0 8px #441955;}
     }
 
-/* Base Code from https://www.w3schools.com/howto/howto_css_modals.asp */
-/* The Modal (background) */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-
-    /* Modal Header */
-    .modal-header {
-        padding: 1px 8px;
-        background-color: #242424;
-        color: white;
+/* Source: https://stackoverflow.com/questions/396145 */
+/* Align vertically & horizontally */
+    .middle-1 {
+        display: table;
+        position: absolute;
+        top: 47%;
+        /* left: 0; */
+        height: 100vh;
+        width: 100vw;
     }
     
-    /* Modal Body */
-    .modal-body {padding: 2px 16px;}
-    
-    /* Modal Content */
-    .modal-content {
-        position: relative;
-        background-color: #fefefe;
-        margin: auto;
-        padding: 0;
-        border-left: 1px solid #444;
-        border-right: 1px solid #444;
-        width: 80%;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-        animation-name: animatetop;
-        animation-duration: 0.4s
+    .middle-2 {
+        display: table-cell;
+        vertical-align: middle;
+    }
+      
+    .middle-3 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        /*whatever width you want*/
     }
     
     /* Add Animation */
@@ -301,11 +288,19 @@ img{
     }
 
 /* Base code from https://github.com/CodeExplainedRepo/Multiple-Choice-Quiz-JavaScript */
+    .quiz {
+        background-color: snow;
+    }
+
     #container{
         margin : 20px auto;
-        background-color: white;
-        height: 300px;
-        width : 100%;
+        background-color: rgb(105, 3, 59); /* Fallback */
+        background: url('resources/quiz_background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0px 5px 15px 0px;
+        height: 80vh;
+        width : 80%;
         position: relative;
         text-align: center;
     }
@@ -315,17 +310,13 @@ img{
         border : 1px solid rgba(0, 0, 0, 0.7);
         border-radius: 1.2%;
         cursor: pointer;
-        position: absolute;
         margin: 0 auto;
         padding: 1%;
         padding-left: 6%;
         padding-right: 6%;
-        top:25%;
+        top:40%;
         color : #040404;
         display: inline-block;
-        transform:translate(-50%,0%);
-        -ms-transform:translate(-50%,0%);
-        left:50%;
     }
 
     #start:hover{
@@ -338,22 +329,23 @@ img{
     }
 
     #question{
-        position:absolute;
-        left:50%;
-        transform:translate(-50%,0%);
-        -ms-transform:translate(-50%,0%);
-        font-size: 2vw;
-        position: absolute;
+        font-size: 2.2em;
         text-align: center;
         margin: auto;
-        /* width: 80%; */
+        width: 75%;
         /* position: absolute; */
-        top:0;
+        /* top:20%; */
+    }
+
+    @media screen and (max-width: 650px) {
+        #question{
+            font-size: 1.5em;
+        }
     }
 
     #question p{
-        margin : 0;
-        padding : 15px;
+        /* margin : 0; */
+        padding : 1.5%;
         font-size: 1.25em;
         line-height: 1.3em;
         /* font-family: Tahoma, Geneva, sans-serif; */
@@ -362,34 +354,78 @@ img{
     }
 
     #choices{
-        width : 58.2%;
-        position: absolute;
-        left: 300px;
-        top : 130px;
-        padding : 10px;
+        min-width: 55%;
+        max-width : 85%;
+        bottom : 35%;
+        padding-bottom : 3%;
         display: inline-flex;
-        justify-content: space-around;
+        justify-content: center;
+        flex-flow: column wrap;
     }
 
-    .choice{
+    .Choice-deactivated {
+        cursor: not-allowed;
+    }
+
+    .choice, .Choice-deactivated {
+        margin: 1%;
         display: inline-block;
-        width : 200px;
+        min-width: 20vh;
+        width : 100%;
         text-align: center;
         border : 1px solid grey;
         border-radius: 5px;
-        cursor: pointer;
-        padding : 5px;
-        /* font-family: Tahoma, Geneva, sans-serif; */
+        padding : 4%;
+        padding-left: 3%;
+        padding-right: 3%;
+        font-weight: bold;
+        font-size: 1.25em;
+        line-height: 1.3em;
     }
 
-    .choice:hover{
-        border : 2px solid grey;
+    .choice:hover {
+        overflow: hidden;
+        color : snow;
+        background-color: #040404;
+        transition: .2s;
+        cursor: pointer;
+    }
+
+    .solution {
+        background-color: #8d8;
+        color: black;
+        cursor: default;
+    }
+
+    .wrong-answer {
+        background-color: #d88;
+        color: black;
+        cursor: default;
+    }
+
+    #qNext, #qRestart {
+        display: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 0.2%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-bottom: 5%;
+        cursor: pointer;
+        font-size: x-large;
         font-weight: bold;
     }
 
+    #qNext:hover, #qRestart:hover {
+        transition: .2s;
+        border: 1px solid snow;
+        background-color: black;
+        color: snow;
+        cursor: pointer;
+    }
 
     #progress{
-        width : 500px;
+        /* width : 500px; */
         position: absolute;
         bottom : 0px;
         right : 0px;
@@ -430,20 +466,13 @@ img{
     #scoreContainer p{
         position: absolute;
         display: block;
-        width : 100%;
-        height :59px;
+        width: 59px;
+        height:59px;
         top:130px;
         font-size: 1.5em;
         font-weight: bold;
         text-align: center;
         font-family: Tahoma, Geneva, sans-serif;
-    }
-
-    #qRestart {
-        width: 45px;
-        margin: auto;
-        border: 1px solid white;
-        border-radius: 5px;
     }
 
     .icons {
@@ -453,7 +482,8 @@ img{
         display: flex;
     }
 
-    /* code copied from w3schools */
+    
+/* code copied from w3schools */
     .fa {
         padding: 20px;
         font-size: 30px;
@@ -461,8 +491,6 @@ img{
         text-align: center;
         text-decoration: none;
         margin: 5px 2px;
-        
-
     }
 
     .fa:hover {
@@ -470,7 +498,7 @@ img{
 
     }
 
-      span:hover {
+    span:hover {
         color: black !important;
     }
 
