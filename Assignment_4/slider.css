@@ -55,8 +55,8 @@
 }
 
 .carousel__control:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
 
 .carousel__activator:nth-of-type(1):checked
