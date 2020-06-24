@@ -14,3 +14,7 @@
     x[myIndex-1].style.display = "flex";  
     setTimeout(carousel, 4000);    
     }
+
+// Use Vimeo API to move after the film finishes
+    let player = new Vimeo.Player(document.getElementsByTagName('iframe')[0])
+    player.on('ended', function(){window.location.href='#about'})
