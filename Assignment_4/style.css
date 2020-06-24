@@ -133,6 +133,15 @@ nav a:hover {
 }
 
 @media screen and (max-width: 650px) {
+    nav a {
+        padding: 3%;
+    }
+
+    p {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
     .title-holder {
         top: 1.5%;
     }
@@ -167,13 +176,6 @@ p {
     padding-right: 20%;
     font-weight: bold;
     text-align: center;
-}
-
-@media screen and (max-width: 650px) {
-    p {
-        padding-left: 7%;
-        padding-right: 7%;
-    }
 }
 
 video {
