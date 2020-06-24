@@ -37,21 +37,26 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: #eee;
   color: #3d414a;
   border-radius: 100%;
-  box-shadow: 0 2px 10px 0 rgba(33, 34, 36, 0.3);
+  box-shadow: 0 2px 10px 0 rgba(33, 34, 36, 0.7);
   font-size: 24px;
   height: 48px;
   justify-content: center;
-  transition: 0.3s all;
+  transition: 0.4s all;
   width: 48px;
   z-index: 1;
 }
 
+.carousel__control img {
+  width: 16px;
+  height: 24px;
+}
+
 .carousel__control:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
 
 .carousel__activator:nth-of-type(1):checked
