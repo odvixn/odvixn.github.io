@@ -170,5 +170,6 @@ function qClearChoices() {
 }
 
 function qImgLoad() {
+    console.log('qImgload');
     document.getElementsByClassName('qFallback')[0].style.backgroundColor = "transparent";
 }
