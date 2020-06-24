@@ -33,6 +33,7 @@
 }
 
 .carousel__control {
+  font-family: Helvetica, sans-serif;
   cursor: pointer;
   display: flex;
   align-items: center;
