@@ -186,7 +186,7 @@ video {
     margin-top: 1%;
 }
 
-#about {
+#about, #resources {
     background-color: #200035; /* Fallback */
     background-image: url('resources/purple_background.png');
     background-size: cover;
