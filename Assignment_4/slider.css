@@ -33,7 +33,7 @@
 }
 
 .carousel__control {
-  font-family: Helvetica, sans-serif;
+  font-family: cursive, sans-serif;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -48,6 +48,7 @@
   width: 48px;
   z-index: 1;
 }
+
 .carousel__control:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
