@@ -169,3 +169,8 @@ function qClearChoices() {
     solution.className = solution.className.replace(" solution", "");
     userChoice = null;
 }
+
+function qImgLoad() {
+    console.log('qImgload');
+    document.getElementsByClassName('qFallback')[0].style.backgroundColor = "transparent";
+}
