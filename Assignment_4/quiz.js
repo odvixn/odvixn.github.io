@@ -3,6 +3,7 @@
 
 
 // select all elements
+const qFilter = document.getElementById("qFilter");
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz-set");
 const question = document.getElementById("question");
@@ -58,6 +59,7 @@ start.addEventListener("click",startQuiz);
 
 // start quiz
 function startQuiz(){
+    qFilter.style.display = "block";
     start.style.display = "none";
     renderQuestion();
     quiz.style.display = "block";
@@ -156,6 +158,7 @@ function qReset() {
     qRestart.style.display = "none";
     start.style.display = "block";
     quiz.style.display = "none";
+    qFilter.style.display = "none";
 }
 
 function qClearChoices() {

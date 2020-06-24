@@ -208,6 +208,13 @@ video {
     box-shadow: inset 0px 0px 100vw black;
 }
 
+.whitefilter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.55);
+    z-index: -1;
+}
 
 /* Below from https://stackoverflow.com/questions/826782 for disabling select*/
     .noselect {
