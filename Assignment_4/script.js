@@ -15,6 +15,7 @@
     setTimeout(carousel, 4000);    
     }
 
+// Fix this later
 
     const source1 = document.getElementById("source1");
     const source2 = document.getElementById("source2");

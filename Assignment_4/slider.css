@@ -228,144 +228,34 @@
   height: 250px;
   width: 100%;
   cursor: pointer;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-}
-
-.demo-content a{
-    text-decoration: none;
-    color: white;
-    font-size: 0.30em;
-    text-shadow: 1px 0 white;
-    font-weight: bold;
-    display: block;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.3);
-    margin: 0;
-    padding: 30px;
-}
-
-.linkers {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 250px;
-  resize: vertical;
-  overflow: auto;
-}
-
-#source1 {
-  /*format inspired from https://www.w3schools.com/cssref/pr_background-image.asp*/
-
-  /*image source: https://www.columbiaspectator.com/news/2020/01/27/here-are-seven-factors-that-influence-sexual-consent/*/
-  background-image: url("resources/quiz_a2.png");
-  width:100%;
-  height: 250px; 
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  transition: .6s ease;
-  position: absolute;
-}
-
-#source2 {
-  /*image src: https://shegzsablezs.blogspot.com/2019/09/what-you-should-know-about-date-rape.html*/
-  background-image: url("resources/quiz_a4.jpg");
-  width:100%;
-  height: 250px; 
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  transition: .6s ease;
-  position: absolute;
-}
-
-#source3 {
-  /*image source: https://www.fastcompany.com/3052908/sexual-consent-is-like-a-cup-of-tea-according-to-this-awesome-psa*/
-  background-image: url("resources/quiz_a5.jpg");
-  width:100%;
-  height: 250px; 
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  transition: .6s ease;
-  position: absolute;
-}
-
-#source4 {
-  /*image source: https://www.forbes.com/sites/michaeltnietzel/2019/12/16/college-enrollment-declines-again-its-down-more-than-two-million-students-in-this-decade/#773843543d95;*/
-  background-image: url("resources/quiz_a6.jpg");
-  width:100%;
-  height: 250px; 
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  transition: .6s ease;
-  position: absolute;
-}
-
-#source5 {
-  /*image source: https://en.wikipedia.org/wiki/Flag_of_Singapore;*/
-  background-image: url("resources/quiz_a7.jpg");
-  width:100%;
-  height: 250px; 
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  transition: .6s ease;
-  position: absolute;
-}
-
-#source6 {
-  /*image source: https://www.avert.org/sex-stis/consent;*/
-  background-image: url("resources/quiz_a8.jpg");
-  width:100%;
-  height: 250px; 
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  transition: .6s ease;
-  position: absolute;
-}
-
-#source7 {
-  /*image source: https://www.healthline.com/health/guide-to-consent;*/
-  background-image: url("resources/quiz_a1.png");
-  width:100%;
-  height: 250px; 
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  transition: .6s ease;
-  position: absolute;
 }
 
 .carousel__item:nth-child(1) .demo-content {
-
+  background-color: #216485;
 }
 
 .carousel__item:nth-child(2) .demo-content {
-
+  background-color: #3692b6;
 }
 
 .carousel__item:nth-child(3) .demo-content {
-  
+  background-color: #6fccc9;
 }
+
 .carousel__item:nth-child(4) .demo-content {
-  
+  background-color: #a6e3cf;
 }
 
 .carousel__item:nth-child(5) .demo-content {
-  
+  background-color: #aff0be;
 }
 
 .carousel__item:nth-child(6) .demo-content {
-  
+  background-color: #527059;
 }
 
 .carousel__item:nth-child(7) .demo-content {
-  
+  background-color: #243127;
 }
 
 @media screen and (max-width: 1023px) {
