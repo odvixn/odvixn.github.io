@@ -16,6 +16,7 @@ html, body {
     font-size: 15px;
     line-height: 1.5;
     /* vertical-align: baseline; */
+    background-color: black;
 }
 
 nav {
@@ -52,7 +53,7 @@ nav a:hover {
 
 .content {   /* changed 5.5% -> 80px */
     padding-top: 80px;
-    padding-bottom: 4%;
+    padding-bottom: 75px;
 }
 
 .mySlides {  /* Initially do not display (wait for JavaScript) */
@@ -157,12 +158,13 @@ p {
 }
 
 #video {
+    margin-bottom: 3%;
     height:calc(100vh - 43px);
     position: relative;
     background: black;
 }
 
-#video * {
+#video iframe {
     position: absolute;
     top: 5%;
     left: 0;
@@ -171,21 +173,26 @@ p {
 }
 
 
-video {
+/* video {
     max-width: 100%;
     max-height: 100%;
     min-width: 60%;
     height: auto;
     margin-top: 1%;
-}
+} */
 
-#about, #resources {
+#about1, #about2 {
     background-color: #200035; /* Fallback */
-    background-image: url('resources/purple_background.png');
+    background-image: url('resources/dark_purple_wall.gif');
     background-size: cover;
     color: snow;
 }
-  
+
+#resources {
+    background-color: black;
+    color: snow;
+}
+
 .footer {
     background-color: #040404;
     color: beige;
