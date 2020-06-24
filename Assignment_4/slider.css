@@ -1,4 +1,4 @@
-/* Code from https://frontendscript.com/responsive-css-only-carousel-slider/ */
+/* Base code from https://frontendscript.com/responsive-css-only-carousel-slider/ */
 
 .carousel {
   /* min-width: 900px; */
@@ -216,6 +216,8 @@
 
 
 .demo-content {
+  background-size: cover;
+  background-position: 50%, 60%;
   color: #fff;
   display: flex;
   font-family: Helvetica;
@@ -224,38 +226,59 @@
   justify-content: center;
   text-transform: uppercase;
   border-radius: 3px;
-  font-size: 56px;
+  /* font-size: 56px; */
+  font-size: 30px;
   height: 250px;
   width: 100%;
   cursor: pointer;
 }
 
+.demo-content:hover {
+  filter: brightness(110%);
+  box-shadow: none;
+  transition: 1s;
+}
+
+.linkers {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 90%;
+}
+
+
+
 .carousel__item:nth-child(1) .demo-content {
-  background-color: #216485;
+  background-color: #270024;
+  background-image: url('resources/resource_1.png');
 }
 
 .carousel__item:nth-child(2) .demo-content {
-  background-color: #3692b6;
+  background-color: #390032;
+  background-image: url('resources/resource_2.jpg');
 }
 
 .carousel__item:nth-child(3) .demo-content {
-  background-color: #6fccc9;
+  background-color: #4e004f;
+  background-image: url('resources/resource_3.jpg');
 }
 
 .carousel__item:nth-child(4) .demo-content {
-  background-color: #a6e3cf;
+  background-color: #5f0056;
+  background-image: url('resources/resource_4.jpg');
 }
 
 .carousel__item:nth-child(5) .demo-content {
-  background-color: #aff0be;
+  background-color: #690060;
+  background-image: url('resources/resource_5.jpg');
 }
 
 .carousel__item:nth-child(6) .demo-content {
-  background-color: #527059;
+  background-color: #760036;
+  background-image: url('resources/resource_6.png');
 }
 
 .carousel__item:nth-child(7) .demo-content {
-  background-color: #243127;
+  background-color: #850021;  
+  background-image: url('resources/resource_7.png');
 }
 
 @media screen and (max-width: 1023px) {
