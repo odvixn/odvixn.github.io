@@ -254,7 +254,7 @@
 
 .carousel__item:nth-child(1) .demo-content {
   background-color: #270024;
-  background-image: url('resources/resource_1.png');
+  background-image: url('resources/resource_1.jpg');
 }
 
 .carousel__item:nth-child(2) .demo-content {
