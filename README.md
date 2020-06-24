@@ -1,6 +1,4 @@
-# odvixn.github.io
-
-Mr. Miyagis by Joonha, Tonya, Beethoven and Pam.
+# Mr. Miyagis, Was it You? by Joonha, Tonya, Beethoven and Pam.
 
 Project Name: Mr. Miyagis, Was it You?
 
