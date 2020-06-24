@@ -125,7 +125,7 @@ nav a:hover {
     padding-left: 6%;
     padding-right: 6%;
     /* top:40%; */
-    background-color: red;
+    background-color:#680020;
     color : white;
     display: inline-block;
     font-size: 25px;
@@ -133,7 +133,7 @@ nav a:hover {
 
 .title-watch:hover {
     cursor: pointer;
-    background-color: rgb(170, 0, 0);
+    background-color: #8C002A;
     transition: .2s;
 }
 
