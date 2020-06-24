@@ -17,6 +17,10 @@
         z-index: 1;
     }
 
+    .qFallback {
+        background-color: rgb(105, 3, 59); /* Fallback */
+    }
+
     #start{
         letter-spacing: 2px;
         cursor: pointer;
