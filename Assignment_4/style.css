@@ -186,9 +186,9 @@ video {
     margin-top: 1%;
 }
 
-#resources {
+#about {
     background-color: #200035; /* Fallback */
-    background-image: url('resources/resource_background.png');
+    background-image: url('resources/purple_background.png');
     background-size: cover;
     color: snow;
 }
