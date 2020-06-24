@@ -12,7 +12,7 @@
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "flex";  
-    setTimeout(carousel, 4000);    
+    setTimeout(carousel, 7000);    
     }
 
 // Use Vimeo API to move after the film finishes

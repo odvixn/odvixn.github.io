@@ -265,6 +265,20 @@ p {
             0 0 6px #441955, 0 0 7px #441955, 0 0 8px #441955;}
     }
 
+/* For smooth transitions of the image slide */
+    .fade{
+        animation:fading 7s ease infinite; /* pace this with javascript transition */
+    }
+
+    @keyframes fading {
+        0%{opacity:0.1}
+        25%{opacity:0.9}
+        50%{opacity:1}
+        85%{opacity:0.9}
+        100%{opacity:0.1}
+    }
+
+
 /* Source: https://stackoverflow.com/questions/396145 */
 /* Align vertically & horizontally */
     .middle-1 {
