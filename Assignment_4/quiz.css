@@ -1,6 +1,7 @@
 /* Base code from https://github.com/CodeExplainedRepo/Multiple-Choice-Quiz-JavaScript */
     .quiz {
         background-color: snow;
+        color: black;
     }
 
     #container{
