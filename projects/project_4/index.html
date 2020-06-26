@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Consent: Mr Miyagi's </title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="slider.css" />
+        <link rel="stylesheet" href="quiz.css" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">  -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+        <link rel="icon" href="resources/icon2.ico"></link>
+        
+        <!-- from w3schools for social media icons -->
+        <link rel="stylesheet" href="social.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://player.vimeo.com/api/player.js"></script>
+
+    </head>
+    
+    <body onload="qImgLoad()" onloadeddata="qImgLoad()">
+        <!-- Navigation Bar -->
+        <div class="navbar noselect vignette">
+            <nav>
+                <a id="nav-home" href="#home">Home</a>
+                <a id="nav-video" href="#video">Video</a>
+                <a id="nav-about" href="#about2">About</a>
+                <a id="nav-resources" href="#resources">Resources</a>
+                <a id="nav-quiz" href="#quiz">Quiz</a>
+            </nav>
+        </div>
+        <!-- Main Frame -->
+        <div>
+            <!-- Automatic Slideshow Images -->
+            <div class="noselect vignette" id="home">
+                <div class="mySlides fade" style="display: flex;">
+                    <div class="blur" style="background-image: url('resources/slides_1.png');"></div>
+                    <img src="resources/slides_1.png">
+                </div>
+                <div class="mySlides fade">
+                    <div class="blur" style="background-image: url('resources/slides_2.png');"></div>
+                    <img src="resources/slides_2.png">
+                </div>
+                <div class="mySlides fade">
+                    <div class="blur" style="background-image: url('resources/slides_3.png');"></div>
+                    <img src="resources/slides_3.png">
+                </div>
+                <div class="mySlides fade">
+                    <div class="blur" style="background-image: url('resources/slides_4.png');"></div>
+                    <img src="resources/slides_4.png">
+                </div>
+                <div class="title-holder center">
+                    <div class="title-above">
+                        Reflect through the lens of
+                    </div>
+                    <div class="title glow">
+                        Mr. Miyagi's, Was it You?
+                    </div>
+                    <div class="title-below">
+                        Upon the normalization of sexual harassment and the neglect of consent
+                    </div>
+                    <div class="title-watch" onclick="window.location.href='#video'">
+                        WATCH
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- About -->
+            <div class="content about vignette" id="about1">
+                <header>
+                    <h1 class="noselect">Did you order a non-consensual drink?</h1>
+                </header>
+                <p>
+                    A platform through which you rethink the way you perceive sexual harassment, regardless of where you come from or what you have witnessed. <br> 
+                </p>
+            </div>
+
+            <!-- Video -->
+            <div class="content video bg-black vignette noselect" id="video">
+                <iframe src="https://player.vimeo.com/video/432181807" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                    !! Your browser does not seem to support the video element. !!
+                </iframe>
+            </div>
+
+            <div class="content about vignette" id="about2">
+                <header>
+                    <h1 class="noselect">About</h1>
+                </header>
+                <p>
+                    <br>The act of denial consent is sexual harrassment. <br><br>  We believe in the societal crime of sexual harassment and the need to address it as a systemic issue; it is not one person or a particular club but rather a normalized act that happens more often than we think in our communities, just in front of us. <br><br> Even though the setting of the movie and the characters are fictional, similar incidents have occurred countless times in infinite number of places, which include Mr. Miyagi's. <br><br> With the hope to destigmatize the people that suffer assault we hope you, dear interactor, to question with us the complexity of consent. 
+                </p>
+            </div>
+
+            <!-- Resources -->
+            <div class="content resources vignette" id="resources">
+                <header>
+                    <h1 class="noselect">What Else About Consent...</h1>
+                </header>
+                <div class="noselect">
+                    <br>
+                    <div class='carousel'>
+                        <input checked='checked' class='carousel__activator' id='carousel-slide-activator-1' name='carousel' type='radio'>
+                        <input class='carousel__activator' id='carousel-slide-activator-2' name='carousel' type='radio'>
+                        <input class='carousel__activator' id='carousel-slide-activator-3' name='carousel' type='radio'>
+                        <div class='carousel__controls'>
+                            <label class='carousel__control carousel__control--forward' for='carousel-slide-activator-2'>
+                                <img src='resources/icon_1.png' />
+                            </label>
+                        </div>
+                        <div class='carousel__controls'>
+                            <label class='carousel__control carousel__control--backward' for='carousel-slide-activator-1'>
+                                <img src='resources/icon_2.png' />
+                            </label>
+                            <label class='carousel__control carousel__control--forward' for='carousel-slide-activator-3'>
+                                <img src='resources/icon_1.png' />
+                            </label>
+                        </div>
+                        <div class='carousel__controls'>
+                            <label class='carousel__control carousel__control--backward' for='carousel-slide-activator-2'>
+                                <img src='resources/icon_2.png' />
+                            </label>
+                        </div>
+                        <div class='carousel__screen'>
+                            <div class='carousel__track'>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content vignette' onclick="window.open('https://therooster.com/blog/there-are-actually-five-types-sexual-consent-%E2%80%94-heres-how-navigate-them', '_blank');"> 
+                                        <div class="linkers" title="Types of Sexual Consent and How to Navigate them Properly">
+                                           Analyze!<br> 5 Types of Consent  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content vignette' onclick="window.open('https://teens.drugabuse.gov/blog/post/what-are-date-rape-drugs-and-how-do-you-avoid-them', '_blank');">
+                                        <div class="linkers" title="Date Rape Drugs">
+                                            Beware! <br> Date Rape Drugs
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content vignette' onclick="window.open('https://www.youtube.com/watch?v=pZwvrxVavnQ', '_blank');">
+                                        <div class="linkers" title="Tea and Consent">
+                                            Watch!<br>Consent Explained
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content vignette' onclick="window.open('https://www.tandfonline.com/doi/full/10.1080/00224499.2012.700739?needAccess=true', '_blank');">
+                                        <div class="linkers" title="College Students and Sexual Consent: Unique Insights">
+                                            Research: College and Sexual Consent
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content vignette' onclick="window.open('https://www.vice.com/en_us/article/4ay39n/singapores-pervert-problem-getting-worse', '_blank');"> 
+                                        <div class="linkers" title="Is Singapore's Pervert Problem Getting Worse?">
+                                            Sexual Objectification of Women
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content vignette' onclick="window.open('https://www.avert.org/sex-stis/consent', '_blank');">
+                                        <div class="linkers" title="Sex & STIS: SEXUAL CONSENT">
+                                            Sex and STI'S
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content vignette' onclick="window.open('https://www.healthline.com/health/guide-to-consent', '_blank');">
+                                        <div class="linkers" title="Guide to Consent">
+                                            Your Guide to Sexual Consent
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Quiz -->
+            <div class="content quiz noselect" id="quiz">
+                <div class="middle-1" id="container">
+                    <div class="whitefilter" id="qFilter" style="display: none;"></div>
+                <div class="middle-2 qFallback">
+                        <h1 class="middle-3" id="start">Test Yourself! <br> How Much Do You Know about consent?</h1>
+                    </div>
+                    <div class="center-2" id="quiz-set" style="display: none">
+                        <div id="question"></div>
+                        <div id="choices">
+                            <div class="choice center-2" id="A" onclick="checkAnswer('A')"></div>
+                            <div class="choice center-2" id="B" onclick="checkAnswer('B')"></div>
+                            <div class="choice center-2" id="C" onclick="checkAnswer('C')"></div>
+                            <div class="center-2"><br></div>
+                        </div>
+                        <div id="progress"></div>
+                    </div>
+                    <div id="scoreContainer" style="display: none"></div>
+                    <div class="center-2" id="quiz-buttons">
+                        <div id="qNext" onclick="qProgress();">Next</div>
+                        <div id="qRestart" onclick="qReset();">Finish</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer noselect">
+            <!-- code inspired from previous project -->
+            <div class="icons">
+            <p>
+                <a href="https://www.facebook.com/NYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
+                <a href="https://twitter.com/NYUAbuDhabi?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><span class="fa fa-twitter"></span></a>
+                <a href="https://www.instagram.com/nyuabudhabi/?hl=en" target="_blank"><span class="fa fa-instagram"></span></a>
+            </p>
+            </div>
+            NYUAD Communications Lab 2020™
+        </div>
+
+        <script src="script.js" type="text/javascript"></script>
+        <script src="quiz.js" type="text/javascript"></script>
+    </body>
+</html>

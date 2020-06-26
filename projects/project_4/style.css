@@ -1,0 +1,342 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', Geneva, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    /* vertical-align: baseline; */
+    background-color: black;
+    color: snow;
+}
+
+nav {
+    text-align: left;
+    position:fixed;
+    display: block;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    width:100%;
+    z-index:999;
+    top:0;
+}
+
+nav a {
+    display: inline-block;
+    user-select: none;
+    width: auto;
+    padding: 1%;
+    border-radius: 3%;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: beige;
+    /* font-size: 1.05vw; */
+    /* line-height: 50%; */
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.9);
+    transition: .5s;
+}
+
+.content {   /* changed 5.5% -> 80px */
+    padding-top: 80px;
+    padding-bottom: 75px;
+}
+
+#home {
+    background-color: rgb(15, 0, 15);
+}
+
+.mySlides {  /* Initially do not display (wait for JavaScript) */
+    display: none;
+    flex-direction: column;
+    background-size: cover;
+    overflow: hidden;
+    /* position: relative; */
+    padding: 0;
+    padding-top: 40px;
+    /* vertical-align: middle; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+.mySlides .blur {
+    width: 100%;
+    height:calc(100vh - 40px);
+    -webkit-filter: blur(3vw);
+    -moz-filter: blur(3vw);
+    -o-filter: blur(3vw);
+    -ms-filter: blur(3vw);
+    filter: blur(3vw);
+}
+
+.mySlides img {
+    background-color: inherit;
+    position: absolute;
+    height:calc(100vh - 43px);
+    transform: translate(-50%,0);
+    -ms-transform:translate(-50%,0);
+    left: 50%;
+    width: auto;
+    max-width: 100%;
+    margin: auto;
+    border-width: 0;
+}
+
+.title-holder {
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 80px;
+    line-height: 95px;
+    font-weight: bold;
+    width: 85%;
+}
+
+.title-above, .title-below{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    width: 85%;
+    font-size: 25px;
+}
+
+.title-watch {
+    border-radius: 1.7%;
+    margin: 0 auto;
+    padding: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+    /* top:40%; */
+    background-color:#680020;
+    color : white;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.title-watch:hover {
+    cursor: pointer;
+    background-color: #8C002A;
+    transition: .2s;
+}
+
+h1 {
+    /* text-shadow: 0.05vw 0 #040404, 0 -0.05vw #040404, -0.05vw 0 #040404, 0 0.05vw #040404; */
+    margin: auto;
+    margin-top: 0;
+    font-size: 400%;
+    /* max-width: 50%; */
+    cursor: default;
+}
+
+p {
+    font-size: 130%;
+    line-height: 150%;
+    padding-left: 20%;
+    padding-right: 20%;
+    /* font-weight: bold; */
+    text-align: center;
+}
+
+#video {
+    margin-bottom: 3%;
+    height:calc(100vh - 43px);
+    position: relative;
+    background: black;
+}
+
+#video iframe {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* video {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 60%;
+    height: auto;
+    margin-top: 1%;
+} */
+
+#about1, #about2 {
+    background-color: #200035; /* Fallback */
+    background-image: url('resources/dark_purple_wall.gif');
+    background-size: cover;
+    color: snow;
+}
+
+#resources {
+    background-color: black;
+    color: snow;
+}
+
+.footer {
+    background-color: #040404;
+    color: beige;
+    border-color: snow;
+    border-style: inset;
+    border-width: 0;
+    border-top-width: 1px;
+    padding: 0.7%;
+    width:100%;
+}
+
+.bg-black {
+    background-color: #040404;
+    color: snow;
+}
+
+.center {
+    position: absolute;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left:50%;
+}
+
+.center-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+}
+
+.vignette {
+    /* z-index: 0; */
+    /* position: fixed; */
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 100vw black;
+}
+
+.whitefilter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.55);
+    z-index: -1;
+}
+
+/* Below from https://stackoverflow.com/questions/826782 for disabling select*/
+    .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none;   /* Safari */
+        -khtml-user-select: none;    /* Konqueror HTML */
+        -moz-user-select: none;      /* Old versions of Firefox */
+        -ms-user-select: none;       /* Internet Explorer/Edge */
+        user-select: none;           /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+    }
+
+/* Glow effect from https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+    .glow {
+        color: #eeeeee;
+        -webkit-animation: glow 4s ease-in-out infinite alternate;
+        -moz-animation: glow 4s ease-in-out infinite alternate;
+        animation: glow 4s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+        from {text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #c000c0, 0 0 4px #c000c0, 
+            0 0 5px #c000c0, 0 0 6px #c000c0, 0 0 7px #c000c0;}
+        to {text-shadow: 0 0 2px #eee, 0 0 3px #441955, 0 0 4px #441955, 0 0 5px #441955, 
+            0 0 6px #441955, 0 0 7px #441955, 0 0 8px #441955;}
+    }
+
+/* For smooth transitions of the image slide */
+    .fade{
+        animation:fading 7s ease infinite; /* pace this with javascript transition */
+    }
+
+    @keyframes fading {
+        0%{opacity:0.05}
+        25%{opacity:0.9}
+        50%{opacity:1}
+        85%{opacity:0.9}
+        100%{opacity:0.05}
+    }
+
+
+/* Source: https://stackoverflow.com/questions/396145 */
+/* Align vertically & horizontally */
+    .middle-1 {
+        display: table;
+        position: absolute;
+        top: 47%;
+        /* left: 0; */
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .middle-2 {
+        display: table-cell;
+        vertical-align: middle;
+    }
+      
+    .middle-3 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        /*whatever width you want*/
+    }
+
+
+/* Positioning here to ensure override */
+    @media screen and (max-width: 650px) {
+        nav a {
+            padding: 3%;
+        }
+    
+        h1 {
+            width: 90%;
+            font-size: 300%;
+        }
+
+        p {
+            padding-left: 7%;
+            padding-right: 7%;
+        }
+    
+        .title-holder {
+            top: 1.5%;
+        }
+    
+        .title {
+            font-size: 60px;
+            line-height: 70px;
+        }
+        
+        .title-above, .title-below {
+            font-size: 20px;
+        }
+        
+        .title-watch {
+            font-size: 20px;
+        }
+    }

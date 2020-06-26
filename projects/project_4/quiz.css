@@ -1,0 +1,208 @@
+/* Base code from https://github.com/CodeExplainedRepo/Multiple-Choice-Quiz-JavaScript */
+    .quiz {
+        background-color: snow;
+        color: black;
+    }
+
+    #container{
+        margin : 20px auto;
+        background-color: rgb(105, 3, 59); /* Fallback */
+        background: url('resources/quiz_background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0px 5px 15px 0px;
+        height: 80vh;
+        width : 80%;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .qFallback {
+        background-color: rgb(105, 3, 59); /* Fallback */
+    }
+
+    #start{
+        letter-spacing: 2px;
+        cursor: pointer;
+        margin: 0 auto;
+        padding: 1%;
+        padding-left: 6%;
+        padding-right: 6%;
+        top:40%;
+        background-color: rgba(0, 0, 0, 0.4);
+        color : white;
+        display: inline-block;
+        font-size: 250%;
+        z-index: 2;
+    }
+
+    #start:hover{
+        /* border: 3px solid #aaa; */
+        /* text-decoration: underline; */
+        color : snow;
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: .5s;
+    }
+
+    #question{
+        font-size: 2.2em;
+        text-align: center;
+        margin: auto;
+        width: 75%;
+        /* position: absolute; */
+        /* top:20%; */
+        z-index: 2;
+    }
+
+    #question p{
+        /* margin : 0; */
+        padding : 1.5%;
+        font-size: 1.25em;
+        line-height: 1.3em;
+        /* font-family: Tahoma, Geneva, sans-serif; */
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #choices{
+        min-width: 55%;
+        max-width : 85%;
+        bottom : 35%;
+        padding-bottom : 3%;
+        display: inline-flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        z-index: 2;
+    }
+
+    .Choice-deactivated {
+        cursor: not-allowed;
+    }
+
+    .choice, .Choice-deactivated {
+        margin: 1%;
+        display: inline-block;
+        min-width: 20vh;
+        width : 100%;
+        text-align: center;
+        border : 1px solid grey;
+        border-radius: 5px;
+        padding : 4%;
+        padding-left: 3%;
+        padding-right: 3%;
+        font-weight: bold;
+        font-size: 1.25em;
+        line-height: 1.3em;
+    }
+
+    .choice:hover {
+        overflow: hidden;
+        color : snow;
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: .2s;
+        cursor: pointer;
+    }
+
+    .solution {
+        background-color: #8d8;
+        color: black;
+        cursor: default;
+    }
+
+    .wrong-answer {
+        background-color: #d88;
+        color: black;
+        cursor: default;
+    }
+
+    #qNext, #qRestart {
+        display: none;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+        padding: 0.2%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-bottom: 5%;
+        cursor: pointer;
+        font-size: x-large;
+        font-weight: bold;
+        z-index: 2;
+    }
+
+    #qNext:hover, #qRestart:hover {
+        transition: .2s;
+        border: 1px solid snow;
+        background-color: rgba(0, 0, 0, 0.8);;
+        color: snow;
+        cursor: pointer;
+    }
+
+    #progress{
+        /* width : 500px; */
+        position: absolute;
+        bottom : 0px;
+        right : 0px;
+        padding:5px;
+        text-align: right;
+        z-index: 2;
+    }
+
+    .prog{
+        width : 25px;
+        height : 25px;
+        border: 1px solid #000;
+        display: inline-block;
+        border-radius: 50%;
+        margin-left : 5px;
+        margin-right : 5px;
+    }
+
+    #scoreContainer{
+        margin : 20px auto;
+        background-color: black;
+        opacity: 0.8;
+        /* height: 50%; */
+        width : 85%;
+        border-radius: 5px;
+        position: relative;
+        display: none;
+        z-index: 2;
+    }
+
+    #scoreContainer p{
+        margin: 1%;
+        width : 100%;
+        height: 100%;
+        text-align: center;
+        padding : 4%;
+        padding-left: 3%;
+        padding-right: 3%;
+        font-weight: bold;
+        font-size: 1.5em;
+        line-height: 1.7em;
+        color: snow;
+    }
+
+    .icons {
+        justify-content: space-around;
+        width: 100%;
+        text-align: center;
+        display: flex;
+    }
+
+    @media screen and (max-width: 650px) {
+        #start{
+            font-size: 180%;
+        }
+
+        #question{
+            font-size: 1.5em;
+        }
+
+        .prog{
+            width : 15px;
+            height : 15px;
+            border-radius: 50%;
+        }
+    }
