@@ -1,15 +1,32 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <title>Redirect Page</title>
+        <title>Welcome!</title>
+        <link rel="stylesheet" href="resources/style/welcome.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body style="text-align:center; padding:0; margin:0;padding-top:15%;background-color: #757575;">
-        <a href="Assignment_1\index.html">Assignment 1</a>
-        <br><br>
-        <a href="Assignment_2\index.html">Assignment 2</a>
-        <br><br>
-        <a href="Assignment_3\index.html">Assignment 3</a>
-        <br><br>
-        <a href="Assignment_4\index.html">Assignment 4</a>
+    <body>
+        <div class="wc-wrapper noselect">
+            <div class="wc-text">
+                <h1 class="wc-welcome glitch" data-text="Welcome!">Welcome!</h1>
+                <h2 class="wc-notice">Unfortunately, many functions will not work without JavaScript.</h2>    
+            </div>
+            <div class="wc-btn-wrapper-nojs">
+                <div class="wc-btn-nojs">
+                    <a class="wc-yes-nojs" href="main.html">I understand</a>
+                </div>
+                <div class="I-reject-no">
+                    <a class="wc-sad">:(</a>
+                    <a class="wc-no-nojs">Unacceptable!</a>
+                </div>
+            </div>
+            <div id="coords"></div>
+        </div>
+        <div id="wc-preload">
+            <!-- preload media files Here before entering-->
+        </div>
+        <!-- Script -->
+        <script src="resources/script/welcome.js" type="text/javascript"></script>
+        <script src="resources/script/customize.js" type="text/javascript"></script>
     </body>
 </html>

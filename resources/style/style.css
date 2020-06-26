@@ -1,0 +1,55 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #333333;
+    color: snow;
+    overflow: hidden;
+}
+
+#coords {
+    display: none;
+    position: fixed;
+    padding: 0.5%;
+    background-color: #040404;
+    outline: 2px solid #8cff99;
+    color: #8cff99;
+    letter-spacing: .05em;
+}
+
+
+.center {
+    position: absolute;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /* left:50%; */
+}
+
+.center-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+}
+
+/* Below from https://stackoverflow.com/questions/826782 for disabling select*/
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;      /* Old versions of Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
