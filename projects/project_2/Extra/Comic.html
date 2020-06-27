@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Comic Strip</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="styleComic.css" />
+        <script src="Comic.js" type="text/javascript"></script>
+    </head>
+    <body onload="loadComplete()" class ="bg">
+        <!-- Loading Screen. This will be hidden once everything loads. -->
+
+
+        <div class="loading">LOADING...</div>
+
+
+        <!-- Preloads all image files so transition is smooth-->
+        <div class="preload" style="visibility: hidden">
+            <div background="resources/scenes/1.png"></div>
+            <div background="resources/scenes/2.png"></div>
+            <div background="resources/scenes/3.png"></div>
+            <div background="resources/scenes/4.png"></div>
+            <div background="resources/scenes/5.png"></div>
+            <div background="resources/scenes/6.png"></div>
+            <div background="resources/scenes/7.png"></div>
+            <div background="resources/scenes/8.png"></div>
+            <div background="resources/scenes/9.png"></div>
+            <div background="resources/scenes/10.png"></div>
+            <div background="resources/scenes/11.png"></div>
+            <div background="resources/scenes/12.png"></div>
+            <div background="resources/scenes/13.png"></div>
+        </div>
+
+        <!-- Main -->
+        <div class="comic-box" onmousedown="return false">
+            <img src="resources/scenes/1.png"/>
+            <p class="dialogue" id="speaker"></p>
+            <p class="dialogue" id="dialogue"></p>
+        </div>
+
+        <div class="vertical-menu" id = "Menu" style = "display:none;">
+          <a href="index.html">>return</a>
+        </div>
+
+    </body>
+    <script src="dialogue.js" type="text/javascript"></script>
+</html>
