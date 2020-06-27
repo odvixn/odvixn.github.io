@@ -41,6 +41,7 @@ function getProj() {
 
 // Idea from https://taliacotton.com/
 document.onmousemove = function(e){
+    if (window.innerWidth < 650) {return;}
     coords = document.getElementById("coords");
     elem = getInnermostHovered().outerHTML.toString()
     coords.innerText = elem.substr(0,elem.indexOf(">")+1);

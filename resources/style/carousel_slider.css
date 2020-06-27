@@ -262,6 +262,7 @@ h3 {
   .carousel-container {
     min-height: 90vh;
     min-width: 95vw;
+    margin-bottom: 30vh;
   }
   .c__ss {
     position: relative;
