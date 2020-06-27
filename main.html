@@ -3,24 +3,113 @@
         <meta charset="UTF-8">
         <title>Javascript Enabled</title>
         <link rel="stylesheet" href="resources/style/style.css" />
-        <script src="resources/script/script.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="resources/style/carousel_slider.css" />
+        <link rel="stylesheet" href="resources/style/candle.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div id="page_1">
-            <div id="title" class="noselect">
-                <h1 style="text-align: center;">🚧 Page Under Construction... 🚧</h1>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <div></div>
+        <h1 class="name glitch easy-select" data-text="Joonha Yu">Joonha Yu</h1>
+        <section class="noselect">
+            <div class="carousel-container">
+                <ul class="carousel my-carousel">
+                    <input class="c__a" type="radio" id="profile" name="activator"/>
+                    <input class="c__a" type="radio" id="proj_4" name="activator" checked="checked"/>
+                    <input class="c__a" type="radio" id="proj_3" name="activator"/>
+                    <input class="c__a" type="radio" id="proj_2" name="activator"/>
+                    <input class="c__a" type="radio" id="proj_1" name="activator"/>
+                    <div class="c__ss">
+                        <div class="slide_overlay">
+                            <div class="overlay-icons">
+                                <img src="resources/link.png" title="visit webpage" onclick="window.open(gLink[getProj()], '_blank');"/>
+                                <img src="resources/document.png" title="documentation" onclick="window.open(gDoc[getProj()], '_blank');">
+                                <img src="resources/github.png" title="github page" onclick="window.open(gGit[getProj()], '_blank');">
+                            </div>
+                        </div>
+                        <li class="c__s">
+                            <div class="wrapper">
+                                <div class="candles">
+                                  <div class="light__wave"></div>
+                                  <div class="candle1">
+                                    <div class="candle1__body">
+                                      <div class="candle1__eyes">
+                                        <span class="candle1__eyes-one"></span>
+                                        <span class="candle1__eyes-two"></span>
+                                      </div>
+                                      <div class="candle1__mouth"></div>
+                                    </div>
+                                    <div class="candle1__stick"></div>
+                                  </div>
+                                  
+                                  <div class="candle2">
+                                    <div class="candle2__body">
+                                      <div class="candle2__eyes">
+                                        <div class="candle2__eyes-one"></div>
+                                        <div class="candle2__eyes-two"></div>
+                                      </div>
+                                    </div>
+                                    <div class="candle2__stick"></div>
+                                  </div>
+                                  <div class="candle2__fire"></div>
+                                  <div class="sparkles-one"></div>
+                                  <div class="sparkles-two"></div>
+                                  <div class="candle__smoke-one">
+                                  </div>
+                                  <div class="candle__smoke-two">
+                                  </div>
+                                </div>
+                                <div class="floor">
+                                </div>
+                            </div>
+                            <div class="profile deselect">
+                                <p>Hello! Welcome to my web portfolio.<br>
+                                   While I am working on my webpage, have my contact information.<br>
+                                </p>
+                                <p>
+                                   Email: <span class="easy-select">jy2639@nyu.edu</span><br>
+                                   Github ID: <span class="easy-select">odvixn</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="c__s">
+                            <h1>06.24.2020</h1>
+                        </li>
+                        <li class="c__s">
+                            <h1>06.17.2020</h1>
+                        </li>
+                        <li class="c__s">
+                            <h1>06.10.2020</h1>
+                        </li>
+                        <li class="c__s">
+                            <h1>06.04.2020</h1>
+                        </li>
                     </div>
-                </div>
-                <div></div>
+                    <div class="c__is">
+                        <label class="c__i" for="profile">
+                            <img src="resources/profile.png" />
+                            <div>Profile</div>
+                        </label>
+                        <label class="c__i" for="proj_4">
+                            <img src="resources/proj_4.png" />
+                            <div>Mr. Miyagis, Was it You?</div>
+                        </label>
+                        <label class="c__i" for="proj_3">
+                            <img src="resources/proj_3.png" />
+                            <div>A Story of Refuge</div>
+                        </label>
+                        <label class="c__i" for="proj_2">
+                            <img src="resources/proj_2.png" />
+                            <div>Shut Up and Click</div>
+                        </label>
+                        <label class="c__i" for="proj_1">
+                            <img src="resources/proj1.png" />
+                            <div>30MFF</div>
+                        </label>
+                    </div>
+                </ul>
             </div>
-        </div>
-
-
-
+        </section>
+        <div id="coords" class="noselect"></div>
+        <!-- Load JavaScript -->
+        <script src="resources/script/script.js" type="text/javascript"></script>
     </body>
 </html>

@@ -6,7 +6,7 @@
     let wrapper = document.getElementsByClassName('wc-btn-wrapper-nojs')[0];
     wrapper.className = wrapper.className.replace("-nojs", "");
     wrapper.innerHTML = `
-    <div class="wc-btn wc-yes">
+    <div class="wc-btn wc-yes" onclick="window.alert('Sorry! This feature is currently unavailable!');">
         Yes
     </div>
     <div class="wc-btn" onclick="window.location.href='main.html'">
