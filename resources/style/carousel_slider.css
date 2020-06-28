@@ -180,7 +180,6 @@
   background-position: top;
   animation: none;
   background-color: snow;
-  background-image:url("../loading.svg");
 }
 /**
   * Theming
@@ -236,16 +235,16 @@ h3 {
   background-image: none;
 }
 .c__s:nth-of-type(2) {
-  background-image: url("../screenshots/proj_4.jpg");
+  background-image: url("../loading.svg"), url("../screenshots/proj_4.jpg");
 }
 .c__s:nth-of-type(3) {
-  background-image: url("../screenshots/proj_3.png");
+  background-image: url("../loading.svg"), url("../screenshots/proj_3.png");
 }
 .c__s:nth-of-type(4) {
-  background-image: url("../screenshots/proj_2.png");
+  background-image: url("../loading.svg"), url("../screenshots/proj_2.png");
 }
 .c__s:nth-of-type(5) {
-  background-image: url("../screenshots/proj_1.png");
+  background-image: url("../loading.svg"), url("../screenshots/proj_1.png");
 }
 
 @keyframes animateScroll {
