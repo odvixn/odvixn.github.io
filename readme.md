@@ -2,7 +2,7 @@ Features worked on:
 
 - Web-hostile(hardened) browser compatibility
     - Since some (my) browsers block third-party resources and a few DOM object types including webfont, canvas, iframe, and others by default for improved security and privacy, I built the webpage to function without relying on those.
-- Similarly, the core part of the webpage works without JavaScript. HTML and pure CSS was used as an alternative. These include:  
+- Similarly, the core part of the webpage works without JavaScript. HTML and pure CSS wer used as alternatives. The core features include:  
     - Glitchy text
     - Responsive Carousel Slider.
     - Changing slide images, contents, and links based on user interaction. 
