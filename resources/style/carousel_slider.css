@@ -182,6 +182,7 @@
   background-position: top;
   animation: none;
   background-color: snow;
+  background-image: url(../loading.svg);
 }
 /**
   * Theming
