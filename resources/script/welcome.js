@@ -6,13 +6,26 @@
     let wrapper = document.getElementsByClassName('wc-btn-wrapper-nojs')[0];
     wrapper.className = wrapper.className.replace("-nojs", "");
     wrapper.innerHTML = `
-    <div class="wc-btn wc-yes" onclick="window.alert('Sorry! This feature is currently unavailable!');">
+    <div class="wc-btn wc-yes" onclick="ask();">
         Yes
     </div>
     <div class="wc-btn" onclick="window.location.href='main.html'">
         <div class="wc-no">No</div>
     </div>
     `;
+
+// !! Work In Progress !!
+    function ask() {
+        ans = window.confirm('Sorry! This feature is currently unavailable!\nDo you want to suggest some features?');
+        if (ans) {window.open('https://github.com/odvixn/odvixn.github.io/issues/new', '_blank');}
+        else {window.alert('Okay!');}
+    }
+
+// Customizing
+
+    function customize() {
+        // https://www.cssscript.com/sortable-toggleable-tree-pickle/
+    }
 
 
 // When the window looses focus, change tab title
