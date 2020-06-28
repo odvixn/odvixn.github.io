@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- https://css-tricks.com/svg-properties-and-css/ For reference -->
-<!-- https://stackoverflow.com/questions/5546346/how-to-place-and-center-text-in-an-svg-rectangle For centering text -->
-
-<?xml version="1.0" encoding="utf-8"?>
 <svg xmlns='http://www.w3.org/2000/svg' version='1.1'>
   <style>
     .loading {
@@ -19,3 +15,7 @@
     Loading...
   </text>
 </svg>
+
+
+<!-- https://css-tricks.com/svg-properties-and-css/ For reference -->
+<!-- https://stackoverflow.com/questions/5546346/how-to-place-and-center-text-in-an-svg-rectangle For centering text -->
