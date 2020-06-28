@@ -49,6 +49,7 @@ html, body {
 }
 
 .overlay-icons img {
+    transition: .4s;
     border: 0;
     width: 64px;
     height: 64px;
