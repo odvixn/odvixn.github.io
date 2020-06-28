@@ -30,6 +30,7 @@ html, body {
 }
 
 .preload {
+    display: inline;
     width: 0;
     height: 0;
 }
