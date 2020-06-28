@@ -96,9 +96,9 @@ p {
 }
 
 @media screen and (max-width: 650px) {
-    html, body {
+    /* html, body {
         overflow: auto;
-    }
+    } */
     .name {
         font-size: 45px;
         letter-spacing: 5px;
