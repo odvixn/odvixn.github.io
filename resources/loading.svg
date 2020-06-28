@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- https://css-tricks.com/svg-properties-and-css/ For reference -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns='http://www.w3.org/2000/svg' version='1.1'>
+  <style>
+    .loading {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 45px;
+      letter-spacing: 5px;
+      fill: #454545;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+  </style>
+
+  <text class='loading' x='50%' y='47%'>
+    Loading...
+  </text>
+</svg>
