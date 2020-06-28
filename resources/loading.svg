@@ -3,16 +3,22 @@
   <style>
     .loading {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 45px;
-      letter-spacing: 5px;
+      font-size: 32px;
+      letter-spacing: 3.5px;
       fill: #454545;
       dominant-baseline: middle;
       text-anchor: middle;
     }
+    @media screen and (max-width: 650px) {
+      .loading {
+        font-size: 20px;
+        letter-spacing: 2.1px;
+      }
+    }
   </style>
 
   <text class='loading' x='50%' y='47%'>
-    Loading...
+    The image has not loaded yet.
   </text>
 </svg>
 
