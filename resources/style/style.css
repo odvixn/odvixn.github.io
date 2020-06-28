@@ -19,7 +19,7 @@ html, body {
     color: snow; */
     background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
 	color: #555;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .name {
@@ -42,17 +42,22 @@ html, body {
 }
 
 .slide_overlay:hover {
-    transition: .4s;
+    transition: opacity .4s;
     background-color: snow;
     background-color: rgba(255,255,255,.9);
     opacity: 1;
 }
 
-.overlay-icons img {
-    transition: .4s;
-    border: 0;
+.slide_overlay:hover > div > a > img {
     width: 64px;
     height: 64px;
+}
+
+.overlay-icons img {
+    transition: opacity .4s;
+    border: 0;
+    width: 0;
+    height: 0;
     z-index: 7;
     cursor: pointer;
     margin-left: 10px;
@@ -60,6 +65,7 @@ html, body {
 }
 
 .overlay-icons a {
+    font-size: 0;
     text-decoration: none;
 }
 
@@ -100,6 +106,9 @@ p {
     p {
         font-size: 18px;
         line-height: 36px;
+    }
+    .overlay-icons img {
+        transition: .4s;
     }
 }
 
