@@ -9,9 +9,13 @@ Features worked on:
     - Moving images
     - Fallback message "The image is not ready yet." when images are blocked or has not been loaded yet
     - Cache control
+    - Single click to select contact information & copy all text formatting (try Ctrl + A  and Ctrl + C)
 - But there are also JavaScript features. These include:
     - Replacing the content of HTML document to display JavaScript version of the webpage.
     - Displaying mouse coordination.
-    - Alert message interaction with users (as an alternative to customizing feature).
+    - Pop-up message interactions with users (as an alternative to customizing feature).
     - Changing window(tab) title based on focus.
     - Mini inspect-element feature.
+
+Final comment(s):
+    - I guess I'm more of a back-end developer
