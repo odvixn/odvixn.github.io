@@ -1,160 +1,131 @@
 /* Pure CSS Carousel Modified */
-/* Base code from https://frontendscript.com/pure-css-carousel-slider/ */
-
-/* Shortened keywords */
-/* carousel__activator  -->  c__a */
-/*    activators decide which slide to show (backend) */
-/* carousel__indicator  -->  c__i */
-/*    the frontend of activators. */
-/* carousel__slide  -->  c__s */
-/*    the slide. holds contents */
+/* Inspired by https://frontendscript.com/pure-css-carousel-slider/ */
 
 .carousel {
-  /* height: 300px; */
-  /* width: 400px; */
-  width: 100%;
-  /* overflow: hidden; */
-  text-align: center;
-  position: relative;
-  padding: 0;
-  list-style: none;
-
   display: flex;
   flex-flow: row-reverse wrap;
   justify-content: space-evenly;
+  /* position: relative; */
+  /* height: 300px; */
+  /* width: 400px; */
+  width: 100%;
+  padding: 0;
+  /* overflow: hidden; */
+  text-align: center;
+  list-style: none;
 }
+
+
+
+/* Carousel activator (backend)*/
+/* Activators decide which slide to show */
 .c__a {
   display: none;
 }
-.c__a:nth-of-type(1):checked ~ .c__ss > .c__s:nth-of-type(1) {
-  transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+
+
+/* Template of what happens to carousel slides when a corresponding activator is selected */
+.c__a:nth-of-type(1):checked ~ .c__ss > .c__s:nth-of-type(1),
+.c__a:nth-of-type(2):checked ~ .c__ss > .c__s:nth-of-type(2),
+.c__a:nth-of-type(3):checked ~ .c__ss > .c__s:nth-of-type(3),
+.c__a:nth-of-type(4):checked ~ .c__ss > .c__s:nth-of-type(4),
+.c__a:nth-of-type(5):checked ~ .c__ss > .c__s:nth-of-type(5)
+{
+  /* Display */
+  -webkit-transform: scale(1);
+  transform: scale(1);
   top: 0;
   left: 0;
   right: 0;
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  z-index: 7;
-}
-.c__a:nth-of-type(1):checked ~ .c__is .c__i:nth-of-type(1) {
-  opacity: 1;
-}
-.c__a:nth-of-type(2):checked ~ .c__ss > .c__s:nth-of-type(2) {
+  z-index: 5;
+
+  /* Transition */
   transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
   transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  z-index: 5;  /* Appear on top when selected */
-  
-  animation: animateScroll 25s ease-in-out infinite;
-  animation-direction: alternate;
+
+  /* Animation */
+  animation: animateScroll 20s ease-in-out infinite alternate;
 }
 
-.c__a:nth-of-type(2):checked ~ .c__is .c__i:nth-of-type(2) {
-  opacity: 1;
+
+/* Custom style of carousel slides when a corresponding activator is selected */
+.c__a:nth-of-type(2):checked ~ .c__ss > .c__s:nth-of-type(2) {
+  animation-duration: 25s;
 }
 .c__a:nth-of-type(3):checked ~ .c__ss > .c__s:nth-of-type(3) {
-  transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  z-index: 5;  /* Appear on top when selected */
-  
-  animation: animateScroll 10s ease-in-out infinite;
-  animation-direction: alternate;
-}
-.c__a:nth-of-type(3):checked ~ .c__is .c__i:nth-of-type(3) {
-  opacity: 1;
+  animation-duration: 10s;
 }
 .c__a:nth-of-type(4):checked ~ .c__ss > .c__s:nth-of-type(4) {
-  transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  z-index: 5;  /* Appear on top when selected */
-  
-  animation: animateScroll 15s ease-in-out infinite;
-  animation-direction: alternate;
-}
-.c__a:nth-of-type(4):checked ~ .c__is .c__i:nth-of-type(4) {
-  opacity: 1;
+  animation-duration: 15s;
 }
 .c__a:nth-of-type(5):checked ~ .c__ss > .c__s:nth-of-type(5) {
-  transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  z-index: 5;  /* Appear on top when selected */
-  
-  animation: animateScroll 24s ease-in-out infinite;
-  animation-direction: alternate;
+  animation-duration: 24s;
 }
-.c__a:nth-of-type(5):checked ~ .c__is .c__i:nth-of-type(5) {
+
+
+/* Template of what happens to carousel indicators when a corresponding activator is selected */
+.c__a:nth-of-type(1):checked ~ .c__is .c__i:nth-of-type(1),
+.c__a:nth-of-type(2):checked ~ .c__is .c__i:nth-of-type(2),
+.c__a:nth-of-type(3):checked ~ .c__is .c__i:nth-of-type(3),
+.c__a:nth-of-type(4):checked ~ .c__is .c__i:nth-of-type(4),
+.c__a:nth-of-type(5):checked ~ .c__is .c__i:nth-of-type(5)
+{
   opacity: 1;
 }
+
+
+
+/* A carousel indicator container */
 .c__is {
-  /* top: 0; */
-  /* left: 10%; */
-  position: relative;
-  height: 100%;
-  /* position: absolute; */
-  /* bottom: 20px; */
-  width: 16%;
-  text-align: left;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
+  /* position: relative; */
+  height: 100%;
+  width: 16%;
+  text-align: left;
 }
+
+
+/* Carousel indicator (frontend) */
+/* An alternative display of default radio's indicator */
 .c__i {
-  /* height: 30px;
-  width: 30px; */
-  /* border-radius: 100%; */
   display: flex;
   flex-flow: row nowrap;
+  padding: 5% 7% 5% 7%;   /* Top/Right/Bottom/Left */
+  border-radius: 2%;
+  opacity: 0.45;
   z-index: 2;
   cursor: pointer;
-  opacity: 0.45;
-  padding: 5%;
-  padding-left: 7%;
-  padding-right: 7%;
-  margin: 0 2.5px 0 2.5px;
-  border-radius: 2%;
 }
+
+
+/* Carousel indicator on hover */
 .c__i:hover {
   opacity: 0.85;
 }
+
+
+/* Small icon to decorate carousel indicator */
 .c__i img {
   width: 15px;
   height: 15px;
   -ms-transform: translate(-18%,22%);
   transform: translate(-18%,22%);
 }
+
+
+/* Text labels on carousel indicator */
 .c__i div {
   -ms-transform: translateX(5%);
   transform: translateX(5%);
 }
+
+
+
+/* Carousel slide container */
 .c__ss {
   position: relative;
   right: 0;
@@ -162,26 +133,31 @@
   width: 60vw;
   height: 100%;
   max-height: 100vw;
-  /* border: solid #555555 6px; */
   border: solid black 2px;
   border-radius: 0.5%;
 }
+
+
+/* Carousel slide */
 .c__s {
   height: 100%;
   width: 100%;
   position: absolute;
   overflow-y: auto;
   overflow-x: hidden;
-  opacity: 0;
   background-size: cover;
-  background-position: top;
-  animation: none;
+  background-position: top left;
   background-color: snow;
   background-image: url(../loading.svg);
+  opacity: 0;
+  animation: none;
 }
-/**
-  * Theming
-*/
+
+
+
+/* --------
+  Theming
+-------- */
 .carousel-container {
   min-height: 80vh;
   max-width: 90vw;
@@ -189,46 +165,38 @@
   display: flex;
   justify-content: center;
 }
+
 .my-carousel {
   border-radius: 2px;
   margin: 30px;
 }
-.carousel-container h1 {
-  border-left: solid #555555 2px;
-  border-top: solid #555555 2px;
-  font-size: 20px;
-  line-height: 20px;
-  letter-spacing: 2px;
-  /* background-color: #040404; */
-  background-color: snow;
-  background-color: rgba(255,255,255,0.9);
-  padding: 1%;
-  padding-bottom: 1%;
-  /* color: #fafafa; */
-  color: #454545;
+
+/* Date labeling */
+.carousel-container h3 {
   position: absolute;
   bottom: 0;
   right: 0;
-  text-align: center;
+  padding: 1%;
   margin-bottom: auto;
-  /* margin-top: -25px; */
+  border-left: solid black 2px;
+  border-top: solid black 2px;
+  background-color: snow;
+  background-color: rgba(255,255,255,0.9);
+  color: #454545;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: center;
 }
-h2,
-h3 {
-  color: #fafafa;
-}
-h3 {
-  font-size: 50px;
-}
+
+/* Carousel indicator */
 .c__i {
+  width: 100%;
   background-color: #fafafa;
   border: solid #555555 1px;
-  width: 100%;
-}
-.c__i div{
   color: black;
-  width: 100%;
 }
+
 .c__s:nth-of-type(1) {
   background-image: none;
 }
