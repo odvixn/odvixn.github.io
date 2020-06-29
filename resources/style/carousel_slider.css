@@ -1,18 +1,13 @@
-/* Pure CSS Carousel Slider with Dot & Arrow Navigation */
-/* From https://frontendscript.com/pure-css-carousel-slider/ */
+/* Pure CSS Carousel Modified */
+/* Base code from https://frontendscript.com/pure-css-carousel-slider/ */
 
 /* Shortened keywords */
 /* carousel__activator  -->  c__a */
-/* carousel__indicators  -->  c__is */
+/*    activators decide which slide to show (backend) */
 /* carousel__indicator  -->  c__i */
+/*    the frontend of activators. */
 /* carousel__slide  -->  c__s */
-
-/**
-  * style variables
-*/
-/**
-  * Control & indicator mixin
-*/
+/*    the slide. holds contents */
 
 .carousel {
   /* height: 300px; */

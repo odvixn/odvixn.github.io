@@ -53,6 +53,7 @@ html, body {
     height: 64px;
 }
 
+/* Initially set size to zero to prevent accidental link activation on touch environment */
 .overlay-icons img {
     transition: opacity .4s;
     border: 0;
@@ -64,11 +65,13 @@ html, body {
     margin-right: 10px;
 }
 
+/* <a> tag should not have font size because images are used to replace text to display link */
 .overlay-icons a {
     font-size: 0;
     text-decoration: none;
 }
 
+/* Profile holder */
 .profile {
     position: absolute;
     width: 85%;
@@ -79,11 +82,13 @@ html, body {
     text-align: left;
 }
 
+/* Profile formatting */
 p {
     font-size: 25px;
     line-height: 50px;
 }
 
+/* Follows mouse */
 #coords {
     display: none;
     position: fixed;
@@ -122,6 +127,7 @@ p {
     user-select: none;           /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
+/* One-click-select */
 .easy-select {
     -webkit-touch-callout: all;
     -webkit-user-select: all;
