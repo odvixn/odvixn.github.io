@@ -21,11 +21,11 @@ html, body {
     color: snow; */
     background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
 	color: #555;
-    overflow: hidden;
 }
 
 body {
     padding-top: 2.5%;
+    overflow: scroll;
 }
 
 .name {
@@ -115,7 +115,7 @@ p {
 @media screen and (max-width: 1023px) {
     html, body {
         font-size: 13px;
-        overflow: unset;
+        /* overflow: unset; */
     }
     p {
         font-size: 22px;
