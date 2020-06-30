@@ -10,7 +10,6 @@
   /* width: 400px; */
   width: 100%;
   padding: 0;
-  /* overflow: visible; */
   text-align: center;
   list-style: none;
 }
@@ -83,8 +82,8 @@
   flex-flow: column wrap;
   justify-content: space-around;
   /* position: relative; */
-  height: 100%;
-  width: 16%;
+  /* height: 100%; */
+  /* width: 16%; */
   margin: 0 4% 0 4%;
   text-align: left;
 }
@@ -164,8 +163,7 @@
   max-width: 90vw;
   margin: auto;
   display: flex;
-  justify-content: center;
-  overflow: visible;
+  /* justify-content: center; */
 }
 
 .my-carousel {
@@ -237,7 +235,6 @@
   .carousel-container {
     min-height: 90vh;
     min-width: 100vw;
-    /* margin-bottom: 3vh; */
   }
   .c__ss {
     position: relative;

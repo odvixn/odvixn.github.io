@@ -25,7 +25,6 @@ html, body {
 
 body {
     padding-top: 2.5%;
-    overflow: scroll;
 }
 
 .name {
@@ -126,6 +125,10 @@ p {
 @media screen and (max-width: 650px) {
     html, body {
         font-size: 15px;
+    }
+    body {
+        overflow: scroll;
+        padding-bottom: 5%;
     }
     .name {
         font-size: 45px;
