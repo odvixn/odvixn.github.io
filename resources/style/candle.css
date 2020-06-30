@@ -13,6 +13,13 @@
     opacity: 50%;
   }
   
+  @media screen and (max-width: 650px) {
+    .wrapper {
+      bottom: -30%;
+      transform: scale(1);
+    }
+}
+
   .floor {
     position: absolute;
     left: 50%;

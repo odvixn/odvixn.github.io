@@ -15,7 +15,7 @@ document.onmousemove = function(e){
     elem = getInnermostHovered().outerHTML.toString()
     coords.innerText = elem.substr(0,elem.indexOf(">")+1);
 
-    coords.style.display = "block";
+    coords.style.display = "inline-block";
     coords.style.top = e.clientY + 12 + "px";
     coords.style.left = e.clientX + 10 + "px";
 }

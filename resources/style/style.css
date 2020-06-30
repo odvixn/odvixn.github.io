@@ -9,6 +9,8 @@ html {
 }
 
 html, body {
+    min-width: 100vw;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,14 +21,18 @@ html, body {
     color: snow; */
     background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
 	color: #555;
-    /* overflow: hidden; */
+    overflow: hidden;
+}
+
+body {
+    padding-top: 2.5%;
 }
 
 .name {
     text-align: center;
     font-size: 60px;
     letter-spacing: 8px;
-    margin-bottom: auto;
+    margin: 0 0 0 auto;
 }
 
 .slide_overlay {
@@ -83,6 +89,11 @@ html, body {
     text-align: left;
 }
 
+/* Links in profile */
+.profile a {
+    color: inherit;
+}
+
 /* Profile formatting */
 p {
     font-size: 25px;
@@ -101,13 +112,27 @@ p {
     z-index: 999;
 }
 
+@media screen and (max-width: 1023px) {
+    html, body {
+        font-size: 13px;
+        overflow: unset;
+    }
+    p {
+        font-size: 22px;
+        line-height: 44px;
+    }
+}
+
 @media screen and (max-width: 650px) {
-    /* html, body {
-        overflow: auto;
-    } */
+    html, body {
+        font-size: 15px;
+    }
     .name {
         font-size: 45px;
         letter-spacing: 5px;
+    }
+    .profile {
+        padding-top: 0;
     }
     p {
         font-size: 18px;
@@ -117,6 +142,7 @@ p {
         transition: .4s;
     }
 }
+
 
 /* Below from https://stackoverflow.com/questions/826782 for disabling select*/
 .noselect {
@@ -136,15 +162,6 @@ p {
     -moz-user-select: all;
     -ms-user-select: all;
     user-select: all;
-}
-
-.deselect {
-    -webkit-touch-callout: text;
-    -webkit-user-select: text;
-    -khtml-user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
 }
 
 /* Glitchy Text*/
